@@ -17,7 +17,16 @@ A territory counts as British only where a legal instrument placed it under Brit
 A territory's status in a given year is its status on 31 December of that year. So the 1947 frame shows India as independent, and the 1997 frame shows Hong Kong after the handover.
 
 ### Changes of status
-Changes of status are recorded as successive periods rather than a single independence date. For example, Canada is a dominion and then gains legislative independence under the Statute of Westminster (1931).
+Changes of status are recorded as successive periods rather than a single independence date. For example, Zimbabwe runs from British South Africa Company rule, to a self-governing colony from 1923, to its legal position as a British colony after the Unilateral Declaration of Independence (1965–1980).
+
+### When British status ends
+British status ends at independence. For the older dominions this is the Statute of Westminster (11 December 1931), or its adoption for Australia (Act of 1942, effective from 1939) and New Zealand (1947). For later states it is the date in the independence Act, even where the new state was a dominion or kept the British monarch as head of state. Mandates and territories held by a dominion count as British only while the dominion itself does.
+
+### Partial coverage
+Borders are today's. Where a substantial part of a modern country was British, the country is shaded more lightly; where the British part was small (for example, Weihaiwei in China), a dot marks it instead and the country is not shaded.
+
+### Data at a glance
+92 territories, 123 status periods and 116 cited sources (20 primary legal texts, 95 reference entries and the ICOW dataset). The pipeline cross-checks every independence date against ICOW; there are currently no mismatches.
 
 ### Sources
 Every period cites a source. Uncertain or contested cases are flagged in the data and listed in [`DATA_ISSUES.md`](DATA_ISSUES.md).
@@ -28,16 +37,21 @@ Every period cites a source. Uncertain or contested cases are flagged in the dat
 |---|---|---|
 | [Natural Earth](https://www.naturalearthdata.com/), Admin 0 – Countries, 1:50m (v5.1.1) | Base geometry | Public domain |
 | [legislation.gov.uk](https://www.legislation.gov.uk/) | Primary legal texts (Acts of Parliament) cited for individual dates | Open Government Licence v3.0 |
+| [Encyclopaedia Britannica](https://www.britannica.com/) | Status types and dates of change, cited per article | Copyright; only facts are cited, no text is reproduced |
+| [UN Trusteeship Council research guides](https://research.un.org/en/docs/tc/territories) (Dag Hammarskjöld Library) | Trusteeship agreements and terminations | Cited for facts |
+| Australian and New Zealand legislation | Statute of Westminster Adoption Acts 1942 and 1947 | Cited for facts |
 | [ICOW Colonial History Data Set](http://www.paulhensel.org/icowcol.html), v1.1 (Hensel, 2018) | Colonial ruler and independence dates | No open licence; the authors ask that it is not redistributed. Downloaded by `pipeline/01_fetch.py`, not committed. Only individual cited dates appear in this repository. |
 
 Front-end libraries, vendored in `site/lib/`: [D3.js](https://d3js.org/) v7.9.0 and [topojson-client](https://github.com/topojson/topojson-client) v3.1.0, both under the ISC licence.
 
 ## Known limitations
 
-- **Modern borders.** This version draws today's borders. Where only part of a modern country was British (for example, British Somaliland within Somalia), the country is shown in a lighter shade, with a note in the tooltip. Colonial-era borders are planned for a later version.
+- **Modern borders.** This version draws today's borders, with lighter shading or a dot where only part of a modern country was British (see Partial coverage above). Colonial-era borders are planned for a later version.
 - **One status per country.** Where one modern country contained several British statuses at once (for example, colony and protectorates in Malaya), the main status is shown and the others are listed in the notes.
 - **No informal influence.** See the methodology above.
 - **No Antarctica.** Territorial claims there are frozen under the Antarctic Treaty, so Antarctica is left off the map.
+- **Judgement calls.** The status categories do not fit every arrangement (for example, Cyprus under Ottoman sovereignty 1878–1914, leased Weihaiwei, or the West Indies Associated States). Each such case is listed in [`DATA_ISSUES.md`](DATA_ISSUES.md) with the handling used.
+- **Gaps.** A few holdings are not yet mapped because no source has been found for their status or dates: Jubaland (now in Somalia) before 1925, the British Cameroons mandate before 1946, and several small territories administered by Australia or New Zealand. They are listed in `DATA_ISSUES.md`.
 
 ## Repository structure
 
