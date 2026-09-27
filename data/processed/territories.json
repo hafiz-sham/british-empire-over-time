@@ -12,25 +12,65 @@
   "not_british": "Independent / not British"
  },
  "sources": {
+  "brit_botswana": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Botswana\", online edition; sections: British protectorate; Botswana since independence.",
+   "url": "https://www.britannica.com/place/Botswana"
+  },
   "brit_egypt": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Egypt\", online edition; sections: World War I and independence.",
    "url": "https://www.britannica.com/place/Egypt"
+  },
+  "brit_eswatini": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Eswatini\", online edition; sections: Colonial administration.",
+   "url": "https://www.britannica.com/place/Eswatini"
   },
   "brit_kenya": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Kenya\", online edition; sections: The British East Africa Company; The East Africa Protectorate; Kenya colony; World War II to independence.",
    "url": "https://www.britannica.com/place/Kenya"
   },
+  "brit_lesotho": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Lesotho\", online edition; sections: The Sotho kingdom, 1824–69.",
+   "url": "https://www.britannica.com/place/Lesotho"
+  },
   "brit_malawi": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Malawi\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/Malawi"
   },
+  "brit_namibia": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Namibia\", online edition; sections: The South African conquest; The road to Namibia.",
+   "url": "https://www.britannica.com/place/Namibia"
+  },
+  "brit_natal": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Natal (historical province, South Africa)\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Natal-historical-province-South-Africa"
+  },
   "brit_somalia": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Somalia\", online edition; sections: Revolt in British Somaliland; Civil war.",
    "url": "https://www.britannica.com/place/Somalia"
+  },
+  "brit_south_africa": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"South Africa\", online edition; sections: Reconstruction, union, and segregation, 1902–29; The National Party and apartheid.",
+   "url": "https://www.britannica.com/place/South-Africa"
+  },
+  "brit_south_african_war": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"South African War\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/event/South-African-War"
+  },
+  "brit_statute_westminster": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Statute of Westminster\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/event/Statute-of-Westminster"
   },
   "brit_sudan": {
    "type": "reference",
@@ -41,6 +81,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Tanzania\", online edition; sections: German East Africa; Zanzibar; Independence.",
    "url": "https://www.britannica.com/place/Tanzania"
+  },
+  "brit_transvaal": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Transvaal\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Transvaal"
   },
   "brit_uganda": {
    "type": "reference",
@@ -67,10 +112,30 @@
    "citation": "Irish Free State Constitution Act 1922 (13 Geo. 5 Sess. 2 c. 1).",
    "url": "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents/enacted"
   },
+  "leg_botswana_1966": {
+   "type": "primary",
+   "citation": "Botswana Independence Act 1966 (c. 23), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/1966/23/enacted"
+  },
+  "leg_lesotho_1966": {
+   "type": "primary",
+   "citation": "Lesotho Independence Act 1966 (c. 24), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/1966/24/enacted"
+  },
   "leg_s_rhodesia_1965": {
    "type": "primary",
    "citation": "Southern Rhodesia Act 1965 (c. 76), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/1965/76/enacted"
+  },
+  "leg_statute_westminster_1931": {
+   "type": "primary",
+   "citation": "Statute of Westminster 1931 (22 & 23 Geo. 5 c. 4), royal assent 11 December 1931; sections 1 and 10.",
+   "url": "https://www.legislation.gov.uk/ukpga/Geo5/22-23/4/contents"
+  },
+  "leg_swaziland_1968": {
+   "type": "primary",
+   "citation": "Swaziland Independence Act 1968 (c. 56), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/1968/56/enacted"
   },
   "leg_zambia_1964": {
    "type": "primary",
@@ -84,6 +149,31 @@
   }
  },
  "territories": [
+  {
+   "id": "BWA",
+   "name": "Botswana",
+   "area_km2": 581926.3,
+   "label": [
+    24.479,
+    -22.337
+   ],
+   "periods": [
+    {
+     "start": 1885,
+     "end": 1966,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_botswana",
+      "leg_botswana_1966",
+      "icow"
+     ],
+     "end_date": "1966-09-30",
+     "unit": "Bechuanaland Protectorate",
+     "notes": "Protectorate proclaimed in 1885 and extended north in 1890. Ceased to be a protectorate and became independent as Botswana on 30 September 1966."
+    }
+   ]
+  },
   {
    "id": "EGY",
    "name": "Egypt",
@@ -195,6 +285,31 @@
    ]
   },
   {
+   "id": "LSO",
+   "name": "Lesotho",
+   "area_km2": 30094.8,
+   "label": [
+    28.169,
+    -29.609
+   ],
+   "periods": [
+    {
+     "start": 1884,
+     "end": 1966,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_lesotho",
+      "leg_lesotho_1966",
+      "icow"
+     ],
+     "end_date": "1966-10-04",
+     "unit": "Basutoland",
+     "notes": "Annexed to the British Crown in 1868 and administered by the Cape Colony until 1884, when it came under direct British rule as one of three High Commission Territories. The Lesotho Independence Act 1966 calls it the Colony of Basutoland. Independent as Lesotho on 4 October 1966."
+    }
+   ]
+  },
+  {
    "id": "MWI",
    "name": "Malawi",
    "area_km2": 120062.2,
@@ -216,6 +331,32 @@
      "end_date": "1964-07-06",
      "unit": "British Central Africa Protectorate; Nyasaland from 1907",
      "notes": "Protectorate established in 1891; called the British Central Africa Protectorate from 1893 and Nyasaland from 1907. Part of the Federation of Rhodesia and Nyasaland, 1953–1963. Independent on 6 July 1964."
+    }
+   ]
+  },
+  {
+   "id": "NAM",
+   "name": "Namibia",
+   "area_km2": 826494.5,
+   "label": [
+    17.196,
+    -22.945
+   ],
+   "periods": [
+    {
+     "start": 1920,
+     "end": 1931,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "icow",
+      "brit_namibia",
+      "leg_statute_westminster_1931"
+     ],
+     "end_date": "1931-12-11",
+     "unit": "South West Africa",
+     "notes": "Captured from Germany by South African troops in 1914–15 and mandated to South Africa in 1920. Shown as British only while South Africa itself counts as British (to the Statute of Westminster, 1931). South Africa kept control until Namibian independence on 21 March 1990.",
+     "issue": "14"
     }
    ]
   },
@@ -291,6 +432,32 @@
    ]
   },
   {
+   "id": "SWZ",
+   "name": "Eswatini",
+   "area_km2": 17030.1,
+   "label": [
+    31.447,
+    -26.567
+   ],
+   "periods": [
+    {
+     "start": 1906,
+     "end": 1968,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_eswatini",
+      "leg_swaziland_1968",
+      "icow"
+     ],
+     "end_date": "1968-09-06",
+     "unit": "Swaziland",
+     "notes": "British colonial administration from 1906 as a High Commission Territory; formally a protected state from 1967. Ceased to be a protected state on 6 September 1968.",
+     "issue": "18"
+    }
+   ]
+  },
+  {
    "id": "TZA",
    "name": "Tanzania",
    "area_km2": 947902.8,
@@ -360,6 +527,65 @@
      "end_date": "1962-10",
      "unit": "Uganda Protectorate",
      "notes": "Status already in place before 1900; shown from 1900, the start of the map. A protectorate was declared over Buganda in 1894 and extended to the rest of present-day Uganda. Independent in October 1962."
+    }
+   ]
+  },
+  {
+   "id": "ZAF",
+   "name": "South Africa",
+   "area_km2": 1224403.2,
+   "label": [
+    26.095,
+    -28.47
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1902,
+     "status": "crown_colony",
+     "coverage": "partial",
+     "sources": [
+      "brit_south_african_war",
+      "brit_natal",
+      "brit_transvaal"
+     ],
+     "end_date": "1902-05-31",
+     "unit": "Cape Colony and Natal",
+     "notes": "The British colonies of the Cape and Natal (Natal self-governing from 1893). The Transvaal and Orange Free State were Boer republics at war with Britain; Britain proclaimed the annexation of the Transvaal in 1900, but the war ended only with the Treaty of Vereeniging on 31 May 1902.",
+     "issue": "17"
+    },
+    {
+     "start": 1902,
+     "end": 1910,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_south_african_war",
+      "brit_transvaal",
+      "brit_natal",
+      "brit_south_africa"
+     ],
+     "start_date": "1902-05-31",
+     "end_date": "1910-05-31",
+     "unit": "Cape Colony, Natal, Transvaal and Orange River Colony",
+     "notes": "Four British colonies after the Treaty of Vereeniging. Natal was self-governing from 1893; the former republics received responsible government in 1906–07.",
+     "issue": "17"
+    },
+    {
+     "start": 1910,
+     "end": 1931,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_south_africa",
+      "leg_statute_westminster_1931",
+      "icow"
+     ],
+     "start_date": "1910-05-31",
+     "end_date": "1931-12-11",
+     "unit": "Union of South Africa",
+     "notes": "The Union of South Africa, a British dominion created by the South Africa Act 1909, was formed on 31 May 1910. British status ends with the Statute of Westminster (11 December 1931) under this project's rule. South Africa became a republic and left the Commonwealth on 31 May 1961.",
+     "issue": "10"
     }
    ]
   },

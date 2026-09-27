@@ -65,7 +65,7 @@ def main():
     report = pd.DataFrame(rows, columns=["territory_id", "icow_code", "icow_ind_date", "icow_ind_from", "result"])
     report.to_csv(PROCESSED / "icow_crosscheck.csv", index=False, lineterminator="\n")
     print(report.to_string(index=False) if len(report) else "No territories to cross-check.")
-    print(f"\n{(report['result'] == 'MISMATCH').sum()} mismatch(es) for review")
+    print(f"\n{report['result'].str.startswith('MISMATCH').sum()} mismatch(es) for review")
 
 
 if __name__ == "__main__":
