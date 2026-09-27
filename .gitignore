@@ -1,0 +1,24 @@
+# Raw downloads: large and/or licence-restricted. Provenance is recorded in data/raw/SOURCES.md.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/SOURCES.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Node (only used ad hoc, e.g. npx tooling)
+node_modules/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local Claude Code settings
+.claude/settings.local.json
