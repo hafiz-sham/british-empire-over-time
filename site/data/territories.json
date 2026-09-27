@@ -12,15 +12,50 @@
   "not_british": "Independent / not British"
  },
  "sources": {
+  "brit_anguilla": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Anguilla\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Anguilla-island-West-Indies/History"
+  },
+  "brit_ascension": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Ascension\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Ascension-island-Atlantic-Ocean"
+  },
+  "brit_bermuda": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Bermuda\", online edition; sections: History; summary.",
+   "url": "https://www.britannica.com/place/Bermuda"
+  },
+  "brit_biot": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"British Indian Ocean Territory\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/British-Indian-Ocean-Territory"
+  },
   "brit_botswana": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Botswana\", online edition; sections: British protectorate; Botswana since independence.",
    "url": "https://www.britannica.com/place/Botswana"
   },
+  "brit_bvi": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"British Virgin Islands\", online edition; sections: Government and society.",
+   "url": "https://www.britannica.com/place/British-Virgin-Islands/Government-and-society"
+  },
   "brit_cameroon": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Cameroon\", online edition; sections: Moving toward independence.",
    "url": "https://www.britannica.com/place/Cameroon"
+  },
+  "brit_cayman": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Cayman Islands\", online edition; sections: summary.",
+   "url": "https://www.britannica.com/summary/Cayman-Islands"
+  },
+  "brit_cyprus": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Cyprus\", online edition; sections: Ottoman rule; The Republic of Cyprus.",
+   "url": "https://www.britannica.com/place/Cyprus/Ottoman-rule"
   },
   "brit_egypt": {
    "type": "reference",
@@ -32,15 +67,40 @@
    "citation": "Encyclopaedia Britannica, \"Eswatini\", online edition; sections: Colonial administration.",
    "url": "https://www.britannica.com/place/Eswatini"
   },
+  "brit_falklands": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Falkland Islands\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Falkland-Islands/History"
+  },
   "brit_gambia": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"The Gambia\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/The-Gambia"
   },
+  "brit_gibraltar": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Gibraltar\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Gibraltar"
+  },
   "brit_gold_coast": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Gold Coast (historical region, Africa)\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Gold-Coast-historical-region-Africa"
+  },
+  "brit_guernsey": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Guernsey\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Guernsey-island-and-bailiwick-Channel-Islands-English-Channel"
+  },
+  "brit_isle_of_man": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Isle of Man\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Isle-of-Man"
+  },
+  "brit_jersey": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Jersey\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Jersey-island-Channel-Islands-English-Channel"
   },
   "brit_kenya": {
    "type": "reference",
@@ -57,6 +117,26 @@
    "citation": "Encyclopaedia Britannica, \"Malawi\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/Malawi"
   },
+  "brit_maldives": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Maldives\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Maldives/History"
+  },
+  "brit_malta": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Malta\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Malta/History"
+  },
+  "brit_mauritius": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Mauritius\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Mauritius/History"
+  },
+  "brit_montserrat": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Montserrat\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Montserrat-island-West-Indies/History"
+  },
   "brit_namibia": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Namibia\", online edition; sections: The South African conquest; The road to Namibia.",
@@ -71,6 +151,16 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Nigeria\", online edition; sections: The arrival of the British; Nigeria as a colony; Independent Nigeria.",
    "url": "https://www.britannica.com/place/Nigeria"
+  },
+  "brit_pitcairn": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Pitcairn Island\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Pitcairn-Island"
+  },
+  "brit_seychelles": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Seychelles\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Seychelles/History"
   },
   "brit_sierra_leone": {
    "type": "reference",
@@ -91,6 +181,16 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"South African War\", online edition; sections: main article.",
    "url": "https://www.britannica.com/event/South-African-War"
+  },
+  "brit_south_georgia": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"South Georgia\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/South-Georgia"
+  },
+  "brit_st_helena": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Saint Helena\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Saint-Helena-island-South-Atlantic-Ocean"
   },
   "brit_statute_westminster": {
    "type": "reference",
@@ -117,6 +217,11 @@
    "citation": "Encyclopaedia Britannica, \"Transvaal\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Transvaal"
   },
+  "brit_turks_caicos": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Turks and Caicos Islands\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Turks-and-Caicos-Islands"
+  },
   "brit_uganda": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Uganda\", online edition; sections: Bunyoro and Buganda; Growth of a peasant economy; The Republic of Uganda.",
@@ -141,6 +246,11 @@
    "type": "primary",
    "citation": "Irish Free State Constitution Act 1922 (13 Geo. 5 Sess. 2 c. 1).",
    "url": "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents/enacted"
+  },
+  "leg_bna_1981_sch6": {
+   "type": "primary",
+   "citation": "British Nationality Act 1981 (c. 61), Schedule 6 (British Overseas Territories), as in force when accessed.",
+   "url": "https://www.legislation.gov.uk/ukpga/1981/61/schedule/6"
   },
   "leg_botswana_1966": {
    "type": "primary",
@@ -205,6 +315,54 @@
  },
  "territories": [
   {
+   "id": "AIA",
+   "name": "Anguilla",
+   "area_km2": 83.5,
+   "label": [
+    -63.084,
+    18.211
+   ],
+   "periods": [
+    {
+     "start": 1650,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_anguilla",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Anguilla",
+     "notes": "Colonised by British settlers in 1650. Governed with Saint Kitts and Nevis (from 1882 in the Leeward Islands federation) until it broke away in 1967; formally a separate dependent territory from 1980. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "BMU",
+   "name": "Bermuda",
+   "area_km2": 66.1,
+   "label": [
+    -64.715,
+    32.345
+   ],
+   "periods": [
+    {
+     "start": 1684,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_bermuda",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Bermuda",
+     "notes": "Settled by the English from 1612 and a crown colony from 1684. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
    "id": "BWA",
    "name": "Botswana",
    "area_km2": 581926.3,
@@ -257,6 +415,101 @@
    ]
   },
   {
+   "id": "CYM",
+   "name": "Cayman Islands",
+   "area_km2": 302.0,
+   "label": [
+    -81.262,
+    19.317
+   ],
+   "periods": [
+    {
+     "start": 1670,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cayman",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Cayman Islands",
+     "notes": "Ceded to Britain in 1670 and administered as a dependency of Jamaica until Jamaican independence in 1962. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "CYN",
+   "name": "Northern Cyprus",
+   "area_km2": 3478.7,
+   "label": [
+    33.456,
+    35.314
+   ],
+   "periods": [
+    {
+     "start": 1878,
+     "end": 1914,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cyprus"
+     ],
+     "unit": "Cyprus (under Ottoman sovereignty)",
+     "notes": "Part of British-administered Cyprus under the Cyprus Convention of 1878.",
+     "issue": "22"
+    },
+    {
+     "start": 1914,
+     "end": 1960,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cyprus"
+     ],
+     "end_date": "1960-08-16",
+     "unit": "Cyprus",
+     "notes": "Part of British Cyprus (annexed 1914) until independence on 16 August 1960. The Turkish Republic of Northern Cyprus, proclaimed in 1983, is recognised only by Turkey."
+    }
+   ]
+  },
+  {
+   "id": "CYP",
+   "name": "Cyprus",
+   "area_km2": 5720.9,
+   "label": [
+    32.978,
+    34.88
+   ],
+   "periods": [
+    {
+     "start": 1878,
+     "end": 1914,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cyprus"
+     ],
+     "unit": "Cyprus (under Ottoman sovereignty)",
+     "notes": "Under the Cyprus Convention of 1878, Cyprus remained under Ottoman sovereignty but was administered by Britain.",
+     "issue": "22"
+    },
+    {
+     "start": 1914,
+     "end": 1960,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cyprus",
+      "icow"
+     ],
+     "end_date": "1960-08-16",
+     "unit": "Cyprus",
+     "notes": "Annexed by Britain in 1914, when Britain and the Ottoman Empire went to war. Independent republic from 16 August 1960, with Britain keeping sovereignty over the Akrotiri and Dhekelia bases."
+    }
+   ]
+  },
+  {
    "id": "EGY",
    "name": "Egypt",
    "area_km2": 1005831.2,
@@ -282,6 +535,68 @@
    ]
   },
   {
+   "id": "ESB",
+   "name": "Dhekelia",
+   "area_km2": 127.7,
+   "label": [
+    33.76,
+    35.026
+   ],
+   "periods": [
+    {
+     "start": 1878,
+     "end": 1960,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cyprus"
+     ],
+     "end_date": "1960-08-16",
+     "unit": "Cyprus",
+     "notes": "Part of British-administered Cyprus (Cyprus Convention 1878; annexed 1914)."
+    },
+    {
+     "start": 1960,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cyprus",
+      "leg_bna_1981_sch6"
+     ],
+     "start_date": "1960-08-16",
+     "unit": "Sovereign Base Area of Dhekelia",
+     "notes": "Kept under British sovereignty by the 1960 treaties that made Cyprus independent. Before 1960 part of British Cyprus. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "FLK",
+   "name": "Falkland Islands",
+   "area_km2": 11411.8,
+   "label": [
+    -58.77,
+    -51.801
+   ],
+   "periods": [
+    {
+     "start": 1833,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_falklands",
+      "brit_ascension",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Falkland Islands",
+     "notes": "British control re-established in early 1833, after Buenos Aires had proclaimed sovereignty in 1820; Argentina continues to claim the islands. Occupied by Argentina during the 1982 Falklands War. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
    "id": "GBR",
    "name": "United Kingdom",
    "area_km2": 240147.7,
@@ -301,6 +616,29 @@
      "start_date": "1801-01-01",
      "unit": "United Kingdom",
      "notes": "United Kingdom of Great Britain and Ireland from 1 January 1801. Northern Ireland remained in the United Kingdom after 1922."
+    }
+   ]
+  },
+  {
+   "id": "GGY",
+   "name": "Guernsey",
+   "area_km2": 48.2,
+   "label": [
+    -2.587,
+    49.46
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": null,
+     "status": "uk",
+     "coverage": "full",
+     "sources": [
+      "brit_guernsey"
+     ],
+     "unit": "Bailiwick of Guernsey (Crown Dependency)",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Not part of the United Kingdom: a self-governing crown dependency. Occupied by Germany from July 1940 to May 1945.",
+     "issue": "20"
     }
    ]
   },
@@ -344,6 +682,30 @@
    ]
   },
   {
+   "id": "GIB",
+   "name": "Gibraltar",
+   "area_km2": 3.7,
+   "label": [
+    -5.346,
+    36.127
+   ],
+   "periods": [
+    {
+     "start": 1713,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_gibraltar",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Gibraltar",
+     "notes": "Captured by the British during the War of the Spanish Succession and formally ceded by Spain under the Treaty of Utrecht (1713). A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
    "id": "GMB",
    "name": "The Gambia",
    "area_km2": 10336.7,
@@ -365,6 +727,54 @@
      "end_date": "1965-02-18",
      "unit": "Colony and Protectorate of the Gambia",
      "notes": "A small coastal colony with a protectorate over the interior, established in 1894. Independent on 18 February 1965; a republic from 24 April 1970."
+    }
+   ]
+  },
+  {
+   "id": "IMN",
+   "name": "Isle of Man",
+   "area_km2": 558.6,
+   "label": [
+    -4.511,
+    54.246
+   ],
+   "periods": [
+    {
+     "start": 1765,
+     "end": null,
+     "status": "uk",
+     "coverage": "full",
+     "sources": [
+      "brit_isle_of_man"
+     ],
+     "unit": "Isle of Man (Crown Dependency)",
+     "notes": "Not part of the United Kingdom: a self-governing crown possession. The British Parliament purchased sovereignty in 1765.",
+     "issue": "20"
+    }
+   ]
+  },
+  {
+   "id": "IOT",
+   "name": "British Indian Ocean Territory",
+   "area_km2": 132.7,
+   "label": [
+    72.415,
+    -7.322
+   ],
+   "periods": [
+    {
+     "start": 1814,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_biot",
+      "brit_mauritius",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Chagos Archipelago; British Indian Ocean Territory from 1965",
+     "notes": "A dependency of the British colony of Mauritius (from 1814) until the British Indian Ocean Territory was created in 1965. Mauritius claims sovereignty; a UK–Mauritius agreement to cede sovereignty was signed in May 2025. Still listed as a British Overseas Territory in the British Nationality Act 1981 when accessed on 27 September 2026.",
+     "issue": "21"
     }
    ]
   },
@@ -392,6 +802,29 @@
      "unit": "Ireland",
      "notes": "Part of the United Kingdom, not a colony. Its status from December 1922 (the Irish Free State) awaits a decision on how dominions are shown; see DATA_ISSUES.md.",
      "issue": "5"
+    }
+   ]
+  },
+  {
+   "id": "JEY",
+   "name": "Jersey",
+   "area_km2": 126.6,
+   "label": [
+    -2.123,
+    49.209
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": null,
+     "status": "uk",
+     "coverage": "full",
+     "sources": [
+      "brit_jersey"
+     ],
+     "unit": "Bailiwick of Jersey (Crown Dependency)",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Not part of the United Kingdom: a self-governing crown dependency.",
+     "issue": "20"
     }
    ]
   },
@@ -452,6 +885,103 @@
      "end_date": "1966-10-04",
      "unit": "Basutoland",
      "notes": "Annexed to the British Crown in 1868 and administered by the Cape Colony until 1884, when it came under direct British rule as one of three High Commission Territories. The Lesotho Independence Act 1966 calls it the Colony of Basutoland. Independent as Lesotho on 4 October 1966."
+    }
+   ]
+  },
+  {
+   "id": "MDV",
+   "name": "Maldives",
+   "area_km2": 66.6,
+   "label": [
+    73.411,
+    3.261
+   ],
+   "periods": [
+    {
+     "start": 1887,
+     "end": 1965,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_maldives",
+      "icow"
+     ],
+     "end_date": "1965-07",
+     "unit": "Maldive Islands",
+     "notes": "A British protectorate, formalised in 1887. Independent in July 1965; the last British troops left on 29 March 1976."
+    }
+   ]
+  },
+  {
+   "id": "MLT",
+   "name": "Malta",
+   "area_km2": 274.4,
+   "label": [
+    14.422,
+    35.922
+   ],
+   "periods": [
+    {
+     "start": 1814,
+     "end": 1964,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "icow",
+      "brit_malta"
+     ],
+     "end_date": "1964-09",
+     "unit": "Malta",
+     "notes": "Captured from France in 1800 and kept by Britain under the 1814 Treaty of Paris. Independent in September 1964; a republic from 13 December 1974."
+    }
+   ]
+  },
+  {
+   "id": "MSR",
+   "name": "Montserrat",
+   "area_km2": 80.0,
+   "label": [
+    -62.187,
+    16.746
+   ],
+   "periods": [
+    {
+     "start": 1783,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_montserrat",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Montserrat",
+     "notes": "English colony from 1632, returned to Britain by the Treaty of Paris (1783) after the last French capture. Part of the Leeward Islands federal colony 1871–1956 and the West Indies Federation 1958–62. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "MUS",
+   "name": "Mauritius",
+   "area_km2": 1883.4,
+   "label": [
+    57.58,
+    -20.278
+   ],
+   "periods": [
+    {
+     "start": 1814,
+     "end": 1968,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_biot",
+      "brit_mauritius",
+      "icow"
+     ],
+     "end_date": "1968-03",
+     "unit": "Mauritius",
+     "notes": "Proclaimed a British colony in 1814 under the Treaty of Paris. Independent in March 1968."
     }
    ]
   },
@@ -560,6 +1090,30 @@
    ]
   },
   {
+   "id": "PCN",
+   "name": "Pitcairn Islands",
+   "area_km2": 38.8,
+   "label": [
+    -128.317,
+    -24.368
+   ],
+   "periods": [
+    {
+     "start": 1898,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_pitcairn",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Pitcairn Islands",
+     "notes": "Settled by the Bounty mutineers in 1790 and placed under the British high commissioner for the Western Pacific in 1898; administered from Fiji from 1952, and by the high commissioner in New Zealand from 1970. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
    "id": "SDN",
    "name": "Sudan",
    "area_km2": 1867226.7,
@@ -604,6 +1158,55 @@
      "end_date": "1956-01",
      "unit": "Anglo-Egyptian Sudan",
      "notes": "Part of the Anglo-Egyptian Sudan (condominium declared in 1899). South Sudan became independent from Sudan in 2011."
+    }
+   ]
+  },
+  {
+   "id": "SGS",
+   "name": "South Georgia and the South Sandwich Islands",
+   "area_km2": 3676.6,
+   "label": [
+    -36.461,
+    -54.431
+   ],
+   "periods": [
+    {
+     "start": 1908,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_south_georgia",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "South Georgia and the South Sandwich Islands",
+     "notes": "Formally annexed by Britain in 1908. Briefly occupied by Argentina in 1982. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "SHN",
+   "name": "Saint Helena, Ascension and Tristan da Cunha",
+   "area_km2": 186.3,
+   "label": [
+    -14.361,
+    -7.924
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_st_helena",
+      "brit_ascension",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Saint Helena, with Ascension and Tristan da Cunha",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Saint Helena has been British since the English East India Company took possession in 1659. Ascension became its dependency in 1922. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
     }
    ]
   },
@@ -682,6 +1285,54 @@
    ]
   },
   {
+   "id": "SYC",
+   "name": "Seychelles",
+   "area_km2": 174.8,
+   "label": [
+    55.487,
+    -4.672
+   ],
+   "periods": [
+    {
+     "start": 1814,
+     "end": 1976,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_seychelles",
+      "icow"
+     ],
+     "end_date": "1976-06",
+     "unit": "Seychelles",
+     "notes": "Ceded to Britain by the Treaty of Paris (1814) and administered as a dependency of Mauritius until it became a separate crown colony in 1903. Self-government in 1975; independent in June 1976."
+    }
+   ]
+  },
+  {
+   "id": "TCA",
+   "name": "Turks and Caicos Islands",
+   "area_km2": 331.0,
+   "label": [
+    -71.746,
+    21.812
+   ],
+   "periods": [
+    {
+     "start": 1799,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_turks_caicos",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "Turks and Caicos Islands",
+     "notes": "Annexed by the Bahamas government in 1799. Under the governor of Jamaica 1874–1959 and a separate crown colony from 1962; for a time in the 1960s and 70s under the Bahamas. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
    "id": "TZA",
    "name": "Tanzania",
    "area_km2": 947902.8,
@@ -751,6 +1402,67 @@
      "end_date": "1962-10",
      "unit": "Uganda Protectorate",
      "notes": "Status already in place before 1900; shown from 1900, the start of the map. A protectorate was declared over Buganda in 1894 and extended to the rest of present-day Uganda. Independent in October 1962."
+    }
+   ]
+  },
+  {
+   "id": "VGB",
+   "name": "British Virgin Islands",
+   "area_km2": 135.7,
+   "label": [
+    -64.62,
+    18.425
+   ],
+   "periods": [
+    {
+     "start": 1672,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_bvi",
+      "leg_bna_1981_sch6"
+     ],
+     "unit": "British Virgin Islands",
+     "notes": "Annexed to the British-administered Leeward Islands in 1672; a crown colony after the Leeward Islands federation was dissolved (1956) and its governorship abolished (1960). Became an overseas territory under the British Overseas Territories Act 2002.",
+     "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "WSB",
+   "name": "Akrotiri",
+   "area_km2": 98.9,
+   "label": [
+    32.936,
+    34.637
+   ],
+   "periods": [
+    {
+     "start": 1878,
+     "end": 1960,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cyprus"
+     ],
+     "end_date": "1960-08-16",
+     "unit": "Cyprus",
+     "notes": "Part of British-administered Cyprus (Cyprus Convention 1878; annexed 1914)."
+    },
+    {
+     "start": 1960,
+     "end": null,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_cyprus",
+      "leg_bna_1981_sch6"
+     ],
+     "start_date": "1960-08-16",
+     "unit": "Sovereign Base Area of Akrotiri",
+     "notes": "Kept under British sovereignty by the 1960 treaties that made Cyprus independent. Before 1960 part of British Cyprus. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
+     "issue": "12"
     }
    ]
   },
