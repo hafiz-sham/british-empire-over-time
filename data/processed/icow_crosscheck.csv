@@ -1,13 +1,17 @@
 territory_id,icow_code,icow_ind_date,icow_ind_from,result
 BWA,571,1966-09,200,match
 EGY,651,1831-11,640,independence not from UK; skipped
+GHA,452,1957-03,200,match
+GMB,420,1965-02,200,match
 IRL,205,1922-12,200,match
 KEN,501,1963-12,200,match
 LSO,570,1966-10,200,match
 MWI,553,1964-07,200,match
 NAM,565,1990-03,560,independence not from UK; skipped
+NGA,475,1960-10,200,match
 SDN,625,1956-01,200,match
 SDS,626,2011-07,625,independence not from UK; skipped
+SLE,451,1961-04,200,match
 SWZ,572,1968-09,200,match
 TZA,510,1961-12,200,match
 UGA,500,1962-10,200,match

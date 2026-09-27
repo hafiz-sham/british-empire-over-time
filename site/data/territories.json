@@ -17,6 +17,11 @@
    "citation": "Encyclopaedia Britannica, \"Botswana\", online edition; sections: British protectorate; Botswana since independence.",
    "url": "https://www.britannica.com/place/Botswana"
   },
+  "brit_cameroon": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Cameroon\", online edition; sections: Moving toward independence.",
+   "url": "https://www.britannica.com/place/Cameroon"
+  },
   "brit_egypt": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Egypt\", online edition; sections: World War I and independence.",
@@ -26,6 +31,16 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Eswatini\", online edition; sections: Colonial administration.",
    "url": "https://www.britannica.com/place/Eswatini"
+  },
+  "brit_gambia": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"The Gambia\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/The-Gambia"
+  },
+  "brit_gold_coast": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Gold Coast (historical region, Africa)\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Gold-Coast-historical-region-Africa"
   },
   "brit_kenya": {
    "type": "reference",
@@ -51,6 +66,16 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Natal (historical province, South Africa)\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Natal-historical-province-South-Africa"
+  },
+  "brit_nigeria": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Nigeria\", online edition; sections: The arrival of the British; Nigeria as a colony; Independent Nigeria.",
+   "url": "https://www.britannica.com/place/Nigeria"
+  },
+  "brit_sierra_leone": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Sierra Leone\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Sierra-Leone"
   },
   "brit_somalia": {
    "type": "reference",
@@ -81,6 +106,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Tanzania\", online edition; sections: German East Africa; Zanzibar; Independence.",
    "url": "https://www.britannica.com/place/Tanzania"
+  },
+  "brit_togoland": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Togoland\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Togoland"
   },
   "brit_transvaal": {
    "type": "reference",
@@ -117,6 +147,16 @@
    "citation": "Botswana Independence Act 1966 (c. 23), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/1966/23/enacted"
   },
+  "leg_gambia_1964": {
+   "type": "primary",
+   "citation": "Gambia Independence Act 1964 (c. 93), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/1964/93/enacted"
+  },
+  "leg_ghana_1957": {
+   "type": "primary",
+   "citation": "Ghana Independence Act 1957 (5 & 6 Eliz. 2 c. 6), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/Eliz2/5-6/6"
+  },
   "leg_lesotho_1966": {
    "type": "primary",
    "citation": "Lesotho Independence Act 1966 (c. 24), section 1.",
@@ -126,6 +166,11 @@
    "type": "primary",
    "citation": "Southern Rhodesia Act 1965 (c. 76), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/1965/76/enacted"
+  },
+  "leg_sierra_leone_1961": {
+   "type": "primary",
+   "citation": "Sierra Leone Independence Act 1961 (9 & 10 Eliz. 2 c. 16), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/16"
   },
   "leg_statute_westminster_1931": {
    "type": "primary",
@@ -141,6 +186,16 @@
    "type": "primary",
    "citation": "Zambia Independence Act 1964 (c. 65), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/1964/65/enacted"
+  },
+  "un_trust_br_cameroons": {
+   "type": "reference",
+   "citation": "United Nations Dag Hammarskjöld Library, \"UN Trusteeship Council Documentation: Cameroons under British administration\" (research guide).",
+   "url": "https://research.un.org/en/docs/tc/britishcameroons"
+  },
+  "un_trust_br_togoland": {
+   "type": "reference",
+   "citation": "United Nations Dag Hammarskjöld Library, \"UN Trusteeship Council Documentation: Togoland under British administration\" (research guide).",
+   "url": "https://research.un.org/en/docs/tc/britishtogoland"
   },
   "union_ireland_1800": {
    "type": "primary",
@@ -171,6 +226,33 @@
      "end_date": "1966-09-30",
      "unit": "Bechuanaland Protectorate",
      "notes": "Protectorate proclaimed in 1885 and extended north in 1890. Ceased to be a protectorate and became independent as Botswana on 30 September 1966."
+    }
+   ]
+  },
+  {
+   "id": "CMR",
+   "name": "Cameroon",
+   "area_km2": 466925.5,
+   "label": [
+    13.614,
+    7.379
+   ],
+   "periods": [
+    {
+     "start": 1946,
+     "end": 1961,
+     "status": "mandate",
+     "coverage": "partial",
+     "sources": [
+      "un_trust_br_cameroons",
+      "brit_cameroon",
+      "brit_nigeria"
+     ],
+     "start_date": "1946-12-13",
+     "end_date": "1961-10",
+     "unit": "Southern Cameroons (British Cameroons trust territory)",
+     "notes": "UN trusteeship agreement approved 13 December 1946. After a UN-supervised plebiscite in February 1961, the Southern Cameroons united with the former French Cameroun in October 1961. The British mandate before 1946 is not yet mapped (see DATA_ISSUES.md #19).",
+     "issue": "19"
     }
    ]
   },
@@ -219,6 +301,70 @@
      "start_date": "1801-01-01",
      "unit": "United Kingdom",
      "notes": "United Kingdom of Great Britain and Ireland from 1 January 1801. Northern Ireland remained in the United Kingdom after 1922."
+    }
+   ]
+  },
+  {
+   "id": "GHA",
+   "name": "Ghana",
+   "area_km2": 240102.2,
+   "label": [
+    -1.068,
+    7.977
+   ],
+   "periods": [
+    {
+     "start": 1874,
+     "end": 1922,
+     "status": "crown_colony",
+     "coverage": "partial",
+     "sources": [
+      "brit_gold_coast",
+      "brit_togoland"
+     ],
+     "unit": "Gold Coast",
+     "notes": "Acquired by Britain as the Gold Coast colony in 1874, which later expanded. The eastern strip of present-day Ghana was part of German Togoland until it was occupied in the First World War."
+    },
+    {
+     "start": 1922,
+     "end": 1957,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_gold_coast",
+      "brit_togoland",
+      "un_trust_br_togoland",
+      "leg_ghana_1957",
+      "icow"
+     ],
+     "end_date": "1957-03-06",
+     "unit": "Gold Coast, with British Togoland",
+     "notes": "British Togoland, a League of Nations mandate from 1922 and a UN trust territory from 1946, was administered with the Gold Coast; its trusteeship ended in December 1956. Independent as Ghana on 6 March 1957."
+    }
+   ]
+  },
+  {
+   "id": "GMB",
+   "name": "The Gambia",
+   "area_km2": 10336.7,
+   "label": [
+    -14.36,
+    13.442
+   ],
+   "periods": [
+    {
+     "start": 1894,
+     "end": 1965,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_gambia",
+      "leg_gambia_1964",
+      "icow"
+     ],
+     "end_date": "1965-02-18",
+     "unit": "Colony and Protectorate of the Gambia",
+     "notes": "A small coastal colony with a protectorate over the interior, established in 1894. Independent on 18 February 1965; a republic from 24 April 1970."
     }
    ]
   },
@@ -361,6 +507,59 @@
    ]
   },
   {
+   "id": "NGA",
+   "name": "Nigeria",
+   "area_km2": 913593.8,
+   "label": [
+    7.903,
+    9.073
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1914,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_nigeria"
+     ],
+     "start_date": "1900-01-01",
+     "end_date": "1914-01-01",
+     "unit": "Protectorates of Northern and Southern Nigeria; Lagos Colony",
+     "notes": "The Royal Niger Company's charter was abrogated on 1 January 1900, leaving British protectorates in the north and south alongside the colony of Lagos (a separate colony since 1886). The northern Cameroons, now part of Nigeria, was German until the First World War."
+    },
+    {
+     "start": 1914,
+     "end": 1960,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_nigeria",
+      "icow"
+     ],
+     "start_date": "1914-01-01",
+     "end_date": "1960-10-01",
+     "unit": "Colony and Protectorate of Nigeria",
+     "notes": "The two protectorates were amalgamated on 1 January 1914 as the Colony and Protectorate of Nigeria; the colony was Lagos, the rest a protectorate. Independent on 1 October 1960."
+    },
+    {
+     "start": 1960,
+     "end": 1961,
+     "status": "mandate",
+     "coverage": "partial",
+     "sources": [
+      "brit_nigeria",
+      "un_trust_br_cameroons"
+     ],
+     "start_date": "1960-10-01",
+     "end_date": "1961-06",
+     "unit": "Northern Cameroons (UN trust territory)",
+     "notes": "The northern part of the British Cameroons trust territory remained British after Nigerian independence and joined Nigeria's Northern region in June 1961, after a UN-supervised plebiscite.",
+     "issue": "9"
+    }
+   ]
+  },
+  {
    "id": "SDN",
    "name": "Sudan",
    "area_km2": 1867226.7,
@@ -405,6 +604,31 @@
      "end_date": "1956-01",
      "unit": "Anglo-Egyptian Sudan",
      "notes": "Part of the Anglo-Egyptian Sudan (condominium declared in 1899). South Sudan became independent from Sudan in 2011."
+    }
+   ]
+  },
+  {
+   "id": "SLE",
+   "name": "Sierra Leone",
+   "area_km2": 72036.8,
+   "label": [
+    -11.862,
+    8.448
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1961,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_sierra_leone",
+      "leg_sierra_leone_1961",
+      "icow"
+     ],
+     "end_date": "1961-04-27",
+     "unit": "Sierra Leone Colony and Protectorate",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. A coastal colony (Freetown) with a much larger protectorate inland. Independent on 27 April 1961."
     }
    ]
   },
