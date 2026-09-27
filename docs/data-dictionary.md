@@ -42,7 +42,7 @@ A year with no period means the territory is shown as not British. Where a gap b
 | Code | Legend label | Meaning |
 |---|---|---|
 | `uk` | United Kingdom | Part of the United Kingdom itself (including all of Ireland until 1922). |
-| `crown_colony` | Crown colony | Ruled directly by the British Crown. |
+| `crown_colony` | Crown colony / overseas territory | Ruled directly by the British Crown, including British India (1858–1947) and today's British Overseas Territories. |
 | `protectorate` | Protectorate | A local ruler kept by treaty, with Britain controlling defence and foreign affairs (includes protected states). |
 | `dominion` | Dominion / self-governing | Self-governing under the Crown. |
 | `mandate` | League of Nations mandate | Administered by Britain, or a dominion, under a League of Nations mandate or UN trusteeship. |

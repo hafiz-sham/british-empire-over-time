@@ -3,7 +3,7 @@
 # Codes stored in periods.csv, in legend order. Colours live in site/js/statuses.js.
 STATUSES = {
     "uk": "United Kingdom",
-    "crown_colony": "Crown colony",
+    "crown_colony": "Crown colony / overseas territory",
     "protectorate": "Protectorate",
     "dominion": "Dominion / self-governing",
     "mandate": "League of Nations mandate",

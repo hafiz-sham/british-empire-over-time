@@ -4,7 +4,7 @@
 // legend highlighting and tooltip labels.
 export const STATUSES = [
   { code: "uk", label: "United Kingdom", colour: "#2a78d6" },
-  { code: "crown_colony", label: "Crown colony", colour: "#e87ba4" },
+  { code: "crown_colony", label: "Crown colony / overseas territory", colour: "#e87ba4" },
   { code: "protectorate", label: "Protectorate", colour: "#eda100" },
   { code: "dominion", label: "Dominion / self-governing", colour: "#9b2f6a" },
   { code: "mandate", label: "League of Nations mandate", colour: "#1baf7a" },

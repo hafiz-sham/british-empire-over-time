@@ -23,12 +23,16 @@ The audience includes recruiters in political risk, intelligence and data scienc
 - **Year convention:** status in year *y* = status on 31 December of *y*. Periods are half-open `[start, end)` in integer years; optional exact `start_date`/`end_date` (ISO) where known.
 - **Territorial scope:** British-ruled territories only; other empires are shown as "Independent / not British".
 - **Time scope (v1):** slider runs 1900–2026, covering every British territory in that window. The data model still supports earlier periods.
-- **Source hierarchy:** ICOW → primary legal texts (legislation.gov.uk, treaties) → academic reference works (e.g. Olson, *Historical Dictionary of the British Empire*) → CIA World Factbook. Wikipedia only as a lead, never as a citation. Assess COLDAT (Becker) as a start-date supplement, pending licence check.
+- **Source hierarchy:** ICOW → primary legal texts (legislation.gov.uk, treaties) → reference works (academic works such as Olson's *Historical Dictionary of the British Empire*, and Encyclopaedia Britannica) → UN decolonisation and trusteeship records and Commonwealth Secretariat country pages. Wikipedia only as a lead, never as a citation. Assess COLDAT (Becker) as a start-date supplement, pending licence check.
 - **Licences:** code MIT; curated data CC BY 4.0 (subject to upstream licence compatibility). Raw data whose redistribution terms are unclear stays gitignored.
 - **Palette:** imperial pink for crown colonies within a set checked all-pairs for colour-vision separation (see `site/js/statuses.js`). The closest colour-blind pair is backed by legend-hover highlighting and tooltip labels.
 - **Curated data:** hand-researched tables live in `/data/curated` (territories, periods, sources), separate from raw and processed. They are the single source of truth; ICOW is cited per period and used as a cross-check (`03_crosscheck_icow.py`), not to generate rows.
 - **ICOW:** not redistributed (authors' request); fetched by `01_fetch.py` and gitignored.
-- **CIA World Factbook:** discontinued in February 2026, so it cannot be cited as a live source. A replacement for that tier of the source hierarchy is pending Hafiz's decision.
+- **CIA World Factbook:** discontinued in February 2026; replaced in the hierarchy by Britannica, UN records and Commonwealth Secretariat pages.
+- **End of British status:** at independence. Older dominions end with the Statute of Westminster 1931 (on adoption for Australia and New Zealand); later states end on their independence Act's date, even if they became dominions or realms. Continuing links go in the notes.
+- **British India:** shown as crown colony, with a note (not legally a crown colony).
+- **Overseas territories:** the crown-colony legend entry reads "Crown colony / overseas territory"; no extra colour.
+- **Occupations:** military occupation or administration without a legal instrument of British rule (e.g. Iraq 1917–20, Libya 1943–51) counts as not British, under the formal-status rule (proposed; see DATA_ISSUES.md #13).
 - **Geometry scale:** Natural Earth 1:50m, plus point markers for very small territories.
 - **Borders in Phase 1:** modern borders only, with whole modern countries filled. Colonial-unit borders (dashed for British units inside partly British countries, dotted between units under different British statuses) are deferred until the first map has been inspected.
 - **United Kingdom:** shown in its own colour (metropole), distinct from the status categories.
@@ -45,7 +49,7 @@ Each territory has a geometry and an ordered list of status periods:
 ```
 
 Status categories, each with its own colour and a legend entry:
-- Crown colony
+- Crown colony / overseas territory
 - Protectorate
 - Dominion / self-governing
 - League of Nations mandate
