@@ -42,6 +42,11 @@
    "citation": "Encyclopaedia Britannica, \"Bermuda\", online edition; sections: History; summary.",
    "url": "https://www.britannica.com/place/Bermuda"
   },
+  "brit_bhutan": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Bhutan\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Bhutan/History"
+  },
   "brit_biot": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"British Indian Ocean Territory\", online edition; sections: main article.",
@@ -51,6 +56,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Botswana\", online edition; sections: British protectorate; Botswana since independence.",
    "url": "https://www.britannica.com/place/Botswana"
+  },
+  "brit_brunei": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Brunei\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Brunei/History"
   },
   "brit_bvi": {
    "type": "reference",
@@ -112,6 +122,16 @@
    "citation": "Encyclopaedia Britannica, \"Guernsey\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Guernsey-island-and-bailiwick-Channel-Islands-English-Channel"
   },
+  "brit_hong_kong": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Hong Kong\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Hong-Kong"
+  },
+  "brit_india_1858": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"India\", online edition; sections: Government of India Act of 1858; The transfer of power and the birth of two countries.",
+   "url": "https://www.britannica.com/place/India/Government-of-India-Act-of-1858"
+  },
   "brit_iraq": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Iraq\", online edition; sections: British occupation and the mandatory regime; Independence, 1932–39.",
@@ -152,6 +172,11 @@
    "citation": "Encyclopaedia Britannica, \"Malawi\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/Malawi"
   },
+  "brit_malaysia": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Malaysia\", online edition; sections: Malaya and northern Borneo under British control.",
+   "url": "https://www.britannica.com/place/Malaysia/Malaya-and-northern-Borneo-under-British-control"
+  },
   "brit_maldives": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Maldives\", online edition; sections: History.",
@@ -171,6 +196,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Montserrat\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/Montserrat-island-West-Indies/History"
+  },
+  "brit_myanmar": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Myanmar\", online edition; sections: summary.",
+   "url": "https://www.britannica.com/summary/Myanmar"
   },
   "brit_namibia": {
    "type": "reference",
@@ -212,6 +242,11 @@
    "citation": "Encyclopaedia Britannica, \"Sierra Leone\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Sierra-Leone"
   },
+  "brit_singapore": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Singapore\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Singapore/History"
+  },
   "brit_somalia": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Somalia\", online edition; sections: Revolt in British Somaliland; Civil war.",
@@ -231,6 +266,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"South Georgia\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/South-Georgia"
+  },
+  "brit_sri_lanka": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Sri Lanka\", online edition; sections: British Ceylon, 1796–1900; Independent Ceylon, 1948–71.",
+   "url": "https://www.britannica.com/place/Sri-Lanka/British-Ceylon-1796-1900"
   },
   "brit_st_helena": {
    "type": "reference",
@@ -277,6 +317,11 @@
    "citation": "Encyclopaedia Britannica, \"Uganda\", online edition; sections: Bunyoro and Buganda; Growth of a peasant economy; The Republic of Uganda.",
    "url": "https://www.britannica.com/place/Uganda"
   },
+  "brit_weihai": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Weihai\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Weihai"
+  },
   "brit_yemen": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Yemen\", online edition; sections: The age of imperialism.",
@@ -312,6 +357,11 @@
    "citation": "Botswana Independence Act 1966 (c. 23), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/1966/23/enacted"
   },
+  "leg_burma_1947": {
+   "type": "primary",
+   "citation": "Burma Independence Act 1947 (11 & 12 Geo. 6 c. 3), as enacted.",
+   "url": "https://www.legislation.gov.uk/ukpga/Geo6/11-12/3/contents/enacted"
+  },
   "leg_gambia_1964": {
    "type": "primary",
    "citation": "Gambia Independence Act 1964 (c. 93), section 1.",
@@ -322,10 +372,30 @@
    "citation": "Ghana Independence Act 1957 (5 & 6 Eliz. 2 c. 6), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/Eliz2/5-6/6"
   },
+  "leg_india_1858": {
+   "type": "primary",
+   "citation": "Government of India Act 1858 (21 & 22 Vict. c. 106), as enacted.",
+   "url": "https://www.legislation.gov.uk/ukpga/Vict/21-22/106/contents/enacted"
+  },
+  "leg_indian_independence_1947": {
+   "type": "primary",
+   "citation": "Indian Independence Act 1947 (10 & 11 Geo. 6 c. 30), section 1(1).",
+   "url": "https://www.legislation.gov.uk/ukpga/Geo6/10-11/30/enacted"
+  },
   "leg_lesotho_1966": {
    "type": "primary",
    "citation": "Lesotho Independence Act 1966 (c. 24), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/1966/24/enacted"
+  },
+  "leg_malaya_1957": {
+   "type": "primary",
+   "citation": "Federation of Malaya Independence Act 1957 (5 & 6 Eliz. 2 c. 60), as enacted.",
+   "url": "https://www.legislation.gov.uk/ukpga/Eliz2/5-6/60"
+  },
+  "leg_malaysia_1963": {
+   "type": "primary",
+   "citation": "Malaysia Act 1963 (c. 35), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/1963/35/enacted"
   },
   "leg_s_rhodesia_1965": {
    "type": "primary",
@@ -445,6 +515,33 @@
    ]
   },
   {
+   "id": "BGD",
+   "name": "Bangladesh",
+   "area_km2": 135955.1,
+   "label": [
+    89.868,
+    23.681
+   ],
+   "periods": [
+    {
+     "start": 1858,
+     "end": 1947,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_india_1858",
+      "leg_india_1858",
+      "leg_indian_independence_1947"
+     ],
+     "start_date": "1858-08-02",
+     "end_date": "1947-08-15",
+     "unit": "British India (Bengal)",
+     "notes": "British India: governed by the Crown after the Government of India Act (2 August 1858) transferred power from the East India Company. Not legally a crown colony (see DATA_ISSUES.md #11); the princely states were ruled by their own princes under British paramountcy. East Bengal became part of Pakistan on 15 August 1947; Bangladesh became independent from Pakistan in 1971.",
+     "issue": "11"
+    }
+   ]
+  },
+  {
    "id": "BHR",
    "name": "Bahrain",
    "area_km2": 542.7,
@@ -493,6 +590,54 @@
    ]
   },
   {
+   "id": "BRN",
+   "name": "Brunei",
+   "area_km2": 5684.8,
+   "label": [
+    114.491,
+    4.502
+   ],
+   "periods": [
+    {
+     "start": 1888,
+     "end": 1984,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_brunei",
+      "icow"
+     ],
+     "end_date": "1984-01-01",
+     "unit": "Brunei",
+     "notes": "A British protectorate from 1888; from 1906 a British resident advised the sultan, whose advice he was bound to accept. Self-governing from 1959. Independent on 1 January 1984."
+    }
+   ]
+  },
+  {
+   "id": "BTN",
+   "name": "Bhutan",
+   "area_km2": 39966.2,
+   "label": [
+    90.327,
+    27.506
+   ],
+   "periods": [
+    {
+     "start": 1910,
+     "end": 1947,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_bhutan",
+      "icow"
+     ],
+     "end_date": "1947-08",
+     "unit": "Bhutan",
+     "notes": "By a 1910 treaty Bhutan agreed to be guided by Britain in its external affairs, in return for a subsidy and non-interference in internal affairs. The British role ended with Indian independence; a 1949 treaty with India transferred it to India."
+    }
+   ]
+  },
+  {
    "id": "BWA",
    "name": "Botswana",
    "area_km2": 581926.3,
@@ -514,6 +659,29 @@
      "end_date": "1966-09-30",
      "unit": "Bechuanaland Protectorate",
      "notes": "Protectorate proclaimed in 1885 and extended north in 1890. Ceased to be a protectorate and became independent as Botswana on 30 September 1966."
+    }
+   ]
+  },
+  {
+   "id": "CHN",
+   "name": "China",
+   "area_km2": 9392194.5,
+   "label": [
+    98.582,
+    36.899
+   ],
+   "periods": [
+    {
+     "start": 1898,
+     "end": 1930,
+     "status": "crown_colony",
+     "coverage": "partial",
+     "sources": [
+      "brit_weihai"
+     ],
+     "unit": "Weihaiwei (leased territory)",
+     "notes": "Leased to Britain in 1898, when Russia leased Port Arthur; a summer station for the British fleet. Britain gave up the lease in 1930.",
+     "issue": "24"
     }
    ]
   },
@@ -861,6 +1029,29 @@
    ]
   },
   {
+   "id": "HKG",
+   "name": "Hong Kong",
+   "area_km2": 1031.2,
+   "label": [
+    114.116,
+    22.433
+   ],
+   "periods": [
+    {
+     "start": 1898,
+     "end": 1997,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_hong_kong"
+     ],
+     "end_date": "1997-07-01",
+     "unit": "Hong Kong",
+     "notes": "Hong Kong Island was ceded in 1842 and southern Kowloon in 1860; the New Territories were leased in 1898. Returned to Chinese sovereignty on 1 July 1997 under the Sino-British Joint Declaration (1984)."
+    }
+   ]
+  },
+  {
    "id": "IMN",
    "name": "Isle of Man",
    "area_km2": 558.6,
@@ -880,6 +1071,34 @@
      "unit": "Isle of Man (Crown Dependency)",
      "notes": "Not part of the United Kingdom: a self-governing crown possession. The British Parliament purchased sovereignty in 1765.",
      "issue": "20"
+    }
+   ]
+  },
+  {
+   "id": "IND",
+   "name": "India",
+   "area_km2": 3162896.3,
+   "label": [
+    80.231,
+    21.784
+   ],
+   "periods": [
+    {
+     "start": 1858,
+     "end": 1947,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_india_1858",
+      "leg_india_1858",
+      "leg_indian_independence_1947",
+      "icow"
+     ],
+     "start_date": "1858-08-02",
+     "end_date": "1947-08-15",
+     "unit": "British India",
+     "notes": "British India: governed by the Crown after the Government of India Act (2 August 1858) transferred power from the East India Company. Not legally a crown colony (see DATA_ISSUES.md #11); the princely states were ruled by their own princes under British paramountcy. Independent as the Dominion of India on 15 August 1947.",
+     "issue": "11"
     }
    ]
   },
@@ -1037,6 +1256,30 @@
    ]
   },
   {
+   "id": "KAS",
+   "name": "Siachen Glacier",
+   "area_km2": 2122.9,
+   "label": [
+    77.262,
+    35.407
+   ],
+   "periods": [
+    {
+     "start": 1858,
+     "end": 1947,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_india_1858",
+      "leg_indian_independence_1947"
+     ],
+     "unit": "Jammu and Kashmir (princely state)",
+     "notes": "British India: governed by the Crown after the Government of India Act (2 August 1858) transferred power from the East India Company. Not legally a crown colony (see DATA_ISSUES.md #11); the princely states were ruled by their own princes under British paramountcy. Part of the princely state of Jammu and Kashmir. The area is disputed between India and Pakistan.",
+     "issue": "11"
+    }
+   ]
+  },
+  {
    "id": "KEN",
    "name": "Kenya",
    "area_km2": 596152.3,
@@ -1092,6 +1335,30 @@
      "end_date": "1961-06-19",
      "unit": "Kuwait",
      "notes": "An 1899 treaty gave Britain control of Kuwait's foreign affairs, making it a protected state under this project's formal-status rule; it became a British protectorate proper after the outbreak of the First World War. Britain recognised Kuwait's independence on 19 June 1961."
+    }
+   ]
+  },
+  {
+   "id": "LKA",
+   "name": "Sri Lanka",
+   "area_km2": 66196.8,
+   "label": [
+    80.659,
+    7.907
+   ],
+   "periods": [
+    {
+     "start": 1802,
+     "end": 1948,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_sri_lanka",
+      "icow"
+     ],
+     "end_date": "1948-02-04",
+     "unit": "Ceylon",
+     "notes": "Made a crown colony in 1802; the Kandyan kingdom in the interior was taken over in 1815. Independent as the Dominion of Ceylon on 4 February 1948."
     }
    ]
   },
@@ -1169,6 +1436,32 @@
    ]
   },
   {
+   "id": "MMR",
+   "name": "Myanmar",
+   "area_km2": 664254.3,
+   "label": [
+    95.92,
+    19.28
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1948,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "icow",
+      "brit_myanmar",
+      "leg_burma_1947"
+     ],
+     "end_date": "1948-01",
+     "unit": "Burma",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Ruled as a province of British India until 1937, then as a separate colony. Occupied by Japan during the Second World War. Independent in January 1948.",
+     "issue": "11"
+    }
+   ]
+  },
+  {
    "id": "MSR",
    "name": "Montserrat",
    "area_km2": 80.0,
@@ -1239,6 +1532,59 @@
      "end_date": "1964-07-06",
      "unit": "British Central Africa Protectorate; Nyasaland from 1907",
      "notes": "Protectorate established in 1891; called the British Central Africa Protectorate from 1893 and Nyasaland from 1907. Part of the Federation of Rhodesia and Nyasaland, 1953–1963. Independent on 6 July 1964."
+    }
+   ]
+  },
+  {
+   "id": "MYS",
+   "name": "Malaysia",
+   "area_km2": 328379.5,
+   "label": [
+    102.1,
+    4.013
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1909,
+     "status": "protectorate",
+     "coverage": "partial",
+     "sources": [
+      "brit_malaysia"
+     ],
+     "unit": "Straits Settlements, Malay states, Sarawak and North Borneo",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. The main status shown is protectorate (see DATA_ISSUES.md #4): the Straits Settlements (Penang, Malacca) were a crown colony, the federated Malay states had British residents, Sarawak was ruled by the Brooke rajas, and North Borneo by the British North Borneo Company. The northern Malay states were under Siam until 1909.",
+     "issue": "4"
+    },
+    {
+     "start": 1909,
+     "end": 1957,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_malaysia",
+      "leg_malaya_1957",
+      "icow"
+     ],
+     "end_date": "1957-08-31",
+     "unit": "British Malaya and northern Borneo",
+     "notes": "Siam transferred Kedah, Terengganu, Kelantan and Perlis to Britain by 1909; Johor accepted a British resident in 1914. The British North Borneo Company ruled North Borneo until 1941. Occupied by Japan during the Second World War. The Federation of Malaya became independent on 31 August 1957.",
+     "issue": "4"
+    },
+    {
+     "start": 1957,
+     "end": 1963,
+     "status": "crown_colony",
+     "coverage": "partial",
+     "sources": [
+      "leg_malaysia_1963",
+      "brit_singapore"
+     ],
+     "start_date": "1957-08-31",
+     "end_date": "1963-09",
+     "unit": "North Borneo and Sarawak",
+     "notes": "After Malayan independence, North Borneo (Sabah) and Sarawak remained British until they federated with Malaya to form Malaysia in September 1963, when British sovereignty was relinquished (Malaysia Act 1963).",
+     "issue": "25"
     }
    ]
   },
@@ -1318,6 +1664,34 @@
      "unit": "Northern Cameroons (UN trust territory)",
      "notes": "The northern part of the British Cameroons trust territory remained British after Nigerian independence and joined Nigeria's Northern region in June 1961, after a UN-supervised plebiscite.",
      "issue": "9"
+    }
+   ]
+  },
+  {
+   "id": "PAK",
+   "name": "Pakistan",
+   "area_km2": 875728.5,
+   "label": [
+    70.099,
+    30.415
+   ],
+   "periods": [
+    {
+     "start": 1858,
+     "end": 1947,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_india_1858",
+      "leg_india_1858",
+      "leg_indian_independence_1947",
+      "icow"
+     ],
+     "start_date": "1858-08-02",
+     "end_date": "1947-08-15",
+     "unit": "British India",
+     "notes": "British India: governed by the Crown after the Government of India Act (2 August 1858) transferred power from the East India Company. Not legally a crown colony (see DATA_ISSUES.md #11); the princely states were ruled by their own princes under British paramountcy. Independent as the Dominion of Pakistan on 15 August 1947.",
+     "issue": "11"
     }
    ]
   },
@@ -1440,6 +1814,30 @@
      "end_date": "1956-01",
      "unit": "Anglo-Egyptian Sudan",
      "notes": "Part of the Anglo-Egyptian Sudan (condominium declared in 1899). South Sudan became independent from Sudan in 2011."
+    }
+   ]
+  },
+  {
+   "id": "SGP",
+   "name": "Singapore",
+   "area_km2": 486.0,
+   "label": [
+    103.823,
+    1.348
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1963,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_singapore",
+      "leg_malaysia_1963"
+     ],
+     "end_date": "1963-09",
+     "unit": "Singapore (Straits Settlements; separate colony from 1946)",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Part of the Straits Settlements, a crown colony under the Colonial Office from 1867; a separate crown colony from 1946 and self-governing from 1959, with Britain keeping defence and foreign policy. Joined Malaysia in September 1963, then left in 1965."
     }
    ]
   },
