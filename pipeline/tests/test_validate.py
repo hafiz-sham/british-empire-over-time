@@ -18,7 +18,7 @@ TERRITORIES = pd.DataFrame([
 
 def period(**kw):
     row = {"territory_id": "CAN", "start": "1900", "end": "1931", "start_date": "", "end_date": "",
-           "status": "dominion", "unit": "", "coverage": "full", "notes": "", "source_ids": "icow", "issue": ""}
+           "status": "dominion", "unit": "", "coverage": "full", "marker": "", "notes": "", "source_ids": "icow", "issue": ""}
     row.update(kw)
     return row
 
@@ -45,10 +45,16 @@ def test_clean_data_has_no_errors():
     ({"source_ids": "wikipedia"}, "not in sources.csv"),
     ({"territory_id": "XXX"}, "not in territories.csv"),
     ({"start_date": "1899-12-31"}, "does not fall in year 1900"),
+    ({"coverage": "point"}, "needs a marker"),
+    ({"coverage": "point", "marker": "200 10"}, "needs a marker"),
 ])
 def test_row_errors(kw, expected):
     errors = messages(run(period(**kw)), "error")
     assert any(expected in e for e in errors), errors
+
+
+def test_point_with_marker_is_valid():
+    assert messages(run(period(coverage="point", marker="-55.5 49")), "error") == []
 
 
 def test_overlap_is_error():

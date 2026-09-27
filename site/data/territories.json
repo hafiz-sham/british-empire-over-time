@@ -995,7 +995,7 @@
      "start": 1931,
      "end": 1934,
      "status": "dominion",
-     "coverage": "partial",
+     "coverage": "point",
      "sources": [
       "leg_statute_westminster_1931",
       "brit_newfoundland"
@@ -1004,19 +1004,27 @@
      "end_date": "1934",
      "unit": "Newfoundland",
      "notes": "The Statute of Westminster did not apply to Newfoundland unless adopted by its parliament (section 10), so Newfoundland is still shown as British.",
-     "issue": "10"
+     "issue": "10",
+     "marker": [
+      -56.5,
+      49.0
+     ]
     },
     {
      "start": 1934,
      "end": 1949,
      "status": "crown_colony",
-     "coverage": "partial",
+     "coverage": "point",
      "sources": [
       "brit_newfoundland"
      ],
      "end_date": "1949-03-31",
      "unit": "Newfoundland (Commission of Government)",
-     "notes": "In 1934 responsible government was suspended and replaced by an appointed Commission of Government reporting to the Dominions Office in London. After a referendum in July 1948, Newfoundland became a Canadian province on 31 March 1949."
+     "notes": "In 1934 responsible government was suspended and replaced by an appointed Commission of Government reporting to the Dominions Office in London. After a referendum in July 1948, Newfoundland became a Canadian province on 31 March 1949.",
+     "marker": [
+      -56.5,
+      49.0
+     ]
     }
    ]
   },
@@ -1033,13 +1041,17 @@
      "start": 1898,
      "end": 1930,
      "status": "crown_colony",
-     "coverage": "partial",
+     "coverage": "point",
      "sources": [
       "brit_weihai"
      ],
      "unit": "Weihaiwei (leased territory)",
      "notes": "Leased to Britain in 1898, when Russia leased Port Arthur; a summer station for the British fleet. Britain gave up the lease in 1930.",
-     "issue": "24"
+     "issue": "24",
+     "marker": [
+      122.1,
+      37.5
+     ]
     }
    ]
   },
@@ -2267,7 +2279,7 @@
      "start": 1960,
      "end": 1961,
      "status": "mandate",
-     "coverage": "partial",
+     "coverage": "point",
      "sources": [
       "brit_nigeria",
       "un_trust_br_cameroons"
@@ -2276,7 +2288,11 @@
      "end_date": "1961-06",
      "unit": "Northern Cameroons (UN trust territory)",
      "notes": "The northern part of the British Cameroons trust territory remained British after Nigerian independence and joined Nigeria's Northern region in June 1961, after a UN-supervised plebiscite.",
-     "issue": "9"
+     "issue": "9",
+     "marker": [
+      13.0,
+      10.5
+     ]
     }
    ]
   },
@@ -2897,12 +2913,16 @@
      "start": 1890,
      "end": 1920,
      "status": "protectorate",
-     "coverage": "partial",
+     "coverage": "point",
      "sources": [
       "brit_tanzania"
      ],
      "unit": "Zanzibar Protectorate",
-     "notes": "Zanzibar was proclaimed a British protectorate in 1890. The mainland was German East Africa until the First World War."
+     "notes": "Zanzibar was proclaimed a British protectorate in 1890. The mainland was German East Africa until the First World War.",
+     "marker": [
+      39.3,
+      -6.1
+     ]
     },
     {
      "start": 1920,
@@ -2923,13 +2943,17 @@
      "start": 1961,
      "end": 1963,
      "status": "protectorate",
-     "coverage": "partial",
+     "coverage": "point",
      "sources": [
       "brit_tanzania"
      ],
      "end_date": "1963-12-10",
      "unit": "Zanzibar Protectorate",
-     "notes": "Tanganyika became independent in December 1961. Zanzibar became independent on 10 December 1963 and merged with Tanganyika on 26 April 1964."
+     "notes": "Tanganyika became independent in December 1961. Zanzibar became independent on 10 December 1963 and merged with Tanganyika on 26 April 1964.",
+     "marker": [
+      39.3,
+      -6.1
+     ]
     }
    ]
   },

@@ -12,7 +12,7 @@ export function createTooltip(el, panel) {
       <h3>${esc(territory.name ?? territory.id)}</h3>
       <div class="status"><span class="swatch" style="background:${status.colour}"></span>${esc(status.label)}</div>
       ${years ? `<div class="years">${years}</div>` : ""}
-      ${p?.unit && p.unit !== territory.name ? `<div class="unit">${esc(p.unit)}${p.coverage === "partial" ? " (part of today's territory)" : ""}</div>` : ""}
+      ${p?.unit && p.unit !== territory.name ? `<div class="unit">${esc(p.unit)}${{ partial: " (part of today's territory)", point: " (a small part of today's territory, marked with a dot)" }[p.coverage] ?? ""}</div>` : ""}
       ${p?.notes ? `<p class="notes">${esc(p.notes)}</p>` : ""}`;
   }
 

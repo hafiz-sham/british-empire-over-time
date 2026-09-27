@@ -47,6 +47,15 @@ def parse_year(value):
         return None
 
 
+def parse_marker(value):
+    """'lon lat' -> (lon, lat), or None if missing or out of range."""
+    try:
+        lon, lat = (float(v) for v in value.split())
+    except (AttributeError, ValueError):
+        return None
+    return (lon, lat) if -180 <= lon <= 180 and -90 <= lat <= 90 else None
+
+
 def check_sources(sources):
     out = check_columns(sources, SOURCE_COLUMNS, "sources.csv")
     if out:
@@ -88,6 +97,8 @@ def check_period_rows(periods, territory_ids, source_ids):
             out.append(Finding("error", where, f"unknown status '{p['status']}'"))
         if p["coverage"] not in COVERAGE:
             out.append(Finding("error", where, f"coverage must be one of {sorted(COVERAGE)}"))
+        if p["coverage"] == "point" and parse_marker(p["marker"]) is None:
+            out.append(Finding("error", where, "coverage 'point' needs a marker 'lon lat'"))
 
         start, end = parse_year(p["start"]), parse_year(p["end"]) if p["end"] else None
         if start is None:

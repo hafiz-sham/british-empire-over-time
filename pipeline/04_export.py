@@ -31,6 +31,8 @@ def period_record(p):
     for col in ("start_date", "end_date", "unit", "notes", "issue"):
         if p[col]:
             rec[col] = p[col]
+    if p["coverage"] == "point":
+        rec["marker"] = [float(v) for v in p["marker"].split()]
     return rec
 
 

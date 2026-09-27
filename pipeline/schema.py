@@ -12,12 +12,12 @@ STATUSES = {
     "not_british": "Independent / not British",
 }
 
-COVERAGE = {"full", "partial"}
+COVERAGE = {"full", "partial", "point"}
 
 TERRITORY_COLUMNS = ["territory_id", "name", "icow_code", "notes"]
 PERIOD_COLUMNS = [
     "territory_id", "start", "end", "start_date", "end_date",
-    "status", "unit", "coverage", "notes", "source_ids", "issue",
+    "status", "unit", "coverage", "marker", "notes", "source_ids", "issue",
 ]
 SOURCE_COLUMNS = ["source_id", "type", "citation", "url", "accessed", "licence"]
 SOURCE_TYPES = {"dataset", "primary", "reference", "factbook"}

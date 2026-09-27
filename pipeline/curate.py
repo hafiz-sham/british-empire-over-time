@@ -64,12 +64,12 @@ def add_periods(rows):
     _rewrite("periods.csv", PERIOD_COLUMNS, rows, "territory_id")
 
 
-def period(territory_id, start, end, status, source_ids, unit="", coverage="full",
+def period(territory_id, start, end, status, source_ids, unit="", coverage="full", marker="",
            notes="", start_date="", end_date="", issue=""):
     return {
         "territory_id": territory_id, "start": start, "end": "" if end is None else end,
         "start_date": start_date, "end_date": end_date, "status": status, "unit": unit,
-        "coverage": coverage, "notes": notes, "source_ids": ";".join(source_ids), "issue": issue,
+        "coverage": coverage, "marker": marker, "notes": notes, "source_ids": ";".join(source_ids), "issue": issue,
     }
 
 

@@ -26,7 +26,8 @@ One row per status period. Periods for a territory must not overlap.
 | `end_date` | no | As above, for `end`. |
 | `status` | yes | One of the codes below. |
 | `unit` | no | The historical unit this refers to, e.g. `Aden Colony` within modern Yemen. |
-| `coverage` | yes | `full` if the status covers all of the modern territory, `partial` if only part (shown in a lighter shade). |
+| `coverage` | yes | `full` if the status covers all of the modern territory; `partial` if a substantial part (shown in a lighter shade); `point` if only a small holding inside a large country (the country is not shaded, and a marker is drawn instead). |
+| `marker` | if `point` | Marker position as `lon lat` in decimal degrees, e.g. `122.1 37.5` for Weihaiwei. An approximate display position, not a sourced fact. |
 | `notes` | no | Context shown in the tooltip, including other statuses present at the same time. |
 | `source_ids` | yes | One or more ids from `sources.csv`, separated by `;`. |
 | `issue` | no | Number of the related entry in `DATA_ISSUES.md`. |
