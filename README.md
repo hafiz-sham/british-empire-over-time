@@ -26,8 +26,8 @@ Every period cites a source. Uncertain or contested cases are flagged in the dat
 
 | Dataset | Used for | Licence |
 |---|---|---|
-| Natural Earth, admin-0 countries (1:50m) | Base geometry | _To be confirmed on download_ |
-| ICOW Colonial History Data Set (Hensel) | Colonial ruler and independence dates | _To be confirmed on download_ |
+| [Natural Earth](https://www.naturalearthdata.com/), Admin 0 – Countries, 1:50m (v5.1.1) | Base geometry | Public domain |
+| [ICOW Colonial History Data Set](http://www.paulhensel.org/icowcol.html), v1.1 (Hensel, 2018) | Colonial ruler and independence dates | No open licence; the authors ask that it is not redistributed. Downloaded by `pipeline/01_fetch.py`, not committed. Only individual cited dates appear in this repository. |
 
 ## Known limitations
 
