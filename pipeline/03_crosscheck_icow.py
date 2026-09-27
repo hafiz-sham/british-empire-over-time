@@ -38,14 +38,28 @@ def main():
             rows.append({"territory_id": t["territory_id"], "icow_code": code, "result": "not in ICOW"})
             continue
         rec = icow.loc[code]
+        if int(rec["IndFrom"]) != UK:
+            rows.append({"territory_id": t["territory_id"], "icow_code": code,
+                         "icow_ind_date": f"{rec['ind_year']}-{rec['ind_month']:02d}",
+                         "icow_ind_from": int(rec["IndFrom"]), "result": "independence not from UK; skipped"})
+            continue
         p = periods[periods["territory_id"] == t["territory_id"]]
         boundaries = {int(v) for v in pd.concat([p["start"], p["end"]]) if v}
+        # Months of any exact dates recorded in the ICOW year, e.g. "1963-12-12" -> 12.
+        months = {int(d[5:7]) for d in pd.concat([p["start_date"], p["end_date"]])
+                  if len(d) >= 7 and int(d[:4]) == rec["ind_year"]}
+        if rec["ind_year"] not in boundaries:
+            result = "MISMATCH"
+        elif months and rec["ind_month"] not in months:
+            result = "MISMATCH (month)"
+        else:
+            result = "match"
         rows.append({
             "territory_id": t["territory_id"],
             "icow_code": code,
             "icow_ind_date": f"{rec['ind_year']}-{rec['ind_month']:02d}",
             "icow_ind_from": int(rec["IndFrom"]),
-            "result": "match" if rec["ind_year"] in boundaries else "MISMATCH",
+            "result": result,
         })
 
     report = pd.DataFrame(rows, columns=["territory_id", "icow_code", "icow_ind_date", "icow_ind_from", "result"])

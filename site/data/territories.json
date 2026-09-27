@@ -12,23 +12,103 @@
   "not_british": "Independent / not British"
  },
  "sources": {
+  "brit_egypt": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Egypt\", online edition; sections: World War I and independence.",
+   "url": "https://www.britannica.com/place/Egypt"
+  },
+  "brit_kenya": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Kenya\", online edition; sections: The British East Africa Company; The East Africa Protectorate; Kenya colony; World War II to independence.",
+   "url": "https://www.britannica.com/place/Kenya"
+  },
+  "brit_malawi": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Malawi\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Malawi"
+  },
+  "brit_somalia": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Somalia\", online edition; sections: Revolt in British Somaliland; Civil war.",
+   "url": "https://www.britannica.com/place/Somalia"
+  },
+  "brit_sudan": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Sudan\", online edition; sections: The British conquest; The growth of national consciousness.",
+   "url": "https://www.britannica.com/place/Sudan"
+  },
+  "brit_tanzania": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Tanzania\", online edition; sections: German East Africa; Zanzibar; Independence.",
+   "url": "https://www.britannica.com/place/Tanzania"
+  },
+  "brit_uganda": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Uganda\", online edition; sections: Bunyoro and Buganda; Growth of a peasant economy; The Republic of Uganda.",
+   "url": "https://www.britannica.com/place/Uganda"
+  },
+  "brit_zambia": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Zambia\", online edition; sections: Colonial rule.",
+   "url": "https://www.britannica.com/place/Zambia"
+  },
+  "brit_zimbabwe": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Zimbabwe\", online edition; sections: The British South Africa Company; Rhodesia and the UDI.",
+   "url": "https://www.britannica.com/place/Zimbabwe"
+  },
   "icow": {
    "type": "dataset",
    "citation": "Paul R. Hensel (2018). \"ICOW Colonial History Data Set, version 1.1.\"",
    "url": "http://www.paulhensel.org/icowcol.html"
   },
-  "union_ireland_1800": {
-   "type": "primary",
-   "citation": "Union with Ireland Act 1800 (39 & 40 Geo. 3 c. 67), Article First.",
-   "url": "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents"
-  },
   "irish_free_state_1922": {
    "type": "primary",
    "citation": "Irish Free State Constitution Act 1922 (13 Geo. 5 Sess. 2 c. 1).",
    "url": "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents/enacted"
+  },
+  "leg_s_rhodesia_1965": {
+   "type": "primary",
+   "citation": "Southern Rhodesia Act 1965 (c. 76), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/1965/76/enacted"
+  },
+  "leg_zambia_1964": {
+   "type": "primary",
+   "citation": "Zambia Independence Act 1964 (c. 65), section 1.",
+   "url": "https://www.legislation.gov.uk/ukpga/1964/65/enacted"
+  },
+  "union_ireland_1800": {
+   "type": "primary",
+   "citation": "Union with Ireland Act 1800 (39 & 40 Geo. 3 c. 67), Article First.",
+   "url": "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents"
   }
  },
  "territories": [
+  {
+   "id": "EGY",
+   "name": "Egypt",
+   "area_km2": 1005831.2,
+   "label": [
+    29.455,
+    26.824
+   ],
+   "periods": [
+    {
+     "start": 1914,
+     "end": 1922,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_egypt"
+     ],
+     "start_date": "1914-12",
+     "end_date": "1922-02-28",
+     "unit": "Sultanate of Egypt",
+     "notes": "Britain proclaimed a protectorate in December 1914, after declaring war on the Ottoman Empire. Before this, Egypt was under British occupation but not formally British (see DATA_ISSUES.md #1). The declaration of 28 February 1922 ended the protectorate but reserved defence, imperial communications, foreign interests and the Sudan to Britain.",
+     "issue": "2"
+    }
+   ]
+  },
   {
    "id": "GBR",
    "name": "United Kingdom",
@@ -76,6 +156,298 @@
      "unit": "Ireland",
      "notes": "Part of the United Kingdom, not a colony. Its status from December 1922 (the Irish Free State) awaits a decision on how dominions are shown; see DATA_ISSUES.md.",
      "issue": "5"
+    }
+   ]
+  },
+  {
+   "id": "KEN",
+   "name": "Kenya",
+   "area_km2": 596152.3,
+   "label": [
+    37.535,
+    0.444
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1920,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_kenya"
+     ],
+     "unit": "East Africa Protectorate",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. The British East Africa Company surrendered its charter in 1895. The protectorate became a colony in 1920."
+    },
+    {
+     "start": 1920,
+     "end": 1963,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_kenya",
+      "icow"
+     ],
+     "end_date": "1963-12-12",
+     "unit": "Kenya Colony",
+     "notes": "The East Africa Protectorate became a colony and was renamed Kenya in 1920. Independent on 12 December 1963."
+    }
+   ]
+  },
+  {
+   "id": "MWI",
+   "name": "Malawi",
+   "area_km2": 120062.2,
+   "label": [
+    33.738,
+    -13.307
+   ],
+   "periods": [
+    {
+     "start": 1891,
+     "end": 1964,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_malawi",
+      "brit_zambia",
+      "icow"
+     ],
+     "end_date": "1964-07-06",
+     "unit": "British Central Africa Protectorate; Nyasaland from 1907",
+     "notes": "Protectorate established in 1891; called the British Central Africa Protectorate from 1893 and Nyasaland from 1907. Part of the Federation of Rhodesia and Nyasaland, 1953–1963. Independent on 6 July 1964."
+    }
+   ]
+  },
+  {
+   "id": "SDN",
+   "name": "Sudan",
+   "area_km2": 1867226.7,
+   "label": [
+    29.77,
+    15.448
+   ],
+   "periods": [
+    {
+     "start": 1899,
+     "end": 1956,
+     "status": "condominium",
+     "coverage": "full",
+     "sources": [
+      "brit_sudan",
+      "icow"
+     ],
+     "end_date": "1956-01",
+     "unit": "Anglo-Egyptian Sudan",
+     "notes": "Anglo-Egyptian Condominium declared in 1899: sovereignty shared by the khedive of Egypt and the British Crown. Self-government agreed in 1953; independent in January 1956."
+    }
+   ]
+  },
+  {
+   "id": "SDS",
+   "name": "South Sudan",
+   "area_km2": 625360.4,
+   "label": [
+    29.101,
+    7.846
+   ],
+   "periods": [
+    {
+     "start": 1899,
+     "end": 1956,
+     "status": "condominium",
+     "coverage": "full",
+     "sources": [
+      "brit_sudan",
+      "icow"
+     ],
+     "end_date": "1956-01",
+     "unit": "Anglo-Egyptian Sudan",
+     "notes": "Part of the Anglo-Egyptian Sudan (condominium declared in 1899). South Sudan became independent from Sudan in 2011."
+    }
+   ]
+  },
+  {
+   "id": "SOL",
+   "name": "Somaliland",
+   "area_km2": 168866.7,
+   "label": [
+    46.099,
+    9.69
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1960,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_somalia"
+     ],
+     "end_date": "1960-06-26",
+     "unit": "British Somaliland Protectorate",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Evacuated in 1940 during the Second World War and recaptured in 1941. Independent on 26 June 1960, then united with the former Italian Somaliland to form Somalia."
+    }
+   ]
+  },
+  {
+   "id": "TZA",
+   "name": "Tanzania",
+   "area_km2": 947902.8,
+   "label": [
+    34.236,
+    -6.363
+   ],
+   "periods": [
+    {
+     "start": 1890,
+     "end": 1920,
+     "status": "protectorate",
+     "coverage": "partial",
+     "sources": [
+      "brit_tanzania"
+     ],
+     "unit": "Zanzibar Protectorate",
+     "notes": "Zanzibar was proclaimed a British protectorate in 1890. The mainland was German East Africa until the First World War."
+    },
+    {
+     "start": 1920,
+     "end": 1961,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "brit_tanzania",
+      "icow"
+     ],
+     "start_date": "1920-01",
+     "end_date": "1961-12",
+     "unit": "Tanganyika Territory",
+     "notes": "League of Nations mandate under the Treaty of Versailles (in force January 1920); placed under UN trusteeship in 1947. Zanzibar remained a separate British protectorate throughout.",
+     "issue": "9"
+    },
+    {
+     "start": 1961,
+     "end": 1963,
+     "status": "protectorate",
+     "coverage": "partial",
+     "sources": [
+      "brit_tanzania"
+     ],
+     "end_date": "1963-12-10",
+     "unit": "Zanzibar Protectorate",
+     "notes": "Tanganyika became independent in December 1961. Zanzibar became independent on 10 December 1963 and merged with Tanganyika on 26 April 1964."
+    }
+   ]
+  },
+  {
+   "id": "UGA",
+   "name": "Uganda",
+   "area_km2": 243097.4,
+   "label": [
+    32.682,
+    1.327
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1962,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_uganda",
+      "icow"
+     ],
+     "end_date": "1962-10",
+     "unit": "Uganda Protectorate",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. A protectorate was declared over Buganda in 1894 and extended to the rest of present-day Uganda. Independent in October 1962."
+    }
+   ]
+  },
+  {
+   "id": "ZMB",
+   "name": "Zambia",
+   "area_km2": 757286.7,
+   "label": [
+    25.413,
+    -13.102
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1924,
+     "status": "chartered_company",
+     "coverage": "full",
+     "sources": [
+      "brit_zambia",
+      "brit_zimbabwe"
+     ],
+     "unit": "North-Eastern and North-Western Rhodesia; Northern Rhodesia from 1911",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Administered by the British South Africa Company (chartered 1889), at first in two parts, united as Northern Rhodesia in 1911."
+    },
+    {
+     "start": 1924,
+     "end": 1964,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_zambia",
+      "leg_zambia_1964",
+      "icow"
+     ],
+     "end_date": "1964-10-24",
+     "unit": "Northern Rhodesia",
+     "notes": "The company handed administration to the Colonial Office in 1924. Part of the Federation of Rhodesia and Nyasaland, 1953–1963. Ceased to be a protectorate and became independent as Zambia on 24 October 1964."
+    }
+   ]
+  },
+  {
+   "id": "ZWE",
+   "name": "Zimbabwe",
+   "area_km2": 391057.0,
+   "label": [
+    29.349,
+    -19.013
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1923,
+     "status": "chartered_company",
+     "coverage": "full",
+     "sources": [
+      "brit_zimbabwe"
+     ],
+     "unit": "Southern Rhodesia (British South Africa Company)",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. The British South Africa Company received its royal charter in October 1889."
+    },
+    {
+     "start": 1923,
+     "end": 1965,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_zimbabwe"
+     ],
+     "start_date": "1923-09-12",
+     "end_date": "1965-11-11",
+     "unit": "Southern Rhodesia (self-governing colony)",
+     "notes": "Annexed to the Crown as a self-governing colony on 12 September 1923. Part of the Federation of Rhodesia and Nyasaland, 1953–1963."
+    },
+    {
+     "start": 1965,
+     "end": 1980,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "leg_s_rhodesia_1965",
+      "brit_zimbabwe",
+      "icow"
+     ],
+     "start_date": "1965-11-11",
+     "end_date": "1980-04-18",
+     "unit": "Southern Rhodesia",
+     "notes": "The white minority government's Unilateral Declaration of Independence (11 November 1965) was not recognised; the Southern Rhodesia Act 1965 declared the territory still part of Her Majesty's dominions. In practice ruled by the Rhodesian government until Britain resumed control in 1979. Independent as Zimbabwe on 18 April 1980.",
+     "issue": "15"
     }
    ]
   }

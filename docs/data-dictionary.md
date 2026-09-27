@@ -35,6 +35,8 @@ One row per status period. Periods for a territory must not overlap.
 
 A territory's status in year *y* is its status on **31 December** of *y*. Periods run from `start` up to, but not including, `end`. So a change dated 15 August 1947 is recorded as `end = 1947` for the old period and `start = 1947` for the new one.
 
+Where a status was already in place before 1900 but the source gives no clear start date, the period starts at 1900 (the start of the map) and the notes say so.
+
 A year with no period means the territory is shown as not British. Where a gap between British periods is real, record it as an explicit `not_british` period, so the validator can tell it apart from missing data.
 
 ### Status codes
