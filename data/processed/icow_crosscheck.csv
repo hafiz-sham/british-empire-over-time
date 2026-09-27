@@ -1,22 +1,33 @@
 territory_id,icow_code,icow_ind_date,icow_ind_from,result
 AFG,700,1919-08,200,match
 ARE,696,1971-12,200,match
+ATG,58,1981-11,200,match
 BGD,771,1971-12,770,independence not from UK; skipped
 BHR,692,1971-08,200,match
+BHS,31,1973-07,200,match
+BLZ,80,1981-09,200,match
+BRB,53,1966-11,200,match
 BRN,835,1984-01,200,match
 BTN,760,1947-08,750,independence not from UK; skipped
 BWA,571,1966-09,200,match
+CAN,20,1867-07,200,match
 CYP,352,1960-08,200,match
+DMA,54,1978-11,200,match
 EGY,651,1831-11,640,independence not from UK; skipped
 GHA,452,1957-03,200,match
 GMB,420,1965-02,200,match
+GRD,55,1974-02,200,match
+GUY,110,1966-05,200,match
 IND,750,1947-08,200,match
 IRL,205,1922-12,200,match
 IRQ,645,1932-10,200,match
 ISR,666,1948-05,200,match
+JAM,51,1962-08,200,match
 JOR,663,1946-05,200,match
 KEN,501,1963-12,200,match
+KNA,60,1983-09,200,match
 KWT,690,1961-06,200,match
+LCA,56,1979-02,200,match
 LKA,780,1948-02,200,match
 LSO,570,1966-10,200,match
 MDV,781,1965-07,200,match
@@ -35,8 +46,10 @@ SGP,830,1965-08,820,independence not from UK; skipped
 SLE,451,1961-04,200,match
 SWZ,572,1968-09,200,match
 SYC,591,1976-06,200,match
+TTO,52,1962-08,200,match
 TZA,510,1961-12,200,match
 UGA,500,1962-10,200,match
+VCT,57,1979-10,200,match
 YEM,680,1967-11,200,match
 ZAF,560,1910-05,200,match
 ZMB,551,1964-10,200,match

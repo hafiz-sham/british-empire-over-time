@@ -27,15 +27,35 @@
    "citation": "Encyclopaedia Britannica, \"Anguilla\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/Anguilla-island-West-Indies/History"
   },
+  "brit_antigua": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Antigua and Barbuda\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Antigua-and-Barbuda/History"
+  },
   "brit_ascension": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Ascension\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Ascension-island-Atlantic-Ocean"
   },
+  "brit_bahamas": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"The Bahamas\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/The-Bahamas"
+  },
   "brit_bahrain": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"History of Bahrain\", online edition; sections: main article.",
    "url": "https://www.britannica.com/topic/history-of-Bahrain"
+  },
+  "brit_barbados": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Barbados\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Barbados/History"
+  },
+  "brit_belize": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Belize\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Belize/History"
   },
   "brit_bermuda": {
    "type": "reference",
@@ -72,6 +92,11 @@
    "citation": "Encyclopaedia Britannica, \"Cameroon\", online edition; sections: Moving toward independence.",
    "url": "https://www.britannica.com/place/Cameroon"
   },
+  "brit_canada": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Canada\", online edition; sections: The Dominion of Canada.",
+   "url": "https://www.britannica.com/place/Canada/The-Dominion-of-Canada"
+  },
   "brit_cayman": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Cayman Islands\", online edition; sections: summary.",
@@ -81,6 +106,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Cyprus\", online edition; sections: Ottoman rule; The Republic of Cyprus.",
    "url": "https://www.britannica.com/place/Cyprus/Ottoman-rule"
+  },
+  "brit_dominica": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Dominica\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Dominica"
   },
   "brit_egypt": {
    "type": "reference",
@@ -117,10 +147,20 @@
    "citation": "Encyclopaedia Britannica, \"Gold Coast (historical region, Africa)\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Gold-Coast-historical-region-Africa"
   },
+  "brit_grenada": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Grenada\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Grenada"
+  },
   "brit_guernsey": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Guernsey\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Guernsey-island-and-bailiwick-Channel-Islands-English-Channel"
+  },
+  "brit_guyana": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Guyana\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Guyana/History"
   },
   "brit_hong_kong": {
    "type": "reference",
@@ -141,6 +181,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Isle of Man\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Isle-of-Man"
+  },
+  "brit_jamaica": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Jamaica\", online edition; sections: British rule.",
+   "url": "https://www.britannica.com/place/Jamaica/British-rule"
   },
   "brit_jersey": {
    "type": "reference",
@@ -212,6 +257,11 @@
    "citation": "Encyclopaedia Britannica, \"Natal (historical province, South Africa)\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Natal-historical-province-South-Africa"
   },
+  "brit_newfoundland": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Newfoundland and Labrador\", online edition; sections: British fishery to colony; main article.",
+   "url": "https://www.britannica.com/place/Newfoundland-and-Labrador/British-fishery-to-colony"
+  },
   "brit_nigeria": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Nigeria\", online edition; sections: The arrival of the British; Nigeria as a colony; Independent Nigeria.",
@@ -277,6 +327,21 @@
    "citation": "Encyclopaedia Britannica, \"Saint Helena\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Saint-Helena-island-South-Atlantic-Ocean"
   },
+  "brit_st_kitts": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Saint Kitts and Nevis\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Saint-Kitts-and-Nevis/History"
+  },
+  "brit_st_lucia": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Saint Lucia\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Saint-Lucia"
+  },
+  "brit_st_vincent": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Saint Vincent and the Grenadines\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Saint-Vincent-and-the-Grenadines/History"
+  },
   "brit_statute_westminster": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Statute of Westminster\", online edition; sections: main article.",
@@ -301,6 +366,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Transvaal\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Transvaal"
+  },
+  "brit_trinidad": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Trinidad and Tobago\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Trinidad-and-Tobago/History"
   },
   "brit_turks_caicos": {
    "type": "reference",
@@ -417,6 +487,11 @@
    "citation": "Swaziland Independence Act 1968 (c. 56), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/1968/56/enacted"
   },
+  "leg_west_indies_1967": {
+   "type": "primary",
+   "citation": "West Indies Act 1967 (c. 4), section 1 (associated states).",
+   "url": "https://www.legislation.gov.uk/ukpga/1967/4/enacted"
+  },
   "leg_zambia_1964": {
    "type": "primary",
    "citation": "Zambia Independence Act 1964 (c. 65), section 1.",
@@ -515,6 +590,45 @@
    ]
   },
   {
+   "id": "ATG",
+   "name": "Antigua and Barbuda",
+   "area_km2": 433.8,
+   "label": [
+    -61.786,
+    17.084
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1967,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_antigua"
+     ],
+     "end_date": "1967-02-27",
+     "unit": "Antigua (Leeward Islands)",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Part of the Leeward Islands colony until it was dissolved in 1956; joined the West Indies Federation in 1958."
+    },
+    {
+     "start": 1967,
+     "end": 1981,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_antigua",
+      "leg_west_indies_1967",
+      "icow"
+     ],
+     "start_date": "1967-02-27",
+     "end_date": "1981-11-01",
+     "unit": "Antigua (associated state)",
+     "notes": "An associated state under the West Indies Act 1967: internally self-governing, with Britain responsible for defence and external affairs. Independent as Antigua and Barbuda on 1 November 1981.",
+     "issue": "26"
+    }
+   ]
+  },
+  {
    "id": "BGD",
    "name": "Bangladesh",
    "area_km2": 135955.1,
@@ -566,6 +680,54 @@
    ]
   },
   {
+   "id": "BHS",
+   "name": "The Bahamas",
+   "area_km2": 12697.1,
+   "label": [
+    -78.376,
+    26.648
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1973,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_bahamas",
+      "icow"
+     ],
+     "end_date": "1973-07",
+     "unit": "Bahama Islands",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. A British colony until independence in July 1973."
+    }
+   ]
+  },
+  {
+   "id": "BLZ",
+   "name": "Belize",
+   "area_km2": 22830.1,
+   "label": [
+    -88.737,
+    17.138
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1981,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_belize",
+      "icow"
+     ],
+     "end_date": "1981-09-21",
+     "unit": "British Honduras",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Known as British Honduras until 1973; the last British colony on the American mainland. Independent on 21 September 1981."
+    }
+   ]
+  },
+  {
    "id": "BMU",
    "name": "Bermuda",
    "area_km2": 66.1,
@@ -586,6 +748,30 @@
      "unit": "Bermuda",
      "notes": "Settled by the English from 1612 and a crown colony from 1684. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
      "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "BRB",
+   "name": "Barbados",
+   "area_km2": 390.2,
+   "label": [
+    -59.551,
+    13.175
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1966,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_barbados",
+      "icow"
+     ],
+     "end_date": "1966-11-30",
+     "unit": "Barbados",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. A British possession without interruption from the 17th century. Independent on 30 November 1966."
     }
    ]
   },
@@ -659,6 +845,60 @@
      "end_date": "1966-09-30",
      "unit": "Bechuanaland Protectorate",
      "notes": "Protectorate proclaimed in 1885 and extended north in 1890. Ceased to be a protectorate and became independent as Botswana on 30 September 1966."
+    }
+   ]
+  },
+  {
+   "id": "CAN",
+   "name": "Canada",
+   "area_km2": 9894148.9,
+   "label": [
+    -110.427,
+    56.826
+   ],
+   "periods": [
+    {
+     "start": 1867,
+     "end": 1931,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_canada",
+      "leg_statute_westminster_1931",
+      "icow"
+     ],
+     "start_date": "1867-07",
+     "end_date": "1931-12-11",
+     "unit": "Dominion of Canada; Newfoundland",
+     "notes": "The British North America Act 1867 created the Dominion of Canada. Newfoundland, now part of Canada, was a separate self-governing colony (responsible government from 1855) and is listed as a dominion in the Statute of Westminster. Canada's British status ends with the Statute (11 December 1931) under this project's rule; it gained the power to amend its own constitution in 1982.",
+     "issue": "10"
+    },
+    {
+     "start": 1931,
+     "end": 1934,
+     "status": "dominion",
+     "coverage": "partial",
+     "sources": [
+      "leg_statute_westminster_1931",
+      "brit_newfoundland"
+     ],
+     "start_date": "1931-12-11",
+     "end_date": "1934",
+     "unit": "Newfoundland",
+     "notes": "The Statute of Westminster did not apply to Newfoundland unless adopted by its parliament (section 10), so Newfoundland is still shown as British.",
+     "issue": "10"
+    },
+    {
+     "start": 1934,
+     "end": 1949,
+     "status": "crown_colony",
+     "coverage": "partial",
+     "sources": [
+      "brit_newfoundland"
+     ],
+     "end_date": "1949-03-31",
+     "unit": "Newfoundland (Commission of Government)",
+     "notes": "In 1934 responsible government was suspended and replaced by an appointed Commission of Government reporting to the Dominions Office in London. After a referendum in July 1948, Newfoundland became a Canadian province on 31 March 1949."
     }
    ]
   },
@@ -804,6 +1044,32 @@
      "end_date": "1960-08-16",
      "unit": "Cyprus",
      "notes": "Annexed by Britain in 1914, when Britain and the Ottoman Empire went to war. Independent republic from 16 August 1960, with Britain keeping sovereignty over the Akrotiri and Dhekelia bases."
+    }
+   ]
+  },
+  {
+   "id": "DMA",
+   "name": "Dominica",
+   "area_km2": 699.4,
+   "label": [
+    -61.357,
+    15.462
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1978,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_dominica",
+      "icow",
+      "leg_west_indies_1967"
+     ],
+     "end_date": "1978-11",
+     "unit": "Dominica",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Taken by Britain from France in the 18th century. One of the territories covered by the West Indies Act 1967 (associated statehood); the date of association is not yet recorded here. Independent in November 1978.",
+     "issue": "26"
     }
    ]
   },
@@ -1029,6 +1295,56 @@
    ]
   },
   {
+   "id": "GRD",
+   "name": "Grenada",
+   "area_km2": 286.7,
+   "label": [
+    -61.674,
+    12.147
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1974,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_grenada",
+      "icow",
+      "leg_west_indies_1967"
+     ],
+     "end_date": "1974-02-07",
+     "unit": "Grenada",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Ceded by France to Britain in 1763. One of the territories covered by the West Indies Act 1967 (associated statehood); the date of association is not yet recorded here. Independent on 7 February 1974.",
+     "issue": "26"
+    }
+   ]
+  },
+  {
+   "id": "GUY",
+   "name": "Guyana",
+   "area_km2": 212422.5,
+   "label": [
+    -58.961,
+    4.851
+   ],
+   "periods": [
+    {
+     "start": 1831,
+     "end": 1966,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_guyana",
+      "icow"
+     ],
+     "end_date": "1966-05",
+     "unit": "British Guiana",
+     "notes": "Demerara, Berbice and Essequibo, purchased by Britain in 1814, were united as the colony of British Guiana in 1831. Independent in May 1966."
+    }
+   ]
+  },
+  {
    "id": "HKG",
    "name": "Hong Kong",
    "area_km2": 1031.2,
@@ -1207,6 +1523,30 @@
    ]
   },
   {
+   "id": "JAM",
+   "name": "Jamaica",
+   "area_km2": 10956.7,
+   "label": [
+    -77.156,
+    18.1
+   ],
+   "periods": [
+    {
+     "start": 1866,
+     "end": 1962,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_jamaica",
+      "icow"
+     ],
+     "end_date": "1962-08",
+     "unit": "Jamaica",
+     "notes": "Declared a crown colony by Parliament in 1866. Independent in August 1962. The Cayman Islands and the Turks and Caicos Islands were administered as its dependencies."
+    }
+   ]
+  },
+  {
    "id": "JEY",
    "name": "Jersey",
    "area_km2": 126.6,
@@ -1315,6 +1655,45 @@
    ]
   },
   {
+   "id": "KNA",
+   "name": "Saint Kitts and Nevis",
+   "area_km2": 233.5,
+   "label": [
+    -62.751,
+    17.321
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1967,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_st_kitts"
+     ],
+     "end_date": "1967-02-27",
+     "unit": "Saint Kitts–Nevis–Anguilla",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. English colony from 1623; Saint Kitts, Nevis and Anguilla were united by federal act in 1882."
+    },
+    {
+     "start": 1967,
+     "end": 1983,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_st_kitts",
+      "leg_west_indies_1967",
+      "icow"
+     ],
+     "start_date": "1967-02-27",
+     "end_date": "1983-09-19",
+     "unit": "Saint Kitts–Nevis–Anguilla (associated state)",
+     "notes": "An associated state under the West Indies Act 1967: internally self-governing, with Britain responsible for defence and external affairs. Anguilla broke away in 1967. Saint Kitts and Nevis became independent on 19 September 1983.",
+     "issue": "26"
+    }
+   ]
+  },
+  {
    "id": "KWT",
    "name": "Kuwait",
    "area_km2": 17368.6,
@@ -1335,6 +1714,45 @@
      "end_date": "1961-06-19",
      "unit": "Kuwait",
      "notes": "An 1899 treaty gave Britain control of Kuwait's foreign affairs, making it a protected state under this project's formal-status rule; it became a British protectorate proper after the outbreak of the First World War. Britain recognised Kuwait's independence on 19 June 1961."
+    }
+   ]
+  },
+  {
+   "id": "LCA",
+   "name": "Saint Lucia",
+   "area_km2": 552.6,
+   "label": [
+    -60.98,
+    13.891
+   ],
+   "periods": [
+    {
+     "start": 1814,
+     "end": 1967,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_st_lucia"
+     ],
+     "end_date": "1967-03-01",
+     "unit": "Saint Lucia",
+     "notes": "Ceded to Britain by the Treaty of Paris (1814) and a crown colony thereafter; part of the West Indies Federation from 1960."
+    },
+    {
+     "start": 1967,
+     "end": 1979,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_st_lucia",
+      "leg_west_indies_1967",
+      "icow"
+     ],
+     "start_date": "1967-03-01",
+     "end_date": "1979-02-22",
+     "unit": "Saint Lucia (associated state)",
+     "notes": "An associated state under the West Indies Act 1967: internally self-governing, with Britain responsible for defence and external affairs. Independent on 22 February 1979.",
+     "issue": "26"
     }
    ]
   },
@@ -2013,6 +2431,30 @@
    ]
   },
   {
+   "id": "TTO",
+   "name": "Trinidad and Tobago",
+   "area_km2": 5113.8,
+   "label": [
+    -61.253,
+    10.434
+   ],
+   "periods": [
+    {
+     "start": 1814,
+     "end": 1962,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_trinidad",
+      "icow"
+     ],
+     "end_date": "1962-08",
+     "unit": "Trinidad and Tobago",
+     "notes": "Trinidad was governed as a crown colony; Tobago was ceded to Britain for the last time in 1814. Part of the West Indies Federation 1958–1962. Independent in August 1962."
+    }
+   ]
+  },
+  {
    "id": "TZA",
    "name": "Tanzania",
    "area_km2": 947902.8,
@@ -2082,6 +2524,45 @@
      "end_date": "1962-10",
      "unit": "Uganda Protectorate",
      "notes": "Status already in place before 1900; shown from 1900, the start of the map. A protectorate was declared over Buganda in 1894 and extended to the rest of present-day Uganda. Independent in October 1962."
+    }
+   ]
+  },
+  {
+   "id": "VCT",
+   "name": "Saint Vincent and the Grenadines",
+   "area_km2": 311.8,
+   "label": [
+    -61.201,
+    13.249
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1969,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_st_vincent"
+     ],
+     "end_date": "1969-10-27",
+     "unit": "Saint Vincent",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Part of the Windward Islands administrative union after 1763; in the West Indies Federation 1958–1962."
+    },
+    {
+     "start": 1969,
+     "end": 1979,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_st_vincent",
+      "leg_west_indies_1967",
+      "icow"
+     ],
+     "start_date": "1969-10-27",
+     "end_date": "1979-10",
+     "unit": "Saint Vincent (associated state)",
+     "notes": "An associated state under the West Indies Act 1967: internally self-governing, with Britain responsible for defence and external affairs. Independent in October 1979.",
+     "issue": "26"
     }
    ]
   },
