@@ -1608,8 +1608,24 @@
      "start_date": "1801-01-01",
      "end_date": "1922-12",
      "unit": "Ireland",
-     "notes": "Part of the United Kingdom, not a colony. Its status from December 1922 (the Irish Free State) awaits a decision on how dominions are shown; see DATA_ISSUES.md.",
+     "notes": "Part of the United Kingdom, not a colony. Southern Ireland became the Irish Free State in December 1922.",
      "issue": "5"
+    },
+    {
+     "start": 1922,
+     "end": 1931,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "irish_free_state_1922",
+      "leg_statute_westminster_1931",
+      "icow"
+     ],
+     "start_date": "1922-12",
+     "end_date": "1931-12-11",
+     "unit": "Irish Free State",
+     "notes": "The Irish Free State was established as a dominion in December 1922 (Northern Ireland remained in the United Kingdom) and is listed as a dominion in the Statute of Westminster. British status ends with the Statute (11 December 1931) under this project's rule.",
+     "issue": "10"
     }
    ]
   },
