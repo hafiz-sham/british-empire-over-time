@@ -1,1 +1,3 @@
 territory_id,start,end,start_date,end_date,status,unit,coverage,notes,source_ids,issue
+GBR,1801,,1801-01-01,,uk,United Kingdom,full,"United Kingdom of Great Britain and Ireland from 1 January 1801. Northern Ireland remained in the United Kingdom after 1922.",union_ireland_1800,
+IRL,1801,1922,1801-01-01,1922-12,uk,Ireland,full,"Part of the United Kingdom, not a colony. Its status from December 1922 (the Irish Free State) awaits a decision on how dominions are shown; see DATA_ISSUES.md.",union_ireland_1800;icow;irish_free_state_1922,5
