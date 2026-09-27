@@ -12,6 +12,16 @@
   "not_british": "Independent / not British"
  },
  "sources": {
+  "brit_aden": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Aden\", online edition; sections: summary.",
+   "url": "https://www.britannica.com/summary/Aden"
+  },
+  "brit_anglo_afghan_wars": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Anglo-Afghan Wars\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/event/Anglo-Afghan-Wars"
+  },
   "brit_anguilla": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Anguilla\", online edition; sections: History.",
@@ -21,6 +31,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Ascension\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Ascension-island-Atlantic-Ocean"
+  },
+  "brit_bahrain": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"History of Bahrain\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/topic/history-of-Bahrain"
   },
   "brit_bermuda": {
    "type": "reference",
@@ -77,6 +92,11 @@
    "citation": "Encyclopaedia Britannica, \"The Gambia\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/The-Gambia"
   },
+  "brit_gandamak": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Treaty of Gandamak\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/event/Treaty-of-Gandamak"
+  },
   "brit_gibraltar": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Gibraltar\", online edition; sections: main article.",
@@ -92,6 +112,11 @@
    "citation": "Encyclopaedia Britannica, \"Guernsey\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Guernsey-island-and-bailiwick-Channel-Islands-English-Channel"
   },
+  "brit_iraq": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Iraq\", online edition; sections: British occupation and the mandatory regime; Independence, 1932–39.",
+   "url": "https://www.britannica.com/place/Iraq/British-occupation-and-the-mandatory-regime"
+  },
   "brit_isle_of_man": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Isle of Man\", online edition; sections: main article.",
@@ -102,10 +127,20 @@
    "citation": "Encyclopaedia Britannica, \"Jersey\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Jersey-island-Channel-Islands-English-Channel"
   },
+  "brit_jordan": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Jordan\", online edition; sections: Transjordan, the Hashemite Kingdom, and the Palestine war.",
+   "url": "https://www.britannica.com/place/Jordan/Transjordan-the-Hashemite-Kingdom-and-the-Palestine-war"
+  },
   "brit_kenya": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Kenya\", online edition; sections: The British East Africa Company; The East Africa Protectorate; Kenya colony; World War II to independence.",
    "url": "https://www.britannica.com/place/Kenya"
+  },
+  "brit_kuwait": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Kuwait\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Kuwait/History"
   },
   "brit_lesotho": {
    "type": "reference",
@@ -152,10 +187,20 @@
    "citation": "Encyclopaedia Britannica, \"Nigeria\", online edition; sections: The arrival of the British; Nigeria as a colony; Independent Nigeria.",
    "url": "https://www.britannica.com/place/Nigeria"
   },
+  "brit_palestine": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Palestine\", online edition; sections: World War I and after.",
+   "url": "https://www.britannica.com/place/Palestine/World-War-I-and-after"
+  },
   "brit_pitcairn": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Pitcairn Island\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Pitcairn-Island"
+  },
+  "brit_qatar": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Qatar\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Qatar/History"
   },
   "brit_seychelles": {
    "type": "reference",
@@ -222,10 +267,20 @@
    "citation": "Encyclopaedia Britannica, \"Turks and Caicos Islands\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Turks-and-Caicos-Islands"
   },
+  "brit_uae": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"United Arab Emirates\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/United-Arab-Emirates/History"
+  },
   "brit_uganda": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Uganda\", online edition; sections: Bunyoro and Buganda; Growth of a peasant economy; The Republic of Uganda.",
    "url": "https://www.britannica.com/place/Uganda"
+  },
+  "brit_yemen": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Yemen\", online edition; sections: The age of imperialism.",
+   "url": "https://www.britannica.com/place/Yemen/The-age-of-imperialism"
   },
   "brit_zambia": {
    "type": "reference",
@@ -315,6 +370,33 @@
  },
  "territories": [
   {
+   "id": "AFG",
+   "name": "Afghanistan",
+   "area_km2": 643493.3,
+   "label": [
+    65.193,
+    33.924
+   ],
+   "periods": [
+    {
+     "start": 1879,
+     "end": 1919,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_gandamak",
+      "brit_anglo_afghan_wars",
+      "icow"
+     ],
+     "start_date": "1879-05-26",
+     "end_date": "1919-08",
+     "unit": "Emirate of Afghanistan",
+     "notes": "Under the Treaty of Gandamak (26 May 1879) the emir agreed to conduct foreign relations in accordance with British 'wishes and advice'; Afghanistan kept its own ruler and internal government. Shown as a protected state under the formal-status rule. Afghanistan declared full independence in 1919, leading to the Third Anglo-Afghan War.",
+     "issue": "3"
+    }
+   ]
+  },
+  {
    "id": "AIA",
    "name": "Anguilla",
    "area_km2": 83.5,
@@ -335,6 +417,54 @@
      "unit": "Anguilla",
      "notes": "Colonised by British settlers in 1650. Governed with Saint Kitts and Nevis (from 1882 in the Leeward Islands federation) until it broke away in 1967; formally a separate dependent territory from 1980. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
      "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "ARE",
+   "name": "United Arab Emirates",
+   "area_km2": 71434.7,
+   "label": [
+    55.125,
+    24.344
+   ],
+   "periods": [
+    {
+     "start": 1892,
+     "end": 1971,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_uae",
+      "icow"
+     ],
+     "end_date": "1971-12",
+     "unit": "Trucial States",
+     "notes": "The Trucial sheikhdoms' exclusive agreements of 1892 restricted their foreign relations to Britain (after the general treaty of 1820 and the maritime truce of 1853). The former Trucial States, initially without Ras al-Khaimah, formed the United Arab Emirates in December 1971."
+    }
+   ]
+  },
+  {
+   "id": "BHR",
+   "name": "Bahrain",
+   "area_km2": 542.7,
+   "label": [
+    50.549,
+    26.03
+   ],
+   "periods": [
+    {
+     "start": 1861,
+     "end": 1971,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_bahrain",
+      "icow"
+     ],
+     "end_date": "1971-08",
+     "unit": "Bahrain",
+     "notes": "British-protected status dates from the treaty of 1861, under which Britain took responsibility for Bahrain's defence and foreign relations. Independent in August 1971."
     }
    ]
   },
@@ -806,6 +936,58 @@
    ]
   },
   {
+   "id": "IRQ",
+   "name": "Iraq",
+   "area_km2": 438435.3,
+   "label": [
+    42.486,
+    33.202
+   ],
+   "periods": [
+    {
+     "start": 1920,
+     "end": 1932,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "brit_iraq",
+      "icow"
+     ],
+     "end_date": "1932-10-03",
+     "unit": "Mandatory Iraq",
+     "notes": "Occupied by Britain from 1917 and then a British mandate; an Arab government under Faisal I was established under the mandate in 1921, and an Anglo-Iraqi treaty was signed on 10 October 1922. Admitted to the League of Nations as an independent state on 3 October 1932. British military occupation before the mandate is not counted as British rule (see DATA_ISSUES.md #13).",
+     "issue": "23"
+    }
+   ]
+  },
+  {
+   "id": "ISR",
+   "name": "Israel",
+   "area_km2": 22101.3,
+   "label": [
+    34.67,
+    31.451
+   ],
+   "periods": [
+    {
+     "start": 1920,
+     "end": 1948,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "brit_palestine",
+      "brit_jordan",
+      "icow"
+     ],
+     "start_date": "1920-04",
+     "end_date": "1948-05-14",
+     "unit": "Mandatory Palestine",
+     "notes": "British mandate allocated at San Remo in April 1920 (civil administration from July 1920) and approved by the League of Nations in July 1922. The mandate ended with British withdrawal in May 1948, when Israel declared independence. British military occupation before the mandate is not counted as British rule (see DATA_ISSUES.md #13).",
+     "issue": "23"
+    }
+   ]
+  },
+  {
    "id": "JEY",
    "name": "Jersey",
    "area_km2": 126.6,
@@ -825,6 +1007,32 @@
      "unit": "Bailiwick of Jersey (Crown Dependency)",
      "notes": "Status already in place before 1900; shown from 1900, the start of the map. Not part of the United Kingdom: a self-governing crown dependency.",
      "issue": "20"
+    }
+   ]
+  },
+  {
+   "id": "JOR",
+   "name": "Jordan",
+   "area_km2": 89059.0,
+   "label": [
+    36.3,
+    31.278
+   ],
+   "periods": [
+    {
+     "start": 1920,
+     "end": 1946,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "brit_jordan",
+      "brit_palestine",
+      "icow"
+     ],
+     "end_date": "1946-05",
+     "unit": "Transjordan (Palestine mandate)",
+     "notes": "Part of the British mandate for Palestine allocated at San Remo in 1920 and confirmed by the League of Nations in July 1922; ruled by Emir Abdullah from 1921. Britain recognised Transjordan's independence in 1923 while keeping control of finance, the military and foreign affairs. Independent in May 1946. British military occupation before the mandate is not counted as British rule (see DATA_ISSUES.md #13).",
+     "issue": "23"
     }
    ]
   },
@@ -860,6 +1068,30 @@
      "end_date": "1963-12-12",
      "unit": "Kenya Colony",
      "notes": "The East Africa Protectorate became a colony and was renamed Kenya in 1920. Independent on 12 December 1963."
+    }
+   ]
+  },
+  {
+   "id": "KWT",
+   "name": "Kuwait",
+   "area_km2": 17368.6,
+   "label": [
+    47.404,
+    29.311
+   ],
+   "periods": [
+    {
+     "start": 1899,
+     "end": 1961,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_kuwait",
+      "icow"
+     ],
+     "end_date": "1961-06-19",
+     "unit": "Kuwait",
+     "notes": "An 1899 treaty gave Britain control of Kuwait's foreign affairs, making it a protected state under this project's formal-status rule; it became a British protectorate proper after the outbreak of the First World War. Britain recognised Kuwait's independence on 19 June 1961."
     }
    ]
   },
@@ -1110,6 +1342,56 @@
      "unit": "Pitcairn Islands",
      "notes": "Settled by the Bounty mutineers in 1790 and placed under the British high commissioner for the Western Pacific in 1898; administered from Fiji from 1952, and by the high commissioner in New Zealand from 1970. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
      "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "PSX",
+   "name": "Palestine",
+   "area_km2": 6347.5,
+   "label": [
+    35.26,
+    31.949
+   ],
+   "periods": [
+    {
+     "start": 1920,
+     "end": 1948,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "brit_palestine",
+      "brit_jordan"
+     ],
+     "start_date": "1920-04",
+     "end_date": "1948-05-14",
+     "unit": "Mandatory Palestine",
+     "notes": "Part of Mandatory Palestine: allocated to Britain at San Remo in April 1920 and approved by the League of Nations in July 1922, until British withdrawal in May 1948. British military occupation before the mandate is not counted as British rule (see DATA_ISSUES.md #13).",
+     "issue": "23"
+    }
+   ]
+  },
+  {
+   "id": "QAT",
+   "name": "Qatar",
+   "area_km2": 11099.2,
+   "label": [
+    51.151,
+    25.337
+   ],
+   "periods": [
+    {
+     "start": 1916,
+     "end": 1971,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_qatar",
+      "icow"
+     ],
+     "end_date": "1971-09-03",
+     "unit": "Qatar",
+     "notes": "A 1916 treaty gave Britain control of Qatar's foreign policy in return for British protection. Independent on 3 September 1971."
     }
    ]
   },
@@ -1463,6 +1745,31 @@
      "unit": "Sovereign Base Area of Akrotiri",
      "notes": "Kept under British sovereignty by the 1960 treaties that made Cyprus independent. Before 1960 part of British Cyprus. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
      "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "YEM",
+   "name": "Yemen",
+   "area_km2": 455155.8,
+   "label": [
+    47.491,
+    15.859
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1967,
+     "status": "crown_colony",
+     "coverage": "partial",
+     "sources": [
+      "brit_aden",
+      "brit_yemen",
+      "icow"
+     ],
+     "end_date": "1967-11-30",
+     "unit": "Aden, with the Aden Protectorate states",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Aden was taken by Britain in 1839, governed from British India until 1937 and then a crown colony. It was surrounded by 21 British protectorate states, all but four of which had joined the Federation of South Arabia by 1965; Aden joined in 1963. Sovereignty was transferred to the National Liberation Front on 30 November 1967, creating South Yemen."
     }
    ]
   },

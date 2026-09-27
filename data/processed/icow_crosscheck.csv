@@ -1,11 +1,18 @@
 territory_id,icow_code,icow_ind_date,icow_ind_from,result
+AFG,700,1919-08,200,match
+ARE,696,1971-12,200,match
+BHR,692,1971-08,200,match
 BWA,571,1966-09,200,match
 CYP,352,1960-08,200,match
 EGY,651,1831-11,640,independence not from UK; skipped
 GHA,452,1957-03,200,match
 GMB,420,1965-02,200,match
 IRL,205,1922-12,200,match
+IRQ,645,1932-10,200,match
+ISR,666,1948-05,200,match
+JOR,663,1946-05,200,match
 KEN,501,1963-12,200,match
+KWT,690,1961-06,200,match
 LSO,570,1966-10,200,match
 MDV,781,1965-07,200,match
 MLT,338,1964-09,200,match
@@ -13,6 +20,7 @@ MUS,590,1968-03,200,match
 MWI,553,1964-07,200,match
 NAM,565,1990-03,560,independence not from UK; skipped
 NGA,475,1960-10,200,match
+QAT,694,1971-09,200,match
 SDN,625,1956-01,200,match
 SDS,626,2011-07,625,independence not from UK; skipped
 SLE,451,1961-04,200,match
@@ -20,6 +28,7 @@ SWZ,572,1968-09,200,match
 SYC,591,1976-06,200,match
 TZA,510,1961-12,200,match
 UGA,500,1962-10,200,match
+YEM,680,1967-11,200,match
 ZAF,560,1910-05,200,match
 ZMB,551,1964-10,200,match
 ZWE,552,1965-11,200,match
