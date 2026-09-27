@@ -37,6 +37,11 @@
    "citation": "Encyclopaedia Britannica, \"Ascension\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Ascension-island-Atlantic-Ocean"
   },
+  "brit_australia": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Australia\", online edition; sections: summary; Several small democracies, 1860–1900.",
+   "url": "https://www.britannica.com/summary/Australia"
+  },
   "brit_bahamas": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"The Bahamas\", online edition; sections: main article.",
@@ -127,6 +132,11 @@
    "citation": "Encyclopaedia Britannica, \"Falkland Islands\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/Falkland-Islands/History"
   },
+  "brit_fiji": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Fiji\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Fiji-republic-Pacific-Ocean/History"
+  },
   "brit_gambia": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"The Gambia\", online edition; sections: History.",
@@ -202,6 +212,11 @@
    "citation": "Encyclopaedia Britannica, \"Kenya\", online edition; sections: The British East Africa Company; The East Africa Protectorate; Kenya colony; World War II to independence.",
    "url": "https://www.britannica.com/place/Kenya"
   },
+  "brit_kiribati": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Kiribati\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Kiribati/History"
+  },
   "brit_kuwait": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Kuwait\", online edition; sections: History.",
@@ -257,6 +272,16 @@
    "citation": "Encyclopaedia Britannica, \"Natal (historical province, South Africa)\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Natal-historical-province-South-Africa"
   },
+  "brit_nauru": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Nauru\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Nauru/History"
+  },
+  "brit_new_zealand": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"New Zealand\", online edition; sections: summary.",
+   "url": "https://www.britannica.com/summary/New-Zealand"
+  },
   "brit_newfoundland": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Newfoundland and Labrador\", online edition; sections: British fishery to colony; main article.",
@@ -266,6 +291,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Nigeria\", online edition; sections: The arrival of the British; Nigeria as a colony; Independent Nigeria.",
    "url": "https://www.britannica.com/place/Nigeria"
+  },
+  "brit_niue": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Niue\", online edition; sections: main article.",
+   "url": "https://www.britannica.com/place/Niue"
   },
   "brit_palestine": {
    "type": "reference",
@@ -277,10 +307,20 @@
    "citation": "Encyclopaedia Britannica, \"Pitcairn Island\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Pitcairn-Island"
   },
+  "brit_png": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Papua New Guinea\", online edition; sections: The colonial period.",
+   "url": "https://www.britannica.com/place/Papua-New-Guinea/The-colonial-period"
+  },
   "brit_qatar": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Qatar\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/Qatar/History"
+  },
+  "brit_samoa": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Samoa\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Samoa-island-nation-Pacific-Ocean/History"
   },
   "brit_seychelles": {
    "type": "reference",
@@ -296,6 +336,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Singapore\", online edition; sections: History.",
    "url": "https://www.britannica.com/place/Singapore/History"
+  },
+  "brit_solomons": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Solomon Islands\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Solomon-Islands/History"
   },
   "brit_somalia": {
    "type": "reference",
@@ -362,6 +407,11 @@
    "citation": "Encyclopaedia Britannica, \"Togoland\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Togoland"
   },
+  "brit_tonga": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Tonga\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Tonga/History"
+  },
   "brit_transvaal": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Transvaal\", online edition; sections: main article.",
@@ -377,6 +427,11 @@
    "citation": "Encyclopaedia Britannica, \"Turks and Caicos Islands\", online edition; sections: main article.",
    "url": "https://www.britannica.com/place/Turks-and-Caicos-Islands"
   },
+  "brit_tuvalu": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Tuvalu\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Tuvalu/History"
+  },
   "brit_uae": {
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"United Arab Emirates\", online edition; sections: History.",
@@ -386,6 +441,11 @@
    "type": "reference",
    "citation": "Encyclopaedia Britannica, \"Uganda\", online edition; sections: Bunyoro and Buganda; Growth of a peasant economy; The Republic of Uganda.",
    "url": "https://www.britannica.com/place/Uganda"
+  },
+  "brit_vanuatu": {
+   "type": "reference",
+   "citation": "Encyclopaedia Britannica, \"Vanuatu\", online edition; sections: History.",
+   "url": "https://www.britannica.com/place/Vanuatu/History"
   },
   "brit_weihai": {
    "type": "reference",
@@ -416,6 +476,11 @@
    "type": "primary",
    "citation": "Irish Free State Constitution Act 1922 (13 Geo. 5 Sess. 2 c. 1).",
    "url": "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents/enacted"
+  },
+  "leg_au_sow_adoption_1942": {
+   "type": "primary",
+   "citation": "Statute of Westminster Adoption Act 1942 (Commonwealth of Australia), section 2.",
+   "url": "https://www.legislation.qld.gov.au/view/whole/html/inforce/2024-07-24/act-1942-swaac"
   },
   "leg_bna_1981_sch6": {
    "type": "primary",
@@ -467,6 +532,11 @@
    "citation": "Malaysia Act 1963 (c. 35), section 1.",
    "url": "https://www.legislation.gov.uk/ukpga/1963/35/enacted"
   },
+  "leg_nz_sow_adoption_1947": {
+   "type": "primary",
+   "citation": "Statute of Westminster Adoption Act 1947 (New Zealand, 1947 No 38), section 2; date of assent 25 November 1947.",
+   "url": "https://www.legislation.govt.nz/act/public/1947/38/en/latest/"
+  },
   "leg_s_rhodesia_1965": {
    "type": "primary",
    "citation": "Southern Rhodesia Act 1965 (c. 76), section 1.",
@@ -506,6 +576,16 @@
    "type": "reference",
    "citation": "United Nations Dag Hammarskjöld Library, \"UN Trusteeship Council Documentation: Togoland under British administration\" (research guide).",
    "url": "https://research.un.org/en/docs/tc/britishtogoland"
+  },
+  "un_trust_nauru": {
+   "type": "reference",
+   "citation": "United Nations Dag Hammarskjöld Library, \"UN Trusteeship Council Documentation: Nauru\" (research guide).",
+   "url": "https://research.un.org/en/docs/tc/nauru"
+  },
+  "un_trust_western_samoa": {
+   "type": "reference",
+   "citation": "United Nations Dag Hammarskjöld Library, \"UN Trusteeship Council Documentation: Western Samoa\" (research guide).",
+   "url": "https://research.un.org/en/docs/tc/westernsamoa"
   },
   "union_ireland_1800": {
    "type": "primary",
@@ -625,6 +705,44 @@
      "unit": "Antigua (associated state)",
      "notes": "An associated state under the West Indies Act 1967: internally self-governing, with Britain responsible for defence and external affairs. Independent as Antigua and Barbuda on 1 November 1981.",
      "issue": "26"
+    }
+   ]
+  },
+  {
+   "id": "AUS",
+   "name": "Australia",
+   "area_km2": 7723252.8,
+   "label": [
+    133.077,
+    -24.934
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1901,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_australia"
+     ],
+     "end_date": "1901-01",
+     "unit": "Australian colonies (self-governing)",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. Six British colonies with limited self-government since the mid-19th century, federated in 1901."
+    },
+    {
+     "start": 1901,
+     "end": 1942,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_australia",
+      "leg_au_sow_adoption_1942",
+      "icow"
+     ],
+     "start_date": "1901-01",
+     "unit": "Commonwealth of Australia",
+     "notes": "The colonies federated as the Commonwealth of Australia in January 1901. Australia's British status ends when it adopted the Statute of Westminster: the Adoption Act was passed in 1942 with effect from 3 September 1939 (see DATA_ISSUES.md #27).",
+     "issue": "27"
     }
    ]
   },
@@ -1132,6 +1250,31 @@
      "unit": "Sovereign Base Area of Dhekelia",
      "notes": "Kept under British sovereignty by the 1960 treaties that made Cyprus independent. Before 1960 part of British Cyprus. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
      "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "FJI",
+   "name": "Fiji",
+   "area_km2": 18447.7,
+   "label": [
+    177.978,
+    -17.803
+   ],
+   "periods": [
+    {
+     "start": 1874,
+     "end": 1970,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_fiji",
+      "icow"
+     ],
+     "start_date": "1874-10-10",
+     "end_date": "1970-10-10",
+     "unit": "Colony of Fiji",
+     "notes": "Became a British crown colony on 10 October 1874 after an offer of unconditional cession. Independent on 10 October 1970, the 96th anniversary of cession."
     }
    ]
   },
@@ -1655,6 +1798,42 @@
    ]
   },
   {
+   "id": "KIR",
+   "name": "Kiribati",
+   "area_km2": 939.7,
+   "label": [
+    173.104,
+    1.361
+   ],
+   "periods": [
+    {
+     "start": 1892,
+     "end": 1916,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_kiribati"
+     ],
+     "end_date": "1916",
+     "unit": "Gilbert Islands Protectorate",
+     "notes": "The Gilbert Islands became a British protectorate in 1892; Banaba was annexed in 1900."
+    },
+    {
+     "start": 1916,
+     "end": 1979,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_kiribati",
+      "icow"
+     ],
+     "end_date": "1979-07",
+     "unit": "Gilbert and Ellice Islands Colony",
+     "notes": "Part of the Gilbert and Ellice Islands Colony from 1916, later extended to most of the Phoenix and Line Islands. Independent as Kiribati in 1979."
+    }
+   ]
+  },
+  {
    "id": "KNA",
    "name": "Saint Kitts and Nevis",
    "area_km2": 233.5,
@@ -2086,6 +2265,107 @@
    ]
   },
   {
+   "id": "NIU",
+   "name": "Niue",
+   "area_km2": 197.4,
+   "label": [
+    -169.869,
+    -19.058
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1901,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_niue"
+     ],
+     "end_date": "1901",
+     "unit": "Niue",
+     "notes": "Britain established a protectorate over Niue in 1900."
+    },
+    {
+     "start": 1901,
+     "end": 1947,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_niue",
+      "leg_nz_sow_adoption_1947"
+     ],
+     "end_date": "1947-11-25",
+     "unit": "Niue (New Zealand territory)",
+     "notes": "Annexed to New Zealand in 1901 (with its own resident commissioner from 1903). Shown in the dominion colour while New Zealand counts as British (see DATA_ISSUES.md #28). Self-governing in free association with New Zealand since 1974.",
+     "issue": "28"
+    }
+   ]
+  },
+  {
+   "id": "NRU",
+   "name": "Nauru",
+   "area_km2": 27.9,
+   "label": [
+    166.932,
+    -0.52
+   ],
+   "periods": [
+    {
+     "start": 1920,
+     "end": 1968,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "brit_nauru",
+      "un_trust_nauru"
+     ],
+     "end_date": "1968-01-31",
+     "unit": "Nauru (mandate; UN trust territory from 1947)",
+     "notes": "A League of Nations mandated territory from 1920 and a UN trust territory from November 1947, under a trusteeship agreement with Australia, New Zealand and the United Kingdom. Occupied by Japan from August 1942. Independent on 31 January 1968.",
+     "issue": "8"
+    }
+   ]
+  },
+  {
+   "id": "NZL",
+   "name": "New Zealand",
+   "area_km2": 267464.3,
+   "label": [
+    176.61,
+    -38.008
+   ],
+   "periods": [
+    {
+     "start": 1840,
+     "end": 1907,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_new_zealand"
+     ],
+     "end_date": "1907-09",
+     "unit": "Colony of New Zealand",
+     "notes": "Named a British crown colony in 1840. Became the Dominion of New Zealand in 1907."
+    },
+    {
+     "start": 1907,
+     "end": 1947,
+     "status": "dominion",
+     "coverage": "full",
+     "sources": [
+      "brit_new_zealand",
+      "leg_nz_sow_adoption_1947",
+      "icow"
+     ],
+     "start_date": "1907-09",
+     "end_date": "1947-11-25",
+     "unit": "Dominion of New Zealand",
+     "notes": "British status ends when New Zealand adopted the Statute of Westminster (Adoption Act, assent 25 November 1947).",
+     "issue": "10"
+    }
+   ]
+  },
+  {
    "id": "PAK",
    "name": "Pakistan",
    "area_km2": 875728.5,
@@ -2134,6 +2414,56 @@
      "unit": "Pitcairn Islands",
      "notes": "Settled by the Bounty mutineers in 1790 and placed under the British high commissioner for the Western Pacific in 1898; administered from Fiji from 1952, and by the high commissioner in New Zealand from 1970. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
      "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "PNG",
+   "name": "Papua New Guinea",
+   "area_km2": 465327.9,
+   "label": [
+    144.36,
+    -6.637
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1906,
+     "status": "protectorate",
+     "coverage": "partial",
+     "sources": [
+      "brit_png"
+     ],
+     "unit": "British New Guinea",
+     "notes": "Status already in place before 1900; shown from 1900, the start of the map. A British protectorate was declared over the south-eastern quadrant in 1884; the north-east was German New Guinea.",
+     "issue": "28"
+    },
+    {
+     "start": 1906,
+     "end": 1921,
+     "status": "dominion",
+     "coverage": "partial",
+     "sources": [
+      "brit_png",
+      "icow"
+     ],
+     "unit": "Territory of Papua (administered by Australia)",
+     "notes": "From 1906 British New Guinea was administered by Australia as Papua (ICOW gives 1905). Shown in the dominion colour as a territory of a dominion (see DATA_ISSUES.md #28). Australian forces took German New Guinea early in the First World War.",
+     "issue": "28"
+    },
+    {
+     "start": 1921,
+     "end": 1942,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "brit_png",
+      "icow",
+      "leg_au_sow_adoption_1942"
+     ],
+     "unit": "Papua and the Mandated Territory of New Guinea",
+     "notes": "Australian control of north-eastern New Guinea was formalised as a League of Nations mandate in 1921; Papua remained a separate Australian territory. Australia's British status ends when it adopted the Statute of Westminster: the Adoption Act was passed in 1942 with effect from 3 September 1939 (see DATA_ISSUES.md #27). Australia kept control until Papua New Guinea's independence on 16 September 1975.",
+     "issue": "14"
     }
    ]
   },
@@ -2309,6 +2639,30 @@
    ]
   },
   {
+   "id": "SLB",
+   "name": "Solomon Islands",
+   "area_km2": 25797.0,
+   "label": [
+    160.153,
+    -9.613
+   ],
+   "periods": [
+    {
+     "start": 1893,
+     "end": 1978,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_solomons",
+      "icow"
+     ],
+     "end_date": "1978-07-07",
+     "unit": "British Solomon Islands Protectorate",
+     "notes": "Protectorate declared in 1893. Partly occupied by Japan from 1942 during the Second World War. Renamed Solomon Islands in 1975; independent on 7 July 1978."
+    }
+   ]
+  },
+  {
    "id": "SLE",
    "name": "Sierra Leone",
    "area_km2": 72036.8,
@@ -2431,6 +2785,30 @@
    ]
   },
   {
+   "id": "TON",
+   "name": "Tonga",
+   "area_km2": 432.6,
+   "label": [
+    -175.247,
+    -21.165
+   ],
+   "periods": [
+    {
+     "start": 1900,
+     "end": 1970,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_tonga",
+      "icow"
+     ],
+     "end_date": "1970-06",
+     "unit": "Kingdom of Tonga",
+     "notes": "Became a British protectorate in 1900, keeping its own monarchy. Regained full control of domestic and foreign affairs in 1970."
+    }
+   ]
+  },
+  {
    "id": "TTO",
    "name": "Trinidad and Tobago",
    "area_km2": 5113.8,
@@ -2451,6 +2829,42 @@
      "end_date": "1962-08",
      "unit": "Trinidad and Tobago",
      "notes": "Trinidad was governed as a crown colony; Tobago was ceded to Britain for the last time in 1814. Part of the West Indies Federation 1958–1962. Independent in August 1962."
+    }
+   ]
+  },
+  {
+   "id": "TUV",
+   "name": "Tuvalu",
+   "area_km2": 10.3,
+   "label": [
+    179.207,
+    -8.5
+   ],
+   "periods": [
+    {
+     "start": 1892,
+     "end": 1916,
+     "status": "protectorate",
+     "coverage": "full",
+     "sources": [
+      "brit_tuvalu"
+     ],
+     "end_date": "1916",
+     "unit": "Ellice Islands Protectorate",
+     "notes": "The Ellice Islands became a British protectorate in 1892."
+    },
+    {
+     "start": 1916,
+     "end": 1978,
+     "status": "crown_colony",
+     "coverage": "full",
+     "sources": [
+      "brit_tuvalu",
+      "icow"
+     ],
+     "end_date": "1978-10",
+     "unit": "Gilbert and Ellice Islands Colony; a separate colony from 1975–76",
+     "notes": "Part of the Gilbert and Ellice Islands Colony from 1916; separated after a 1974 referendum (October 1975 – January 1976). Independent as Tuvalu in 1978."
     }
    ]
   },
@@ -2591,6 +3005,30 @@
    ]
   },
   {
+   "id": "VUT",
+   "name": "Vanuatu",
+   "area_km2": 11317.1,
+   "label": [
+    168.356,
+    -17.665
+   ],
+   "periods": [
+    {
+     "start": 1906,
+     "end": 1980,
+     "status": "condominium",
+     "coverage": "full",
+     "sources": [
+      "brit_vanuatu",
+      "icow"
+     ],
+     "end_date": "1980-07",
+     "unit": "New Hebrides (Anglo-French condominium)",
+     "notes": "An Anglo-French condominium from 1906, with separate British and French resident commissioners. Independent as Vanuatu in 1980."
+    }
+   ]
+  },
+  {
    "id": "WSB",
    "name": "Akrotiri",
    "area_km2": 98.9,
@@ -2624,6 +3062,32 @@
      "unit": "Sovereign Base Area of Akrotiri",
      "notes": "Kept under British sovereignty by the 1960 treaties that made Cyprus independent. Before 1960 part of British Cyprus. A British Overseas Territory (listed in Schedule 6 of the British Nationality Act 1981); called a crown colony, then a British Dependent Territory, until 2002.",
      "issue": "12"
+    }
+   ]
+  },
+  {
+   "id": "WSM",
+   "name": "Samoa",
+   "area_km2": 2707.8,
+   "label": [
+    -172.452,
+    -13.612
+   ],
+   "periods": [
+    {
+     "start": 1920,
+     "end": 1947,
+     "status": "mandate",
+     "coverage": "full",
+     "sources": [
+      "brit_samoa",
+      "un_trust_western_samoa",
+      "leg_nz_sow_adoption_1947"
+     ],
+     "end_date": "1947-11-25",
+     "unit": "Western Samoa (New Zealand mandate)",
+     "notes": "Occupied by New Zealand in August 1914; the League of Nations granted New Zealand a mandate in 1920. Shown as British only while New Zealand itself counts as British (to 1947). Became a UN trust territory under New Zealand and independent in 1962.",
+     "issue": "14"
     }
    ]
   },
