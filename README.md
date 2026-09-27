@@ -34,6 +34,7 @@ Every period cites a source. Uncertain or contested cases are flagged in the dat
 - **Modern borders.** This version draws today's borders. Where only part of a modern country was British (for example, British Somaliland within Somalia), the country is shown in a lighter shade, with a note in the tooltip. Colonial-era borders are planned for a later version.
 - **One status per country.** Where one modern country contained several British statuses at once (for example, colony and protectorates in Malaya), the main status is shown and the others are listed in the notes.
 - **No informal influence.** See the methodology above.
+- **No Antarctica.** Territorial claims there are frozen under the Antarctic Treaty, so Antarctica is left off the map.
 
 ## Repository structure
 

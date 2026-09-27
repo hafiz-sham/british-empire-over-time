@@ -13,6 +13,16 @@ run the script to download them. Checksums let you confirm you have the same ver
 - **SHA-256:** `5fed433373581fa648920435f937d95f2d3c0200e067409c6478dcdf1b853139`
 - **Accessed:** 2026-09-27
 
+## Natural Earth, Admin 0 – Countries, 1:10m
+
+- **Download:** https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip
+- **Homepage:** https://www.naturalearthdata.com/downloads/10m-cultural-vectors/
+- **Licence:** Public domain (https://www.naturalearthdata.com/about/terms-of-use/)
+- **Citation:** Natural Earth. Free vector and raster map data @ naturalearthdata.com.
+- **Local file:** `data/raw/natural_earth_admin0_10m/ne_10m_admin_0_countries.zip` (4,930,492 bytes)
+- **SHA-256:** `ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6`
+- **Accessed:** 2026-09-27
+
 ## ICOW Colonial History Data Set, version 1.1
 
 - **Download:** http://www.paulhensel.org/Data/colhist.zip
