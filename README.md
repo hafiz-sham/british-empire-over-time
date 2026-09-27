@@ -27,7 +27,10 @@ Every period cites a source. Uncertain or contested cases are flagged in the dat
 | Dataset | Used for | Licence |
 |---|---|---|
 | [Natural Earth](https://www.naturalearthdata.com/), Admin 0 – Countries, 1:50m (v5.1.1) | Base geometry | Public domain |
+| [legislation.gov.uk](https://www.legislation.gov.uk/) | Primary legal texts (Acts of Parliament) cited for individual dates | Open Government Licence v3.0 |
 | [ICOW Colonial History Data Set](http://www.paulhensel.org/icowcol.html), v1.1 (Hensel, 2018) | Colonial ruler and independence dates | No open licence; the authors ask that it is not redistributed. Downloaded by `pipeline/01_fetch.py`, not committed. Only individual cited dates appear in this repository. |
+
+Front-end libraries, vendored in `site/lib/`: [D3.js](https://d3js.org/) v7.9.0 and [topojson-client](https://github.com/topojson/topojson-client) v3.1.0, both under the ISC licence.
 
 ## Known limitations
 
@@ -49,7 +52,24 @@ docs/             data dictionary and methodology notes
 
 ## Running the pipeline locally
 
-_To be written._
+Requires Python 3.13.
+
+```bash
+python -m venv .venv
+.venv/Scripts/activate        # Windows; on macOS/Linux: source .venv/bin/activate
+pip install -r pipeline/requirements.txt
+
+python pipeline/01_fetch.py            # download Natural Earth and ICOW into data/raw
+python pipeline/02_build_geometry.py   # simplified world.topojson + geometry_index.csv
+python pipeline/validate.py            # check the curated tables
+python pipeline/03_crosscheck_icow.py  # compare curated dates with ICOW
+python pipeline/04_export.py           # write territories.json and copy both files to site/data
+python -m pytest pipeline/tests        # validator tests
+```
+
+To view the site, serve the `site` folder, e.g. `python -m http.server 8000 --directory site`, and open http://localhost:8000.
+
+The curated tables in `data/curated/` are documented in [`docs/data-dictionary.md`](docs/data-dictionary.md). Pushing to `main` runs the validator in GitHub Actions and deploys `site/` to GitHub Pages.
 
 ## Licence
 
