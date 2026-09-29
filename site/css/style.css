@@ -299,6 +299,17 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); curso
 .site-footer a { color: inherit; }
 
 @media (max-width: 800px) {
+  /* Small map: year and counter move into a strip under the map; zoom buttons form a compact row. */
+  .map-panel { display: flex; flex-direction: column; }
+  .year-display {
+    order: 2;
+    position: static; display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px;
+    padding: 6px 12px 8px; font-size: 1.6rem; opacity: 1;
+  }
+  .counter { display: inline; font-size: 0.8rem; }
+  .zoom-controls { flex-direction: row; left: 6px; top: 6px; }
+  .zoom-controls button { width: 30px; height: 30px; font-size: 1.05rem; }
+  .zoom-controls button + button { border-top: 0; border-left: 1px solid var(--hover); }
   .detail-panel {
     position: fixed; top: auto; left: 0; right: 0; bottom: 0;
     width: auto; max-height: 70vh;
