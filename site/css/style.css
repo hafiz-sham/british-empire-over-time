@@ -257,6 +257,14 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); curso
 .slider-ticks span { position: absolute; transform: translateX(-50%); font-variant-numeric: tabular-nums; }
 
 .legend-panel { grid-area: legend; }
+.search { margin-bottom: 14px; }
+.search label { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin: 4px 0 6px; }
+.search input {
+  width: 100%; padding: 8px 10px; font: inherit; font-size: 0.9rem;
+  color: var(--text); background: var(--surface);
+  border: 1px solid var(--land); border-radius: 6px;
+}
+.search input:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
 .legend-panel h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin: 4px 0 8px; }
 .legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
 .legend li {

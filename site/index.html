@@ -64,6 +64,11 @@
     </section>
 
     <aside class="legend-panel" aria-label="Legend">
+      <div class="search">
+        <label for="find">Find a territory</label>
+        <input id="find" type="search" list="territory-names" placeholder="e.g. Kenya" autocomplete="off">
+        <datalist id="territory-names"></datalist>
+      </div>
       <h2>Status</h2>
       <ul id="legend" class="legend"></ul>
       <p class="legend-note">Hover over a status to highlight it. Click or tap a country for its full history and sources; use + and − (or pinch) to zoom. A fainter shade means only part of today's country was British. A dot marks a small territory, or a small British holding inside a larger country.</p>

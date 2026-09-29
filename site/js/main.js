@@ -81,6 +81,24 @@ async function init() {
 
   createLegend(document.getElementById("legend"), (code) => map.highlight(code));
 
+  // "Find a territory": pick a name to open its panel and zoom to it.
+  const find = document.getElementById("find");
+  const idByName = new Map(map.territories().map((t) => [t.name.toLowerCase(), t.id]));
+  document.getElementById("territory-names").append(
+    ...[...map.territories()].sort((a, b) => a.name.localeCompare(b.name, "en-GB"))
+      .map((t) => Object.assign(document.createElement("option"), { value: t.name })),
+  );
+  function findTerritory() {
+    const id = idByName.get(find.value.trim().toLowerCase());
+    if (!id) return false;
+    select(id);
+    zoomToSelected();
+    find.value = "";
+    return true;
+  }
+  find.addEventListener("change", findTerritory);
+  find.addEventListener("keydown", (e) => { if (e.key === "Enter" && findTerritory()) e.preventDefault(); });
+
   const slider = createSlider({
     input: document.getElementById("year"),
     button: document.getElementById("play"),
