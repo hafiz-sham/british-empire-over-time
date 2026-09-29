@@ -57,6 +57,35 @@ def test_point_with_marker_is_valid():
     assert messages(run(period(coverage="point", marker="-55.5 49")), "error") == []
 
 
+def event(**kw):
+    row = {"year": "1931", "label": "Statute", "description": "Dominions equal.", "source_ids": "icow"}
+    row.update(kw)
+    return row
+
+
+def run_events(*rows):
+    return validate(TERRITORIES, pd.DataFrame([period()]), SOURCES, GEOMETRY, pd.DataFrame(list(rows)))
+
+
+def test_clean_events_have_no_errors():
+    assert messages(run_events(event(), event(year="1947")), "error") == []
+
+
+@pytest.mark.parametrize("kw, expected", [
+    ({"year": "1858"}, "outside"),
+    ({"source_ids": ""}, "no source cited"),
+    ({"source_ids": "nope"}, "not in sources.csv"),
+    ({"label": ""}, "missing label"),
+])
+def test_event_errors(kw, expected):
+    errors = messages(run_events(event(**kw)), "error")
+    assert any(expected in e for e in errors), errors
+
+
+def test_duplicate_event_year_is_error():
+    assert any("same year" in e for e in messages(run_events(event(), event()), "error"))
+
+
 def test_overlap_is_error():
     errors = messages(run(period(), period(start="1930", end="1982")), "error")
     assert any("overlaps" in e for e in errors)

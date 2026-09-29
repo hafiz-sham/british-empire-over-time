@@ -55,6 +55,17 @@ A year with no period means the territory is shown as not British. Where a gap b
 
 **Formal-status rule:** a period may use a British status only where a legal instrument placed the territory under British rule: a treaty, an Act of Parliament, a royal charter or a League of Nations mandate.
 
+## `events.csv`
+
+Key moments shown as markers on the year slider. Each event must cite a source.
+
+| Column | Required | Description |
+|---|---|---|
+| `year` | yes | Year of the event, within 1900–2026. One event per year. |
+| `label` | yes | Short label shown on the marker, e.g. `Statute of Westminster`. |
+| `description` | yes | One or two sentences shown when the marker is selected. Dates must match `periods.csv`. |
+| `source_ids` | yes | One or more ids from `sources.csv`, separated by `;`. |
+
 ## `sources.csv`
 
 | Column | Required | Description |

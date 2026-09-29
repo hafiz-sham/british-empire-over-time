@@ -1,0 +1,13 @@
+year,label,description,source_ids
+1901,Australia federates,The six Australian colonies federate as the Commonwealth of Australia in January 1901.,brit_australia;icow
+1910,Union of South Africa,"The Cape, Natal, Transvaal and Orange River colonies unite as the Union of South Africa, a dominion, on 31 May 1910.",brit_south_africa;icow
+1914,Egypt and Cyprus,"On the outbreak of war with the Ottoman Empire, Britain proclaims a protectorate over Egypt (December 1914) and annexes Cyprus.",brit_egypt;brit_cyprus
+1920,Mandates allocated,"Former German and Ottoman territories become League of Nations mandates, including Palestine (allocated at San Remo, April 1920), Iraq and Tanganyika.",brit_palestine;brit_iraq;brit_tanzania
+1922,Irish Free State; Egypt,"Britain ends its protectorate over Egypt (28 February 1922), and the Irish Free State is established as a dominion in December 1922.",brit_egypt;irish_free_state_1922;icow
+1931,Statute of Westminster,"The Statute of Westminster (11 December 1931) gives the dominions legislative equality with Britain. On this map, Canada, South Africa and the Irish Free State stop counting as British.",leg_statute_westminster_1931
+1947,India and Pakistan,India and Pakistan become independent dominions on 15 August 1947 under the Indian Independence Act.,leg_indian_independence_1947;icow
+1948,"Burma, Ceylon, Palestine",Burma becomes independent in January 1948 and Ceylon on 4 February; the Palestine mandate ends with British withdrawal in May.,icow;brit_myanmar;brit_sri_lanka;brit_palestine;brit_jordan
+1957,Ghana and Malaya,Ghana (6 March 1957) and the Federation of Malaya (31 August 1957) become independent.,leg_ghana_1957;leg_malaya_1957;icow
+1960,"Nigeria, Cyprus, Somaliland","British Somaliland (26 June), Cyprus (16 August) and Nigeria (1 October) become independent in 1960.",brit_somalia;brit_cyprus;brit_nigeria;icow
+1965,Rhodesia's UDI,"Southern Rhodesia's white minority government declares independence on 11 November 1965. Britain does not recognise it, and legally the territory remains British until 1980.",brit_zimbabwe;leg_s_rhodesia_1965
+1997,Hong Kong handover,Hong Kong returns to Chinese sovereignty on 1 July 1997.,brit_hong_kong

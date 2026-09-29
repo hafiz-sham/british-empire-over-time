@@ -38,6 +38,7 @@ def period_record(p):
 
 def main():
     territories, periods, sources = read("territories.csv"), read("periods.csv"), read("sources.csv")
+    events = read("events.csv")
     geometry = pd.read_csv(PROCESSED / "geometry_index.csv").set_index("id")
 
     out_territories = []
@@ -61,6 +62,11 @@ def main():
             s["source_id"]: {k: s[k] for k in ("type", "citation", "url") if s[k]}
             for _, s in sources.iterrows()
         },
+        "events": [
+            {"year": int(e["year"]), "label": e["label"], "description": e["description"],
+             "sources": [s.strip() for s in e["source_ids"].split(";") if s.strip()]}
+            for _, e in events.sort_values("year", key=lambda y: y.astype(int)).iterrows()
+        ],
         "territories": out_territories,
     }
 

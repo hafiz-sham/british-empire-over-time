@@ -20,4 +20,5 @@ PERIOD_COLUMNS = [
     "status", "unit", "coverage", "marker", "notes", "source_ids", "issue",
 ]
 SOURCE_COLUMNS = ["source_id", "type", "citation", "url", "accessed", "licence"]
+EVENT_COLUMNS = ["year", "label", "description", "source_ids"]
 SOURCE_TYPES = {"dataset", "primary", "reference", "factbook"}

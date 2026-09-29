@@ -13,9 +13,9 @@ from dataclasses import dataclass
 
 import pandas as pd
 
-from config import CURATED, PROCESSED, YEAR_MAX
+from config import CURATED, PROCESSED, YEAR_MAX, YEAR_MIN
 from schema import (
-    COVERAGE, PERIOD_COLUMNS, SOURCE_COLUMNS, SOURCE_TYPES, STATUSES, TERRITORY_COLUMNS,
+    COVERAGE, EVENT_COLUMNS, PERIOD_COLUMNS, SOURCE_COLUMNS, SOURCE_TYPES, STATUSES, TERRITORY_COLUMNS,
 )
 
 YEAR_FLOOR = 1500  # the data model allows pre-1900 periods; anything earlier is a typo
@@ -158,13 +158,37 @@ def check_coverage(territories, periods, geometry):
     return out
 
 
-def validate(territories, periods, sources, geometry):
+def check_events(events, source_ids):
+    out = check_columns(events, EVENT_COLUMNS, "events.csv")
+    if out:
+        return out
+    for i, e in events.iterrows():
+        where = f"event row {i + 2}"
+        year = parse_year(e["year"])
+        if year is None or not YEAR_MIN <= year <= YEAR_MAX:
+            out.append(Finding("error", where, f"year '{e['year']}' outside {YEAR_MIN}–{YEAR_MAX}"))
+        if not e["label"] or not e["description"]:
+            out.append(Finding("error", where, "missing label or description"))
+        cited = [s.strip() for s in e["source_ids"].split(";") if s.strip()]
+        if not cited:
+            out.append(Finding("error", where, "no source cited"))
+        for s in cited:
+            if s not in source_ids:
+                out.append(Finding("error", where, f"source '{s}' not in sources.csv"))
+    for dup in events.loc[events["year"].duplicated(), "year"]:
+        out.append(Finding("error", f"event {dup}", "more than one event in the same year"))
+    return out
+
+
+def validate(territories, periods, sources, geometry, events=None):
     findings = check_sources(sources)
     findings += check_territories(territories, set(geometry["id"]))
     findings += check_period_rows(periods, set(territories["territory_id"]), set(sources["source_id"]))
     if not any(f.level == "error" and f.where == "periods.csv" for f in findings):
         findings += check_sequences(periods)
         findings += check_coverage(territories, periods, geometry)
+    if events is not None:
+        findings += check_events(events, set(sources["source_id"]))
     return findings
 
 
@@ -174,6 +198,7 @@ def main():
         read_csv(CURATED / "periods.csv"),
         read_csv(CURATED / "sources.csv"),
         read_csv(PROCESSED / "geometry_index.csv"),
+        read_csv(CURATED / "events.csv"),
     )
     for f in findings:
         print(f)
