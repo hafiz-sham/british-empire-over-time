@@ -40,6 +40,9 @@ The audience includes recruiters in political risk, intelligence and data scienc
 - **Ireland:** treated as part of the United Kingdom from 1900 to 1922.
 - **Partly British modern countries (Phase 1):** filled with a lighter shade of the status colour, with a tooltip note naming the British part (e.g. British Somaliland within Somalia).
 - **Formal-status rule:** a territory counts as British only where a legal instrument (treaty, Act of Parliament, royal charter, League of Nations mandate) placed it under British rule. Otherwise it is "Independent / not British". Example: Egypt 1900–1914 is not British.
+- **Phase 2 events:** slider event markers use in-range years instead of 1783/1858/1884–85: 1901, 1910, 1914, 1920, 1922, 1931, 1947, 1948, 1957, 1960, 1965, 1997. Events live in `data/curated/events.csv`, each with sources, checked by the validator.
+- **Phase 2 counter:** territory count excludes the UK and Crown Dependencies; land share includes them. Land share is shown as a range: fully British countries only, up to fully plus partly British countries. `point` holdings are excluded from land share. Denominator: all mapped land (excludes Antarctica).
+- **Phase 2 zoom:** the map gets zoom and pan (see the Phase 2 plan).
 - **Informal influence:** dropped from Phase 1. The README explains the formal-status rule and why; may return later as an optional hatched layer.
 
 ## Data model
@@ -70,7 +73,7 @@ Ambiguous transitions are represented as successive periods rather than a single
 
 ## Phases
 1. **MVP:** world map on modern borders; year slider; play/pause; hover tooltip; legend; responsive layout.
-2. **Detail:** click panel with each territory's full timeline and sources; event markers on the slider (1783, 1858, 1884–85, 1919, 1947, the 1960s, 1997); a counter showing the number of territories and the approximate share of world land area.
+2. **Detail:** click panel with each territory's full timeline and sources; event markers on the slider (in-range years; see Phase 2 events above); zoom and pan; a counter showing the number of territories and the approximate share of world land area.
 3. **Accuracy:** historical borders; a methodology page.
 
 ## Repo standards
