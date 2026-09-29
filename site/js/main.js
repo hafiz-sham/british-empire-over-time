@@ -103,6 +103,9 @@ async function init() {
     input: document.getElementById("year"),
     button: document.getElementById("play"),
     ticks: document.getElementById("slider-ticks"),
+    eventsEl: document.getElementById("slider-events"),
+    caption: document.getElementById("event-caption"),
+    events: data.events,
     min: data.year_min,
     max: data.year_max,
     onChange(year) {

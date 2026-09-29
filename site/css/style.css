@@ -117,7 +117,7 @@ body {
   padding: 8px 16px 16px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 240px;
-  grid-template-areas: "map legend" "controls legend";
+  grid-template-areas: "map legend" "controls legend" "caption legend";
   gap: 12px 20px;
 }
 
@@ -251,7 +251,21 @@ body {
 .play.playing .icon-pause { display: inline; }
 .play:focus-visible, .theme-toggle:focus-visible, input[type="range"]:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 
-.slider-wrap { flex: 1; position: relative; padding-bottom: 18px; }
+.slider-wrap { flex: 1; position: relative; padding: 14px 0 18px; }
+.slider-events { position: absolute; left: 0; right: 0; top: 0; height: 12px; }
+.event-mark {
+  position: absolute; top: 0; width: 12px; height: 12px; padding: 0; margin-left: -6px;
+  border: 2px solid var(--bg); border-radius: 50%;
+  background: var(--text-muted); cursor: pointer;
+}
+.event-mark:hover, .event-mark.active { background: var(--text); transform: scale(1.25); }
+.event-mark:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
+.event-caption {
+  grid-area: caption; margin: -4px 0 0; min-height: 2.6em;
+  font-size: 0.9rem; color: var(--text-muted);
+}
+.event-caption strong { color: var(--text); }
+.event-caption[hidden] { display: block; visibility: hidden; }
 input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); cursor: pointer; }
 .slider-ticks { position: absolute; left: 0; right: 0; bottom: 0; height: 16px; font-size: 0.75rem; color: var(--text-muted); }
 .slider-ticks span { position: absolute; transform: translateX(-50%); font-variant-numeric: tabular-nums; }
@@ -285,6 +299,6 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); curso
     border-radius: 14px 14px 0 0;
     animation-name: sheet-in;
   }
-  .layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "map" "controls" "legend"; }
+  .layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "map" "controls" "caption" "legend"; }
   .legend { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 }

@@ -56,12 +56,15 @@
       <button id="play" class="play" type="button" aria-label="Play">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path class="icon-play" d="M7 4.5v15l12-7.5z"/><path class="icon-pause" d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
       </button>
-      <label class="slider-wrap">
-        <span class="visually-hidden">Year</span>
+      <div class="slider-wrap">
+        <div class="slider-events" id="slider-events" role="group" aria-label="Key events"></div>
+        <label for="year" class="visually-hidden">Year</label>
         <input id="year" type="range" min="1900" max="2026" step="1" value="1920">
         <span class="slider-ticks" id="slider-ticks" aria-hidden="true"></span>
-      </label>
+      </div>
     </section>
+
+    <p id="event-caption" class="event-caption" role="status" aria-live="polite" hidden></p>
 
     <aside class="legend-panel" aria-label="Legend">
       <div class="search">
