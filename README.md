@@ -8,6 +8,13 @@ An interactive map of British rule from 1900 to 2026. Move the year slider, or p
 
 New to the project? Start with [How it works](docs/how-it-works.md): the definitions, data sources and pipeline in plain language.
 
+## Features
+
+- **Year slider and play button** from 1900 to 2026, with 12 sourced key events marked and captioned.
+- **Territory panel:** click any country for its full status history, exact dates, notes and the sources behind every period.
+- **Counter:** the number of territories under British rule and their share of world land, shown as an honest range.
+- **Zoom, search and shareable links** (e.g. `#year=1947&t=IND`), light and dark themes, and a layout that works on phones.
+
 ## Motivation
 
 Want to see how the British Empire spread over time, since the 1900s.
@@ -29,8 +36,11 @@ British status ends at independence. For the older dominions this is the Statute
 ### Partial coverage
 Borders are today's. Where a substantial part of a modern country was British, the country is shaded more lightly; where the British part was small (for example, Weihaiwei in China), a dot marks it instead and the country is not shaded.
 
+### The counter
+The territory count covers today's countries wholly or partly under British rule, excluding the UK, the Crown Dependencies and dot-only holdings. Land share includes the UK and is shown as a range: wholly British countries only, up to wholly plus partly British countries at their full modern area. Details in [How it works](docs/how-it-works.md#the-counter).
+
 ### Data at a glance
-92 territories, 123 status periods and 116 cited sources (20 primary legal texts, 95 reference entries and the ICOW dataset). The pipeline cross-checks every independence date against ICOW; there are currently no mismatches.
+92 territories, 123 status periods, 12 key events and 116 cited sources (20 primary legal texts, 95 reference entries and the ICOW dataset). The pipeline cross-checks every independence date against ICOW; there are currently no mismatches.
 
 ### Sources
 Every period cites a source. Uncertain or contested cases are flagged in the data and listed in [`DATA_ISSUES.md`](DATA_ISSUES.md).

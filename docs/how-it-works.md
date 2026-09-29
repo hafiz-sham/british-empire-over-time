@@ -23,7 +23,23 @@ There are eight colours in the legend:
 
 The site has a light and a dark theme. It follows the viewer's device setting, and the button in the top-right corner switches between them. The dark theme uses darker or brighter versions of the same colours, so each status keeps its identity.
 
-As of this writing the data holds **92 territories, 123 status periods and 116 sources**.
+As of this writing the data holds **92 territories, 123 status periods, 12 key events and 116 sources**.
+
+### What you can do on the map
+
+- **Move through time.** Drag the slider, press play, or use the arrow keys. Dots above the slider mark 12 key events (for example, 1931: Statute of Westminster); the current year's event is captioned below the slider, and playback lingers on each one.
+- **See a territory's full history.** Click or tap a country, or use *Find a territory*. A panel shows its status in the chosen year, a 1900–2026 timeline strip, every period with exact dates and notes, the sources behind each period, and a link to any related judgement call in `DATA_ISSUES.md`.
+- **Zoom.** Use the + and − buttons, double-click or double-tap, pinch on a phone, or hold Ctrl (⌘ on Mac) and scroll. Picking a territory zooms to it.
+- **Share a view.** The address updates as you go, e.g. `#year=1947&t=IND` opens 1947 with India's panel showing.
+
+### The counter
+
+Under the year, two figures summarise that year:
+
+- **Territories:** today's countries and territories that were wholly or partly under British rule on 31 December. It leaves out the United Kingdom and the Crown Dependencies, and small holdings shown only as a dot (such as Weihaiwei in China).
+- **Share of world land:** shown as a range, and includes the UK. The lower figure counts only countries that were wholly British; the higher one adds partly British countries at their full modern area. Areas are measured on an equal-area projection, and "world land" excludes Antarctica.
+
+For example, 1920 reads *84 territories · 25.9%–26.8% of world land*, matching the usual "quarter of the world" figure for the Empire at its peak. 1938 drops to about 16%, because this project stops counting Canada, Australia and South Africa as British once they gained legislative independence (section 2.3).
 
 ---
 
@@ -142,6 +158,7 @@ The **curated tables** in `data/curated/` are the single source of truth:
 - `territories.csv` has one row per map territory, with its ICOW code if it has one.
 - `periods.csv` has one row per status period: years, exact dates, status, historical unit, coverage, notes and the ids of its sources.
 - `sources.csv` has one row per source: citation, URL, access date and licence.
+- `events.csv` has one row per slider event: year, label, description and the ids of its sources.
 
 `pipeline/curate.py` is a small helper for adding researched rows without hand-editing CSV quoting.
 
@@ -149,7 +166,7 @@ The **curated tables** in `data/curated/` are the single source of truth:
 
 ## 5. How quality is checked
 
-**The validator** (`pipeline/validate.py`, covered by 17 tests) stops the build if it finds any of these:
+**The validator** (`pipeline/validate.py`, covered by 23 tests) stops the build if it finds any of these:
 
 - an unknown territory, status or coverage value
 - a start year that is not before the end year, or an exact date that falls outside its year
@@ -157,6 +174,7 @@ The **curated tables** in `data/curated/` are the single source of truth:
 - a period with no source, or a source id missing from `sources.csv`
 - a territory with no map shape
 - a `point` period without a valid marker position
+- an event outside 1900–2026, without a source, or sharing a year with another event
 
 It **warns** (without stopping) on gaps between periods, and on British dependencies in the map data that have no curated territory. Both counts are currently zero.
 
