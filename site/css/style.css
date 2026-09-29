@@ -166,6 +166,32 @@ body {
 .marker { cursor: pointer; }
 .marker.selected { stroke: var(--text); stroke-width: 2; }
 
+/* Zoom: strokes keep their on-screen width at any zoom level. */
+.territory, .marker { vector-effect: non-scaling-stroke; }
+.map svg { cursor: grab; }
+.map svg:active { cursor: grabbing; }
+.zoom-controls {
+  position: absolute; left: 8px; top: 8px; z-index: 2;
+  display: flex; flex-direction: column;
+  background: var(--surface); border-radius: var(--radius);
+  box-shadow: 0 2px 8px var(--shadow); overflow: hidden;
+}
+.zoom-controls button {
+  width: 34px; height: 34px; border: 0; background: transparent; color: var(--text);
+  font-size: 1.2rem; line-height: 1; cursor: pointer; display: grid; place-items: center;
+}
+.zoom-controls button + button { border-top: 1px solid var(--hover); }
+.zoom-controls button:hover:not(:disabled) { background: var(--hover); }
+.zoom-controls button:disabled { opacity: 0.35; cursor: default; }
+.zoom-controls button:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
+.zoom-controls svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.zoom-hint {
+  position: absolute; left: 50%; top: 12px; transform: translateX(-50%); z-index: 2;
+  padding: 6px 12px; border-radius: 999px; font-size: 0.85rem;
+  background: var(--text); color: var(--bg); pointer-events: none;
+}
+.zoom-hint[hidden] { display: none; }
+
 /* Territory detail panel: slides over the right of the map; a bottom sheet on phones. */
 .detail-panel {
   position: absolute; top: 8px; right: 8px; bottom: 8px;

@@ -40,7 +40,7 @@ export function createSlider({ input, button, ticks, min, max, onChange }) {
   button.addEventListener("click", () => (timer ? stop() : play()));
   input.addEventListener("input", () => { stop(); set(+input.value); });
   document.addEventListener("keydown", (e) => {
-    if (e.target.closest("input, button, textarea, [contenteditable]")) return;
+    if (e.target.closest?.("input, button, textarea, summary, a, [contenteditable]")) return;
     if (e.key === " ") { e.preventDefault(); timer ? stop() : play(); }
     if (e.key === "ArrowRight") { stop(); set(+input.value + 1); }
     if (e.key === "ArrowLeft") { stop(); set(+input.value - 1); }

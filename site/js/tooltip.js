@@ -4,8 +4,11 @@ import { periodAt } from "./map.js";
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 export function createTooltip(el, panel) {
-  function render(territory, year) {
-    const p = periodAt(territory, year);
+  // onPoint: hovering the dot of a "point" holding. Hovering the country itself during a
+  // point period shows it as not British, since only the small holding was.
+  function render(territory, year, onPoint) {
+    const found = periodAt(territory, year);
+    const p = found && found.coverage === "point" && !onPoint ? null : found;
     const status = p ? BY_CODE[p.status] : NOT_BRITISH;
     const years = p ? `${p.start}–${p.end === null ? "present" : p.end}` : "";
     return `
@@ -17,8 +20,8 @@ export function createTooltip(el, panel) {
   }
 
   return {
-    show(event, territory, year) {
-      el.innerHTML = render(territory, year);
+    show(event, territory, year, onPoint = false) {
+      el.innerHTML = render(territory, year, onPoint);
       el.hidden = false;
       const box = panel.getBoundingClientRect();
       const tip = el.getBoundingClientRect();

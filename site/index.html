@@ -41,6 +41,14 @@
       <div class="year-display" aria-hidden="true"><span id="year-label">1920</span></div>
       <div id="map" class="map"></div>
       <div id="tooltip" class="tooltip" role="status" hidden></div>
+      <div class="zoom-controls" role="group" aria-label="Zoom">
+        <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+        <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+        <button type="button" id="zoom-reset" aria-label="Reset zoom" disabled>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+        </button>
+      </div>
+      <div id="zoom-hint" class="zoom-hint" hidden>Hold Ctrl (⌘ on Mac) and scroll to zoom</div>
       <aside id="detail-panel" class="detail-panel" role="dialog" aria-labelledby="panel-title" hidden></aside>
     </section>
 
@@ -58,7 +66,7 @@
     <aside class="legend-panel" aria-label="Legend">
       <h2>Status</h2>
       <ul id="legend" class="legend"></ul>
-      <p class="legend-note">Hover over a status to highlight it. Click or tap a country for its full history and sources. A fainter shade means only part of today's country was British. A dot marks a small territory, or a small British holding inside a larger country.</p>
+      <p class="legend-note">Hover over a status to highlight it. Click or tap a country for its full history and sources; use + and − (or pinch) to zoom. A fainter shade means only part of today's country was British. A dot marks a small territory, or a small British holding inside a larger country.</p>
     </aside>
   </main>
 

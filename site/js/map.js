@@ -3,6 +3,8 @@ import { NOT_BRITISH, PARTIAL_OPACITY, colour } from "./statuses.js";
 const WIDTH = 960;
 const HEIGHT = 440;
 const MARKER_MAX_KM2 = 15000; // territories smaller than this also get a point marker
+const MARKER_R = 3.5;
+const MAX_ZOOM = 12;
 
 // Status in `year` under the 31 December convention: start <= year < end.
 export function periodAt(territory, year) {
@@ -48,11 +50,11 @@ export function createMap(container, world, data, handlers) {
     .data(markerData)
     .join("circle")
     .attr("class", "marker")
-    .attr("r", 3.5)
+    .attr("r", MARKER_R)
     .attr("transform", (d) => `translate(${projection(d.at)})`);
 
   // Touch has no hover: a tap opens the panel directly instead of showing a tooltip first.
-  const hover = (event, t) => { if (event.pointerType !== "touch") handlers.hover(event, t); };
+  const hover = (event, t, onPoint = false) => { if (event.pointerType !== "touch") handlers.hover(event, t, onPoint); };
 
   land
     .on("pointerenter pointermove", (event, f) => hover(event, byId.get(f.properties.id)))
@@ -61,9 +63,59 @@ export function createMap(container, world, data, handlers) {
     .on("pointerleave.hl", function () { d3.select(this).classed("hovered", false); })
     .on("click", (event, f) => handlers.select(f.properties.id));
   markers
-    .on("pointerenter pointermove", (event, d) => hover(event, d.t))
+    .on("pointerenter pointermove", (event, d) => hover(event, d.t, !!d.point))
     .on("pointerleave", () => handlers.leave())
     .on("click", (event, d) => handlers.select(d.t.id));
+
+  // Zoom and pan. Mouse-wheel zoom needs Ctrl/Cmd so the page still scrolls; on touch,
+  // one finger scrolls the page until the map is zoomed in, and two fingers pinch.
+  let k = 1;
+  const zoom = d3.zoom()
+    .scaleExtent([1, MAX_ZOOM])
+    .translateExtent([[0, 0], [WIDTH, HEIGHT]])
+    .filter((event) => {
+      if (event.type === "wheel") {
+        if (!(event.ctrlKey || event.metaKey)) { handlers.wheelHint?.(); return false; }
+        return true;
+      }
+      if (event.type.startsWith("touch")) return event.touches.length > 1 || k > 1;
+      return !event.button;
+    })
+    .on("zoom", (event) => {
+      k = event.transform.k;
+      layer.attr("transform", event.transform);
+      markers.attr("r", MARKER_R / Math.sqrt(k));
+      svg.style("touch-action", k > 1 ? "none" : "pan-y");
+      handlers.zoomed?.(k);
+    });
+  svg.call(zoom).style("touch-action", "pan-y");
+
+  function zoomTo(transform, ms = 600) {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    svg.transition().duration(reduce ? 0 : ms).call(zoom.transform, transform);
+  }
+
+  function zoomBy(factor) {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    svg.transition().duration(reduce ? 0 : 250).call(zoom.scaleBy, factor);
+  }
+
+  // Fit a territory's shape (or its marker, for small places) in view.
+  // insetRight: fraction of the map width hidden by an overlay (the side panel), so the
+  // territory is centred in the part of the map that is still visible.
+  function zoomToTerritory(id, insetRight = 0) {
+    const f = features.find((x) => x.properties.id === id);
+    const t = byId.get(id);
+    let [[x0, y0], [x1, y1]] = f ? path.bounds(f) : [[0, 0], [0, 0]];
+    const small = !f || (x1 - x0) * (y1 - y0) < 25 || (t.area_km2 ?? 0) < MARKER_MAX_KM2 || x1 - x0 > WIDTH * 0.9;
+    if (small && t?.label) {
+      const [x, y] = projection(t.label);
+      [x0, y0, x1, y1] = [x - 20, y - 12, x + 20, y + 12];
+    }
+    const visibleW = WIDTH * (1 - insetRight);
+    const scale = Math.min(MAX_ZOOM * 0.75, 0.8 / Math.max((x1 - x0) / visibleW, (y1 - y0) / HEIGHT));
+    zoomTo(d3.zoomIdentity.translate(visibleW / 2, HEIGHT / 2).scale(Math.max(1, scale)).translate(-(x0 + x1) / 2, -(y0 + y1) / 2));
+  }
 
   function paint(el, p) {
     el.style("fill", colour(p ? p.status : NOT_BRITISH.code))
@@ -86,6 +138,10 @@ export function createMap(container, world, data, handlers) {
       const root = d3.select(container).classed("dimmed", !!code);
       root.selectAll(".territory, .marker").classed("highlight", function () { return code && this.dataset.status === code; });
     },
+    zoomIn: () => zoomBy(1.6),
+    zoomOut: () => zoomBy(1 / 1.6),
+    zoomReset: () => zoomTo(d3.zoomIdentity),
+    zoomToTerritory,
     setSelected(id) {
       land.classed("selected", (f) => f.properties.id === id);
       markers.classed("selected", (d) => d.t.id === id);

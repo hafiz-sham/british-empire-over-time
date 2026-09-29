@@ -61,15 +61,23 @@ export function createPanel(el, { data, onClose }) {
       </li>`;
   }
 
-  function render(t, year) {
+  // Headline for the selected year. A "point" period is a small holding, not the whole country.
+  function nowLine(t, year) {
     const p = periodAt(t, year);
+    if (p && p.coverage === "point") {
+      return `<span class="swatch" style="background:${colour(NOT_BRITISH.code)}"></span>In ${year}: ${esc(NOT_BRITISH.label)}; British holding: ${esc(p.unit || "")} (${esc(BY_CODE[p.status].label)})`;
+    }
     const status = p ? BY_CODE[p.status] : NOT_BRITISH;
+    return `<span class="swatch" style="background:${colour(status.code)}"></span>In ${year}: ${esc(status.label)}`;
+  }
+
+  function render(t, year) {
     const periods = t.periods.filter((q) => q.status !== NOT_BRITISH.code);
     el.innerHTML = `
       <div class="panel-head">
         <div>
           <h2 id="panel-title">${esc(t.name)}</h2>
-          <p class="panel-now"><span class="swatch" style="background:${colour(status.code)}"></span>In ${year}: ${esc(status.label)}</p>
+          <p class="panel-now">${nowLine(t, year)}</p>
         </div>
         <button class="panel-close" type="button" aria-label="Close details">×</button>
       </div>
@@ -93,9 +101,7 @@ export function createPanel(el, { data, onClose }) {
     },
     update(year) {
       if (!current || el.hidden) return;
-      const p = periodAt(current, year);
-      const status = p ? BY_CODE[p.status] : NOT_BRITISH;
-      el.querySelector(".panel-now").innerHTML = `<span class="swatch" style="background:${colour(status.code)}"></span>In ${year}: ${esc(status.label)}`;
+      el.querySelector(".panel-now").innerHTML = nowLine(current, year);
       const now = el.querySelector(".now");
       if (now) now.style.left = `${pct(year) + 100 / (max + 1 - min) / 2}%`;
     },

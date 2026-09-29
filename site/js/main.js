@@ -29,6 +29,23 @@ async function init() {
   let lastEvent = null;
   let selectedId = null;
 
+  const hint = document.getElementById("zoom-hint");
+  let hintTimer = null;
+  function showWheelHint() {
+    hint.hidden = false;
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(() => { hint.hidden = true; }, 1500);
+  }
+
+  // Zoom to the selected territory, allowing for the side panel on wide screens.
+  function zoomToSelected() {
+    const panelEl = document.getElementById("detail-panel");
+    const svgBox = document.querySelector("#map svg").getBoundingClientRect();
+    const side = !panelEl.hidden && getComputedStyle(panelEl).position === "absolute";
+    const inset = side ? Math.min(0.6, (panelEl.getBoundingClientRect().width + 16) / svgBox.width) : 0;
+    map.zoomToTerritory(selectedId, inset);
+  }
+
   function writeHash() {
     const params = new URLSearchParams({ year: slider.value });
     if (selectedId) params.set("t", selectedId);
@@ -49,10 +66,16 @@ async function init() {
   }
 
   const map = createMap(document.getElementById("map"), world, data, {
-    hover(event, territory) { hovered = territory; lastEvent = event; tooltip.show(event, territory, slider.value); },
+    hover(event, territory, onPoint) { hovered = { territory, onPoint }; lastEvent = event; tooltip.show(event, territory, slider.value, onPoint); },
     leave() { hovered = null; tooltip.hide(); },
     select,
+    wheelHint: showWheelHint,
+    zoomed(k) { document.getElementById("zoom-reset").disabled = k <= 1.001; },
   });
+
+  document.getElementById("zoom-in").addEventListener("click", () => map.zoomIn());
+  document.getElementById("zoom-out").addEventListener("click", () => map.zoomOut());
+  document.getElementById("zoom-reset").addEventListener("click", () => map.zoomReset());
 
   const panel = createPanel(document.getElementById("detail-panel"), { data, onClose: () => select(null) });
 
@@ -68,7 +91,7 @@ async function init() {
       yearLabel.textContent = year;
       map.update(year);
       panel.update(year);
-      if (hovered) tooltip.show(lastEvent, hovered, year);
+      if (hovered) tooltip.show(lastEvent, hovered.territory, year, hovered.onPoint);
       writeHash();
     },
   });
@@ -81,8 +104,9 @@ async function init() {
     if (id !== selectedId) select(id);
   }
 
-  slider.set(readHash().year ?? DEFAULT_YEAR);
-  if (readHash().id) select(readHash().id);
+  const initial = readHash(); // read once: setting the year rewrites the hash
+  slider.set(initial.year ?? DEFAULT_YEAR);
+  if (initial.id) { select(initial.id); if (selectedId) zoomToSelected(); }
   window.addEventListener("hashchange", applyHash);
 }
 
