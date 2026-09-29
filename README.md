@@ -10,7 +10,7 @@ New to the project? Start with [How it works](docs/how-it-works.md): the definit
 
 ## Motivation
 
-_To be written._
+Want to see how the British Empire spread over time, since the 1900s.
 
 ## Methodology
 
