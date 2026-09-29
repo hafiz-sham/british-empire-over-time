@@ -85,7 +85,7 @@ python pipeline/04_export.py           # write territories.json and copy both fi
 python -m pytest pipeline/tests        # validator tests
 ```
 
-To view the site, serve the `site` folder, e.g. `python -m http.server 8000 --directory site`, and open http://localhost:8000.
+To view the site, run `python pipeline/serve.py` (a local server with caching turned off) and open http://localhost:8000.
 
 The curated tables in `data/curated/` are documented in [`docs/data-dictionary.md`](docs/data-dictionary.md). Pushing to `main` runs the validator in GitHub Actions and deploys `site/` to GitHub Pages.
 

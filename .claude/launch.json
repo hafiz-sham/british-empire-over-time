@@ -4,8 +4,8 @@
     {
       "name": "site",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "site"],
-      "port": 8000
+      "runtimeArgs": ["pipeline/serve.py", "8010"],
+      "port": 8010
     }
   ]
 }
