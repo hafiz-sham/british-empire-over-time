@@ -21,6 +21,8 @@ There are eight colours in the legend:
 | Violet | Chartered-company rule | Governed by a company under royal charter | Southern Rhodesia to 1923 |
 | Grey | Independent / not British | Everything else | Egypt 1900–14; Canada after 1931 |
 
+The site has a light and a dark theme. It follows the viewer's device setting, and the button in the top-right corner switches between them. The dark theme uses darker or brighter versions of the same colours, so each status keeps its identity.
+
 As of this writing the data holds **92 territories, 123 status periods and 116 sources**.
 
 ---
@@ -67,7 +69,7 @@ The map uses **today's borders**, but British rule often covered only part of a 
 | Coverage | Meaning | How it is drawn | Example |
 |---|---|---|---|
 | `full` | All of the modern country | Solid colour | Kenya |
-| `partial` | A substantial part | Lighter shade of the colour | South Africa 1900–02 (Cape and Natal only) |
+| `partial` | A substantial part | Fainter shade of the colour | South Africa 1900–02 (Cape and Natal only) |
 | `point` | A small holding inside a large country | Country left grey; a dot marks the holding | Weihaiwei in China, 1898–1930 |
 
 Very small territories (under 15,000 km², such as Gibraltar or the Falklands) also get a dot so they stay visible.

@@ -1,4 +1,4 @@
-import { BY_CODE, NOT_BRITISH, PARTIAL_OPACITY } from "./statuses.js";
+import { NOT_BRITISH, PARTIAL_OPACITY, colour } from "./statuses.js";
 
 const WIDTH = 960;
 const HEIGHT = 440;
@@ -56,7 +56,7 @@ export function createMap(container, world, data, handlers) {
     .on("pointerleave", () => handlers.leave());
 
   function paint(el, p) {
-    el.attr("fill", p ? BY_CODE[p.status].colour : NOT_BRITISH.colour)
+    el.style("fill", colour(p ? p.status : NOT_BRITISH.code))
       .attr("fill-opacity", p && p.coverage === "partial" ? PARTIAL_OPACITY : 1)
       .attr("data-status", p ? p.status : NOT_BRITISH.code);
   }

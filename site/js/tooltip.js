@@ -1,4 +1,4 @@
-import { BY_CODE, NOT_BRITISH } from "./statuses.js";
+import { BY_CODE, NOT_BRITISH, colour } from "./statuses.js";
 import { periodAt } from "./map.js";
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -10,7 +10,7 @@ export function createTooltip(el, panel) {
     const years = p ? `${p.start}–${p.end === null ? "present" : p.end}` : "";
     return `
       <h3>${esc(territory.name ?? territory.id)}</h3>
-      <div class="status"><span class="swatch" style="background:${status.colour}"></span>${esc(status.label)}</div>
+      <div class="status"><span class="swatch" style="background:${colour(status.code)}"></span>${esc(status.label)}</div>
       ${years ? `<div class="years">${years}</div>` : ""}
       ${p?.unit && p.unit !== territory.name ? `<div class="unit">${esc(p.unit)}${{ partial: " (part of today's territory)", point: " (a small part of today's territory, marked with a dot)" }[p.coverage] ?? ""}</div>` : ""}
       ${p?.notes ? `<p class="notes">${esc(p.notes)}</p>` : ""}`;

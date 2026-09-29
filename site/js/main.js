@@ -2,6 +2,7 @@ import { createMap } from "./map.js";
 import { createTooltip } from "./tooltip.js";
 import { createLegend } from "./legend.js";
 import { createSlider } from "./slider.js";
+import { initThemeToggle } from "./theme.js";
 
 const DEFAULT_YEAR = 1920;
 
@@ -9,6 +10,8 @@ function yearFromHash() {
   const m = location.hash.match(/year=(\d{4})/);
   return m ? +m[1] : null;
 }
+
+initThemeToggle(document.getElementById("theme-toggle"));
 
 async function init() {
   const [world, data] = await Promise.all([

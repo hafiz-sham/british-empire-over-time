@@ -1,14 +1,80 @@
 :root {
+  color-scheme: light;
   --bg: #fbfaf7;
   --surface: #ffffff;
   --ocean: #eef3f6;
+  --land: #d9d6cf;
   --land-border: #ffffff;
-  --modern-border: #8d8a83;
+  --marker-ring: #ffffff;
   --text: #1d1c1a;
   --text-muted: #5f5d58;
   --accent: #1d1c1a;
+  --accent-ink: #ffffff;
+  --hover: #efede8;
+  --focus: #2a78d6;
+  --shadow: rgba(0, 0, 0, 0.14);
+  /* Status colours (legend order in site/js/statuses.js). Light set: all-pairs normal-vision ΔE >= 16. */
+  --status-uk: #2a78d6;
+  --status-crown_colony: #e87ba4;
+  --status-protectorate: #eda100;
+  --status-dominion: #9b2f6a;
+  --status-mandate: #1baf7a;
+  --status-condominium: #b0701a;
+  --status-chartered_company: #4a3aa7;
+  --status-not_british: var(--land);
   --radius: 8px;
   --font: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Dark theme: the same hues re-stepped for the dark ocean (all-pairs normal-vision ΔE >= 15.5),
+   keeping each status's relative lightness so colours keep their identity across themes. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121416;
+    --surface: #23282c;
+    --ocean: #1c2227;
+    --land: #3b4044;
+    --land-border: #1c2227;
+    --marker-ring: #121416;
+    --text: #eceae4;
+    --text-muted: #a9adb0;
+    --accent: #eceae4;
+    --accent-ink: #121416;
+    --hover: #2a3035;
+    --focus: #6aa8f0;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --status-uk: #1961b5;
+    --status-crown_colony: #d0638e;
+    --status-protectorate: #bc800c;
+    --status-dominion: #a2276d;
+    --status-mandate: #0d885e;
+    --status-condominium: #885408;
+    --status-chartered_company: #8780ef;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121416;
+  --surface: #23282c;
+  --ocean: #1c2227;
+  --land: #3b4044;
+  --land-border: #1c2227;
+  --marker-ring: #121416;
+  --text: #eceae4;
+  --text-muted: #a9adb0;
+  --accent: #eceae4;
+  --accent-ink: #121416;
+  --hover: #2a3035;
+  --focus: #6aa8f0;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --status-uk: #1961b5;
+  --status-crown_colony: #d0638e;
+  --status-protectorate: #bc800c;
+  --status-dominion: #a2276d;
+  --status-mandate: #0d885e;
+  --status-condominium: #885408;
+  --status-chartered_company: #8780ef;
 }
 
 * { box-sizing: border-box; }
@@ -26,7 +92,22 @@ body {
   clip: rect(0 0 0 0); white-space: nowrap;
 }
 
-.site-header { padding: 20px 16px 8px; max-width: 1280px; margin: 0 auto; }
+.site-header { padding: 20px 16px 8px; max-width: 1280px; margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.theme-toggle {
+  flex: none; width: 40px; height: 40px; margin-top: 2px;
+  display: grid; place-items: center;
+  border: 1px solid var(--hover); border-radius: 50%;
+  background: var(--surface); color: var(--text); cursor: pointer;
+}
+.theme-toggle:hover { background: var(--hover); }
+.theme-toggle svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: inline; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: inline; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}
 .site-header h1 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); letter-spacing: -0.01em; }
 .subtitle { margin: 4px 0 0; color: var(--text-muted); }
 
@@ -62,7 +143,7 @@ body {
 .territory { stroke: var(--land-border); stroke-width: 0.4; transition: opacity 120ms; }
 .territory.hovered { stroke: var(--text); stroke-width: 1.2; }
 .map.dimmed .territory:not(.highlight), .map.dimmed .marker:not(.highlight) { opacity: 0.18; }
-.marker { stroke: #fff; stroke-width: 1; }
+.marker { stroke: var(--marker-ring); stroke-width: 1; }
 
 .tooltip {
   position: absolute;
@@ -70,7 +151,7 @@ body {
   padding: 10px 12px;
   background: var(--surface);
   border-radius: var(--radius);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 16px var(--shadow);
   font-size: 0.875rem;
   pointer-events: none;
   z-index: 2;
@@ -85,13 +166,13 @@ body {
   flex: none; width: 44px; height: 44px;
   display: grid; place-items: center;
   border: 0; border-radius: 50%;
-  background: var(--accent); color: #fff; cursor: pointer;
+  background: var(--accent); color: var(--accent-ink); cursor: pointer;
 }
 .play svg { fill: currentColor; }
 .play .icon-pause { display: none; }
 .play.playing .icon-play { display: none; }
 .play.playing .icon-pause { display: inline; }
-.play:focus-visible, input[type="range"]:focus-visible { outline: 3px solid #2a78d6; outline-offset: 2px; }
+.play:focus-visible, .theme-toggle:focus-visible, input[type="range"]:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 
 .slider-wrap { flex: 1; position: relative; padding-bottom: 18px; }
 input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); cursor: pointer; }
@@ -105,7 +186,7 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); curso
   display: flex; align-items: center; gap: 8px;
   padding: 5px 6px; border-radius: 6px; cursor: default; font-size: 0.9rem;
 }
-.legend li:hover, .legend li:focus-visible { background: #efede8; outline: none; }
+.legend li:hover, .legend li:focus-visible { background: var(--hover); outline: none; }
 .swatch { flex: none; width: 14px; height: 14px; border-radius: 3px; }
 .legend-note { font-size: 0.8rem; color: var(--text-muted); margin: 10px 0 0; }
 
