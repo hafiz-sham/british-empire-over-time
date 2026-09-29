@@ -161,6 +161,57 @@ body {
 .tooltip .years, .tooltip .unit { color: var(--text-muted); }
 .tooltip .notes { margin: 6px 0 0; color: var(--text-muted); }
 
+.territory { cursor: pointer; }
+.territory.selected { stroke: var(--text); stroke-width: 1.4; }
+.marker { cursor: pointer; }
+.marker.selected { stroke: var(--text); stroke-width: 2; }
+
+/* Territory detail panel: slides over the right of the map; a bottom sheet on phones. */
+.detail-panel {
+  position: absolute; top: 8px; right: 8px; bottom: 8px;
+  width: min(360px, calc(100% - 16px));
+  display: flex; flex-direction: column;
+  background: var(--surface); color: var(--text);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 24px var(--shadow);
+  z-index: 3;
+  animation: panel-in 160ms ease-out;
+}
+.detail-panel[hidden] { display: none; }
+@keyframes panel-in { from { transform: translateX(12px); opacity: 0; } }
+@keyframes sheet-in { from { transform: translateY(24px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .detail-panel { animation: none; } }
+.panel-head { display: flex; justify-content: space-between; gap: 8px; padding: 14px 14px 8px; border-bottom: 1px solid var(--hover); }
+.panel-head h2 { margin: 0; font-size: 1.15rem; }
+.panel-now { margin: 4px 0 0; display: flex; align-items: center; gap: 6px; font-size: 0.9rem; color: var(--text-muted); }
+.panel-close {
+  flex: none; width: 32px; height: 32px; border: 0; border-radius: 50%;
+  background: transparent; color: var(--text); font-size: 1.4rem; line-height: 1; cursor: pointer;
+}
+.panel-close:hover { background: var(--hover); }
+.panel-close:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
+.panel-body { padding: 12px 14px 16px; overflow-y: auto; }
+.panel-empty { color: var(--text-muted); margin: 0; }
+
+.timeline { margin: 4px 0 16px; }
+.timeline .track { position: relative; height: 14px; border-radius: 3px; background: var(--land); overflow: hidden; }
+.timeline .seg { position: absolute; top: 0; bottom: 0; }
+.timeline .now { position: absolute; top: -2px; bottom: -2px; width: 2px; margin-left: -1px; background: var(--text); }
+.timeline .axis { position: relative; height: 16px; font-size: 0.72rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.timeline .axis span { position: absolute; top: 2px; }
+.timeline .axis span:nth-child(2), .timeline .axis span:nth-child(3) { transform: translateX(-50%); }
+
+.periods { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.period-head { display: flex; align-items: center; gap: 6px; }
+.period-years { margin-left: auto; color: var(--text-muted); font-variant-numeric: tabular-nums; font-size: 0.85rem; }
+.period-unit, .period-dates { font-size: 0.85rem; color: var(--text-muted); margin-top: 2px; }
+.period-notes { font-size: 0.875rem; margin: 6px 0 0; }
+.period-issue { font-size: 0.8rem; margin: 6px 0 0; color: var(--text-muted); }
+.period-sources { margin-top: 6px; font-size: 0.8rem; color: var(--text-muted); }
+.period-sources summary { cursor: pointer; }
+.period-sources ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+.detail-panel a { color: inherit; }
+
 .controls { grid-area: controls; display: flex; align-items: center; gap: 12px; }
 .play {
   flex: none; width: 44px; height: 44px;
@@ -194,6 +245,12 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); curso
 .site-footer a { color: inherit; }
 
 @media (max-width: 800px) {
+  .detail-panel {
+    position: fixed; top: auto; left: 0; right: 0; bottom: 0;
+    width: auto; max-height: 70vh;
+    border-radius: 14px 14px 0 0;
+    animation-name: sheet-in;
+  }
   .layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "map" "controls" "legend"; }
   .legend { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 }

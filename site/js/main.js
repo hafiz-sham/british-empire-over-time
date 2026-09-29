@@ -2,13 +2,16 @@ import { createMap } from "./map.js";
 import { createTooltip } from "./tooltip.js";
 import { createLegend } from "./legend.js";
 import { createSlider } from "./slider.js";
+import { createPanel } from "./panel.js";
 import { initThemeToggle } from "./theme.js";
 
 const DEFAULT_YEAR = 1920;
 
-function yearFromHash() {
-  const m = location.hash.match(/year=(\d{4})/);
-  return m ? +m[1] : null;
+// URL hash holds shareable state, e.g. #year=1947&t=IND
+function readHash() {
+  const params = new URLSearchParams(location.hash.slice(1));
+  const year = /^\d{4}$/.test(params.get("year") ?? "") ? +params.get("year") : null;
+  return { year, id: params.get("t") };
 }
 
 initThemeToggle(document.getElementById("theme-toggle"));
@@ -19,16 +22,39 @@ async function init() {
     d3.json("data/territories.json"),
   ]);
 
-  const panel = document.querySelector(".map-panel");
+  const mapPanel = document.querySelector(".map-panel");
   const yearLabel = document.getElementById("year-label");
-  const tooltip = createTooltip(document.getElementById("tooltip"), panel);
+  const tooltip = createTooltip(document.getElementById("tooltip"), mapPanel);
   let hovered = null;
   let lastEvent = null;
+  let selectedId = null;
+
+  function writeHash() {
+    const params = new URLSearchParams({ year: slider.value });
+    if (selectedId) params.set("t", selectedId);
+    history.replaceState(null, "", `#${params}`);
+  }
+
+  function select(id) {
+    const t = id && map.territory(id);
+    selectedId = t ? id : null;
+    map.setSelected(selectedId);
+    if (t) {
+      tooltip.hide();
+      panel.open(t, slider.value);
+    } else {
+      panel.close();
+    }
+    writeHash();
+  }
 
   const map = createMap(document.getElementById("map"), world, data, {
     hover(event, territory) { hovered = territory; lastEvent = event; tooltip.show(event, territory, slider.value); },
     leave() { hovered = null; tooltip.hide(); },
+    select,
   });
+
+  const panel = createPanel(document.getElementById("detail-panel"), { data, onClose: () => select(null) });
 
   createLegend(document.getElementById("legend"), (code) => map.highlight(code));
 
@@ -41,13 +67,23 @@ async function init() {
     onChange(year) {
       yearLabel.textContent = year;
       map.update(year);
+      panel.update(year);
       if (hovered) tooltip.show(lastEvent, hovered, year);
-      history.replaceState(null, "", `#year=${year}`);
+      writeHash();
     },
   });
 
-  slider.set(yearFromHash() ?? DEFAULT_YEAR);
-  window.addEventListener("hashchange", () => { const y = yearFromHash(); if (y) slider.set(y); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && selectedId) select(null); });
+
+  function applyHash() {
+    const { year, id } = readHash();
+    slider.set(year ?? slider.value ?? DEFAULT_YEAR);
+    if (id !== selectedId) select(id);
+  }
+
+  slider.set(readHash().year ?? DEFAULT_YEAR);
+  if (readHash().id) select(readHash().id);
+  window.addEventListener("hashchange", applyHash);
 }
 
 init().catch((err) => {
