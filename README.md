@@ -2,7 +2,11 @@
 
 An interactive map of British rule from 1900 to 2026. Move the year slider, or press play, and the world map recolours to show which territories were under British rule in that year, and in what form: crown colony, protectorate, dominion, League of Nations mandate, condominium or chartered-company rule.
 
-> **Status:** in development (Phase 1). The live demo link and a GIF of the slider will be added here.
+**Live demo:** [hafiz-sham.github.io/british-empire-over-time](https://hafiz-sham.github.io/british-empire-over-time/)
+
+> A GIF of the slider will be added here.
+
+New to the project? Start with [How it works](docs/how-it-works.md): the definitions, data sources and pipeline in plain language.
 
 ## Motivation
 
