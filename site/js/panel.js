@@ -92,12 +92,12 @@ export function createPanel(el, { data, onClose }) {
 
   return {
     get territory() { return current; },
-    open(t, year) {
+    open(t, year, { focus = true } = {}) {
       const wasOpen = !el.hidden;
       current = t;
       render(t, year);
       el.hidden = false;
-      if (!wasOpen) el.querySelector(".panel-close").focus({ preventScroll: true });
+      if (!wasOpen && focus) el.querySelector(".panel-close").focus({ preventScroll: true });
     },
     update(year) {
       if (!current || el.hidden) return;

@@ -55,6 +55,7 @@ def main():
         })
 
     data = {
+        "world_area_km2": round(float(geometry["area_km2"].sum())),  # all mapped land (no Antarctica)
         "year_min": YEAR_MIN,
         "year_max": YEAR_MAX,
         "statuses": STATUSES,

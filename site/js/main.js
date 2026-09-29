@@ -3,6 +3,7 @@ import { createTooltip } from "./tooltip.js";
 import { createLegend } from "./legend.js";
 import { createSlider } from "./slider.js";
 import { createPanel } from "./panel.js";
+import { createCounter } from "./counter.js";
 import { initThemeToggle } from "./theme.js";
 
 const DEFAULT_YEAR = 1920;
@@ -52,13 +53,13 @@ async function init() {
     history.replaceState(null, "", `#${params}`);
   }
 
-  function select(id) {
+  function select(id, { focus = true } = {}) {
     const t = id && map.territory(id);
     selectedId = t ? id : null;
     map.setSelected(selectedId);
     if (t) {
       tooltip.hide();
-      panel.open(t, slider.value);
+      panel.open(t, slider.value, { focus });
     } else {
       panel.close();
     }
@@ -80,6 +81,7 @@ async function init() {
   const panel = createPanel(document.getElementById("detail-panel"), { data, onClose: () => select(null) });
 
   createLegend(document.getElementById("legend"), (code) => map.highlight(code));
+  const counter = createCounter(document.getElementById("counter"), data);
 
   // "Find a territory": pick a name to open its panel and zoom to it.
   const find = document.getElementById("find");
@@ -112,6 +114,7 @@ async function init() {
       yearLabel.textContent = year;
       map.update(year);
       panel.update(year);
+      counter.update(year);
       if (hovered) tooltip.show(lastEvent, hovered.territory, year, hovered.onPoint);
       writeHash();
     },
@@ -127,7 +130,7 @@ async function init() {
 
   const initial = readHash(); // read once: setting the year rewrites the hash
   slider.set(initial.year ?? DEFAULT_YEAR);
-  if (initial.id) { select(initial.id); if (selectedId) zoomToSelected(); }
+  if (initial.id) { select(initial.id, { focus: false }); if (selectedId) zoomToSelected(); }
   window.addEventListener("hashchange", applyHash);
 }
 

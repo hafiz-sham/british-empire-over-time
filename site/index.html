@@ -38,7 +38,10 @@
 
   <main class="layout">
     <section class="map-panel" aria-label="Map">
-      <div class="year-display" aria-hidden="true"><span id="year-label">1920</span></div>
+      <div class="year-display">
+        <span id="year-label" aria-hidden="true">1920</span>
+        <span id="counter" class="counter"></span>
+      </div>
       <div id="map" class="map"></div>
       <div id="tooltip" class="tooltip" role="status" hidden></div>
       <div class="zoom-controls" role="group" aria-label="Zoom">
@@ -74,6 +77,11 @@
       </div>
       <h2>Status</h2>
       <ul id="legend" class="legend"></ul>
+      <details class="counter-info">
+        <summary>How is the counter calculated?</summary>
+        <p><strong>Territories</strong> counts today's countries and territories that were wholly or partly under British rule on 31 December of the selected year. It leaves out the United Kingdom and the Crown Dependencies, and small holdings marked only with a dot (such as Weihaiwei in China).</p>
+        <p><strong>Share of world land</strong> includes the United Kingdom. It is shown as a range: the lower figure counts only countries that were wholly British; the higher one adds countries that were partly British, whose whole area is counted. Areas are today's borders, measured on an equal-area projection; world land excludes Antarctica.</p>
+      </details>
       <p class="legend-note">Hover over a status to highlight it. Click or tap a country for its full history and sources; use + and − (or pinch) to zoom. A fainter shade means only part of today's country was British. A dot marks a small territory, or a small British holding inside a larger country.</p>
     </aside>
   </main>
